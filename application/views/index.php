@@ -219,9 +219,9 @@
                 <div class="col-sms-6 col-sm-6 col-md-4">
                     <div class="tabs-top">
                         <ul class="navx ver-tabs">
-                            <li class="active"><a href="#a4" data-toggle="tab"><span class="glyphicon glyphicon-heart"></span></a></li>
-                            <li><a href="#b4" data-toggle="tab"><span class="glyphicon glyphicon-star"></span></a></li>
-                            <li><a href="#c4" data-toggle="tab"><span class="glyphicon glyphicon-headphones"></span></a></li>
+                            <li class="active"><a href="#a4" data-toggle="tab"><span>TOUR</span></a></li>
+                            <li class="s-tab"><a href="#b4" data-toggle="tab"><span>Khach San</span></a></li>
+                            <li class="s-tab"><a href="#c4" data-toggle="tab"><span>Nha Hang</span></a></li>
                         </ul>
                         <div class="tab-top-content">
                             <div class="tab-pane active" id="a4">

@@ -5261,15 +5261,15 @@ display:none !important
 
 .navx
 {
-    margin-bottom:0;padding-left:0;list-style:none
+    margin-bottom:0;padding-left:0;list-style:none;
 }
 .navx>li
 {
-    position:relative;display:block
+    position:inherit;
 }
 .navx>li>a
 {
-    position:relative;display:block;padding:10px 15px
+    position:relative;display:block;
 }
 .navx>li>a:hover,.navx>li>a:focus
 {
@@ -5297,7 +5297,7 @@ display:none !important
 }
 .navx-tabs
 {
-    border-bottom:1px solid #ddd
+    border-bottom:1px solid #ddd;
 }
 .navx-tabs>li
 {
@@ -5438,16 +5438,4 @@ display:none !important
         border-bottom-color:#fff
     }
 
-}
-.tab-content>.tab-pane
-{
-    display:none
-}
-.tab-content>.active
-{
-    display:block
-}
-.navxx-tabs .dropdown-menu
-{
-    margin-top:-1px;border-top-right-radius:0;border-top-left-radius:0
 }
