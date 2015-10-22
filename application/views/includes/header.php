@@ -6,10 +6,6 @@
  * Time: 9:56 PM
  */
 
-if(!($this->session->userdata('language'))){
-    $this->session->set_userdata('language', 'vietnam');
-    $this->session->set_userdata('lang_code', 'VI');
-}
 $user_language = $this->session->userdata('language');
 if(strlen($this->session->userdata('language'))<1){
     $user_language = $this->session->userdata('language');
@@ -34,17 +30,6 @@ if(isset($metaData)){
 <!--[if gt IE 9]><!-->
 <html xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
-    <meta property="og:type" content="website" />
-
-    <meta property="og:site_name" content="Vung Chua Travel" />
-
-    <meta property="og:title" content="<?php echo (isset($metaTitle)) ? $metaTitle : $this->lang->line('title');?>" />
-
-    <meta property="fb:admins" content="vungchuatravel" />
-
-    <meta property="og:url" content="<?php uri_string()?>" />
-
-    <meta property="og:description" content="<?php echo (isset($metaDesc)) ? $metaDesc : $this->lang->line('description');?>"/>
     <!-- Page Title -->
     <title><?php echo (isset($metaTitle)) ? $metaTitle : $this->lang->line('title');?></title>
 
@@ -62,7 +47,7 @@ if(isset($metaData)){
 
     <link rel="stylesheet" href="<?php echo base_url()?>resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url()?>resources/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Arial:300,400,600,700,800|Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800|Shadows+Into+Light' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="<?php echo base_url()?>resources/css/animate.min.css">
 
     <!-- Current Page Styles -->
@@ -92,7 +77,6 @@ if(isset($metaData)){
     <![endif]-->
 
 
-    <script type='text/javascript'> var pageUrl = <?php echo base_url()?></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -138,12 +122,7 @@ if(isset($metaData)){
                         </ul>
                         <?php } ?>
                     </li>
-                    <li class="googleplus"><a title="googleplus" href="#" data-toggle="tooltip"><i class="soap-icon-googleplus"> google+</i></a></li>
-                    <li class="facebook"><a title="facebook" href="https://www.facebook.com/vungchuatravel" data-toggle="tooltip"><i class="soap-icon-facebook"> facebook</i></a></li>
-                    <li class="skype"><a title="skype" href="#" data-toggle="tooltip"><i class="soap-icon-skype"></i> dieuhanh.vungchuatravel</a></li>
-                    <li class="phone"><a title="phone" href="#" data-toggle="tooltip"><i class="soap-icon-phone"></i> (052) 382 88 82</a></li>
                 </ul>
-
                 <ul class="quick-menu pull-right">
                     <li><a href="#travelo-login" class="soap-popupbox"><?php echo $this->lang->line('login'); ?></a></li>
                     <li><a href="#travelo-signup" class="soap-popupbox"><?php echo $this->lang->line('singup'); ?></a></li>
@@ -423,15 +402,154 @@ if(isset($metaData)){
                     <!-- Slide1 -->
                     <li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
                         <!-- MAIN IMAGE -->
-                        <img src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider4/slide1/bg.png"  alt="" data-bgposition="0% 0%" data-bgfit="100% 100%" data-bgrepeat="repeat-y">
+                        <img src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide1/bg.jpg" alt="">
                         <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption lfb fadeout"
+                             data-x="center" data-hoffset="0"
+                             data-y="bottom" data-voffset="0"
+                             data-speed="300" data-endspeed="300"
+                             data-start="400"
+                             data-easing="Power3.easeInOut"
+                             style="z-index: 1">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide1/stage.png">
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption tp-fade fadeout"
+                             data-x="center" data-hoffset="0"
+                             data-y="bottom" data-voffset="0"
+                             data-speed="300" data-endspeed="300"
+                             data-start="800"
+                             data-easing="Power3.easeInOut"
+                             style="z-index: 2;">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide1/tree.png">
+                        </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption lfl str" data-x="756" data-y="500" data-speed="1500" data-start="1100" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1500" style="z-index: 3;">
+                            <img src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide1/shadow.png" alt="">
+                        </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption sfr stl" data-x="801" data-y="319" data-speed="1500" data-start="1400" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1500" style="z-index: 4;">
+                            <img src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide1/brifcase.png" alt="">
+                        </div>
+
+                        <!-- LAYER NR. 5 -->
+                        <div class="tp-caption sfr skewtoleft" data-x="718" data-y="357" data-speed="1500" data-start="1700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1500" style="z-index: 5;">
+                            <img src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide1/plate.png" alt="">
+                        </div>
+
+                        <!-- LAYER NR. 6 -->
+                        <div class="tp-caption sfr stb" data-x="798" data-y="450" data-speed="1500" data-start="2000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1500" style="z-index: 6;">
+                            <img src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide1/watch.png" alt="">
+                        </div>
+
+                        <!-- LAYER NR. 7 -->
+                        <div class="tp-caption sfr stl " data-x="773" data-y="315" data-speed="1500" data-start="2300" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 7;"><img src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide1/cap.png" alt="">
+                        </div>
+
+                        <!-- LAYER NR. 8 -->
+                        <div class="tp-caption customin fadeout"
+                             data-x="center" data-hoffset="320"
+                             data-y="160"
+                             data-customin="x:1000;y:360;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="1000" data-endspeed="600"
+                             data-start="3000"
+                             data-easing="easeOutQuad"
+                             style="z-index: 8;">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide1/plane.png">
+                        </div>
+
+                        <!-- LAYER NR. 9 -->
+                        <div class="tp-caption sft tp-resizeme"
+                             data-x="250"
+                             data-y="center" data-voffset="40"
+                             data-speed="600" data-endspeed="600"
+                             data-start="3600"
+                             data-easing="easeOutQuad"
+                             style="z-index: 9;">
+                            <p class="caption-small-title"><?php echo $this->lang->line('welcome'); ?></p>
+                            <p class="caption-medium-title"><?php echo $this->lang->line('welcome1title'); ?></p>
+                        </div>
+
+                        <!-- LAYER NR. 10 -->
+                        <div class="tp-caption largewhitebg_button1 lfl stl" data-x="310" data-y="395" data-speed="1500" data-start="3200" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1500" data-linktoslide="1" style="z-index: 10;">
+                            <a href="#"><?php echo $this->lang->line('bytour'); ?></a>
+                        </div>
+
+                        <!-- LAYER NR. 10 -->
+                        <div class="tp-caption largewhitebg_button1 lfr str tp-resizeme" data-x="444" data-y="395" data-speed="1500" data-start="3500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1500" data-linktoslide="1" style="z-index: 11;">
+                            <a href="#"><?php echo $this->lang->line('moreinfo'); ?></a>
+                        </div>
                     </li>
 
                     <!-- Slide2 -->
-                    <li data-masterspeed="500" data-slotamount="7" data-transition="curtain-3">
+                    <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1500">
                         <!-- MAIN IMAGE -->
-                        <img src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider2/slide2/bg.png" alt="">
+                        <img src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide2/bg.jpg" alt="">
                         <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption lfl str start" data-x="576" data-y="260" data-speed="1500" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1500" style="z-index: 2;"><img style="width: 650px; height: 385px;" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide2/quangbinhquan.png" alt="">
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption lfr stl start" data-x="27" data-y="359" data-speed="1500" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1500" style="z-index: 3;"><img style="width: 267px; height: 187px;" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide2/island.png" alt="">
+                        </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption lfb stt start" data-x="266" data-y="479" data-speed="1500" data-start="1100" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 4;"><img style="width: 25px; height: 34px;" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide2/ballon.png" alt="">
+                        </div>
+
+
+                        <!-- LAYER NR. 5 -->
+                        <div class="tp-caption large_bold_white_med_2 lfb str tp-resizeme start" data-x="25" data-y="181" data-speed="1500" data-start="1700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 6;">
+                            <p class="caption-big-title"><?php echo $this->lang->line('lets'); ?><strong><i><?php echo $this->lang->line('discover'); ?></i></strong><?php echo $this->lang->line('twtogether'); ?></p>
+                        </div>
+
+                        <!-- LAYER NR. 6 -->
+                        <div class="tp-caption lft stl start" data-x="22" data-y="230" data-speed="1500" data-start="2000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1500" style="z-index: 7;"><img style="width: 43px; height: 32px;" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide2/pleane.png" alt="">
+                        </div>
+
+                        <!-- LAYER NR. 7 -->
+                        <div class="tp-caption sfl stl start" data-x="23" data-y="273" data-speed="1500" data-start="2300" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1300" style="z-index: 8;"><img style="width: 43px; height: 32px;" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide2/buil.png" alt="">
+                        </div>
+
+                        <!-- LAYER NR. 8 -->
+                        <div class="tp-caption sfl stt start" data-x="18" data-y="317" data-speed="1500" data-start="2600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1500" style="z-index: 9;"><img style="width: 43px; height: 32px;" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide2/watch.png" alt="">
+                        </div>
+
+                        <!-- LAYER NR. 9 -->
+                        <div class="tp-caption sfl stl start" data-x="18" data-y="354" data-speed="1500" data-start="2900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1500" style="z-index: 10;"><img style="width: 43px; height: 31px;" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide2/man.png" alt="">
+                        </div>
+
+                        <!-- LAYER NR. 10 -->
+                        <div class="tp-caption large_bold_white_med lft str tp-resizeme start" data-x="72" data-y="230" data-speed="1500" data-start="3200" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 11;">
+                            <span class="caption-medium-title"><?php echo $this->lang->line('over'); ?><strong> 500 </strong><?php echo $this->lang->line('airlines'); ?></span>
+                        </div>
+
+                        <!-- LAYER NR. 11 -->
+                        <div class="tp-caption large_bold_white_med lft stl tp-resizeme start" data-x="73" data-y="274" data-speed="1500" data-start="3500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 12;">
+                            <span class="caption-medium-title"><?php echo $this->lang->line('morethan'); ?><strong>13,000</strong><?php echo $this->lang->line('places'); ?></span>
+                        </div>
+
+                        <!-- LAYER NR. 12 -->
+                        <div class="tp-caption large_bold_white_med lft stt tp-resizeme start" data-x="73" data-y="318" data-speed="1500" data-start="3800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 13;">
+                            <span class="caption-medium-title"><?php echo $this->lang->line('bstPrcWrt'); ?></span>
+                        </div>
+
+                        <!-- LAYER NR. 13 -->
+                        <div class="tp-caption large_bold_white_med lft stl tp-resizeme start" data-x="75" data-y="357" data-speed="1500" data-start="4100" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 14;">
+                            <span class="caption-medium-title"><?php echo $this->lang->line('custCare'); ?></span>
+                        </div>
+
+                        <!-- LAYER NR. 14 -->
+                        <div class="tp-caption tp-resizeme start hasclicklistener" data-x="29" data-y="410" data-speed="1500" data-start="4400" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1300" data-linktoslide="1" style="z-index: 15; ">
+                            <a class="link link-home-slider-blue" href="#"><?php echo $this->lang->line('findOutMore'); ?></a>
+                        </div>
                     </li>
 
                     <!-- Slide3 -->
@@ -439,8 +557,561 @@ if(isset($metaData)){
                         <!-- MAIN IMAGE -->
                         <img src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide3/bg.jpg" alt="">
                         <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption lfr start"
+                             data-x="right" data-hoffset="10"
+                             data-y="center" data-voffset="0"
+                             data-speed="400"
+                             data-start="1000"
+                             data-easing="Power3.easeInOut"
+                             style="z-index: 2;">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide3/cloud.png">
+                        </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption customin fadeout start"
+                             data-x="right" data-hoffset="60"
+                             data-y="bottom"
+                             data-customin="x:800;y:450;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:846;transformOrigin:50% 50%;"
+                             data-speed="600"
+                             data-start="1600"
+                             data-easing="Power3.easeInOut"
+                             style="z-index: 16;">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide3/hand.png">
+                        </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption sfb fadeout start"
+                             data-x="right" data-hoffset="-307"
+                             data-y="134"
+                             data-speed="400"
+                             data-start="1700"
+                             data-easing="Power3.easeInOut"
+                             style="z-index: 4;">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide3/balloon.png">
+                        </div>
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption customin fadeout start"
+                             data-x="center" data-hoffset="-24"
+                             data-y="139"
+                             data-customin="x:1000;y:360;z:-250;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                             data-speed="300"
+                             data-start="2100"
+                             data-easing="Power3.easeInOut"
+                             style="z-index: 5;">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide3/plane.png">
+                        </div>
+
+                        <!-- LAYER NR. 5 -->
+                        <div class="tp-caption sfb start"
+                             data-x="right" data-hoffset="-440"
+                             data-y="72"
+                             data-speed="300"
+                             data-start="2100"
+                             data-easing="Power3.easeInOut"
+                             style="z-index: 15;">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide3/newyork.png">
+                        </div>
+
+                        <!-- LAYER NR. 6 -->
+                        <div class="tp-caption sfb start"
+                             data-x="right" data-hoffset="-413"
+                             data-y="30"
+                             data-speed="300"
+                             data-start="2300"
+                             data-easing="Power3.easeInOut"
+                             style="z-index: 14;">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide3/london.png">
+                        </div>
+
+                        <!-- LAYER NR. 7 -->
+                        <div class="tp-caption sfb start"
+                             data-x="right" data-hoffset="-481"
+                             data-y="178"
+                             data-speed="300"
+                             data-start="2500"
+                             data-easing="Power3.easeInOut"
+                             style="z-index: 13;">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide3/building.png">
+                        </div>
+
+                        <!-- LAYER NR. 8 -->
+                        <div class="tp-caption sfb start"
+                             data-x="right" data-hoffset="-342"
+                             data-y="183"
+                             data-speed="300"
+                             data-start="2700"
+                             data-easing="Power3.easeInOut"
+                             style="z-index: 12;">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide3/sydney.png">
+                        </div>
+
+                        <!-- LAYER NR. 9 -->
+                        <div class="tp-caption sfb start"
+                             data-x="right" data-hoffset="-365"
+                             data-y="98"
+                             data-speed="300"
+                             data-start="2900"
+                             data-easing="Power3.easeInOut"
+                             style="z-index: 11;">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide3/paris.png">
+                        </div>
+
+                        <!-- LAYER NR. 10 -->
+                        <div class="tp-caption sfb start"
+                             data-x="right" data-hoffset="-367"
+                             data-y="152"
+                             data-speed="300"
+                             data-start="3100"
+                             data-easing="Power3.easeInOut"
+                             style="z-index: 10;">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide3/building2.png">
+                        </div>
+
+                        <!-- LAYER NR. 11 -->
+                        <div class="tp-caption sfb start"
+                             data-x="right" data-hoffset="-381"
+                             data-y="134"
+                             data-speed="300"
+                             data-start="3300"
+                             data-easing="Power3.easeInOut"
+                             style="z-index: 9;">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide3/building3.png">
+                        </div>
+
+                        <!-- LAYER NR. 12 -->
+                        <div class="tp-caption sfb start"
+                             data-x="right" data-hoffset="-498"
+                             data-y="201"
+                             data-speed="300"
+                             data-start="3500"
+                             data-easing="Power3.easeInOut"
+                             style="z-index: 8;">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide3/building4.png">
+                        </div>
+
+                        <!-- LAYER NR. 13 -->
+                        <div class="tp-caption sfb start"
+                             data-x="right" data-hoffset="-437"
+                             data-y="117"
+                             data-speed="300"
+                             data-start="3700"
+                             data-easing="Power3.easeInOut"
+                             style="z-index: 7;">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide3/building5.png">
+                        </div>
+
+                        <!-- LAYER NR. 14 -->
+                        <div class="tp-caption sfb start"
+                             data-x="right" data-hoffset="-486"
+                             data-y="116"
+                             data-speed="300"
+                             data-start="3900"
+                             data-easing="Power3.easeInOut"
+                             style="z-index: 6;">
+                            <img alt="" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide3/italy.png">
+                        </div>
+
+                        <!-- LAYER NR. 15 -->
+                        <div class="tp-caption lfr stl tp-resizeme start" data-x="25" data-y="181" data-speed="1500" data-start="4000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 17;">
+                            <p class="caption-big-title"><?php echo $this->lang->line('lets'); ?> <strong><i><?php echo $this->lang->line('discover'); ?></i></strong> <?php echo $this->lang->line('twtogether'); ?></p>
+                        </div>
+
+                        <!-- LAYER NR. 16 -->
+                        <div class="tp-caption sfb stb start" data-x="22" data-y="230" data-speed="1500" data-start="4200" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1500" style="z-index: 18;"><img style="width: 43px; height: 32px;" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide2/pleane.png" alt="">
+                        </div>
+
+                        <!-- LAYER NR. 17 -->
+                        <div class="tp-caption large_bold_white_med sfb stb tp-resizeme start" data-x="72" data-y="230" data-speed="1500" data-start="4400" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 19;">
+                            <span class="caption-medium-title"><?php echo $this->lang->line('over'); ?><strong> 500 </strong><?php echo $this->lang->line('airlines'); ?></span>
+                        </div>
+
+                        <!-- LAYER NR. 18 -->
+                        <div class="tp-caption sfb stb start" data-x="23" data-y="273" data-speed="1500" data-start="4600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1300" style="z-index: 20;"><img style="width: 43px; height: 32px;" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide2/buil.png" alt="">
+                        </div>
+
+                        <!-- LAYER NR. 19 -->
+                        <div class="tp-caption large_bold_white_med lft stl tp-resizeme start" data-x="73" data-y="274" data-speed="1500" data-start="4700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 21;">
+                            <span class="caption-medium-title"><?php echo $this->lang->line('morethan'); ?> <strong>13,000</strong> <?php echo $this->lang->line('places'); ?></span>
+                        </div>
+
+                        <!-- LAYER NR. 20 -->
+                        <div class="tp-caption sfl stt start" data-x="18" data-y="317" data-speed="1500" data-start="4900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1500" style="z-index: 22;"><img style="width: 43px; height: 32px;" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide2/watch.png" alt="">
+                        </div>
+
+                        <!-- LAYER NR. 21 -->
+                        <div class="tp-caption large_bold_white_med lft stt tp-resizeme start" data-x="73" data-y="318" data-speed="1500" data-start="5100" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 23;">
+                            <span class="caption-medium-title"><?php echo $this->lang->line('bstPrcWrt'); ?></span>
+                        </div>
+
+                        <!-- LAYER NR. 22 -->
+                        <div class="tp-caption sfl stl start" data-x="18" data-y="354" data-speed="1500" data-start="5300" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1500" style="z-index: 24;"><img style="width: 43px; height: 31px;" src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide2/man.png" alt="">
+                        </div>
+
+                        <!-- LAYER NR. 23 -->
+                        <div class="tp-caption large_bold_white_med lft stl tp-resizeme start" data-x="75" data-y="357" data-speed="1500" data-start="5500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 25;">
+                            <span class="caption-medium-title"><?php echo $this->lang->line('custCare'); ?></span>
+                        </div>
+
+                        <!-- LAYER NR. 24 -->
+                        <div class="tp-caption tp-resizeme start hasclicklistener" data-x="29" data-y="410" data-speed="1500" data-start="5700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="1300" data-linktoslide="1" style="z-index: 26; ">
+                            <a class="link link-home-slider-blue" href="#"><?php echo $this->lang->line('findOutMore'); ?></a>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
+
+    <section id="content">
+        <div class="search-box-wrapper">
+            <div class="search-box container">
+                <ul class="search-tabs clearfix">
+                    <li class="active"><a href="#tours-tab" data-toggle="tab"><?php echo $this->lang->line('tours'); ?></a></li>
+                    <li><a href="#hotels-tab" data-toggle="tab"><?php echo $this->lang->line('hotels'); ?></a></li>
+                    <li><a href="#booking-tab" data-toggle="tab"><?php echo $this->lang->line('booking'); ?></a></li>
+<!--                    <li><a href="#cars-tab" data-toggle="tab">CARS</a></li>-->
+<!--                    <li><a href="#cruises-tab" data-toggle="tab">CRUISES</a></li>-->
+<!--                    <li><a href="#flight-status-tab" data-toggle="tab">FLIGHT STATUS</a></li>-->
+<!--                    <li><a href="#online-checkin-tab" data-toggle="tab">ONLINE CHECK IN</a></li>-->
+                </ul>
+                <div class="visible-mobile">
+                    <ul id="mobile-search-tabs" class="search-tabs clearfix">
+                        <li class="active"><a href="#tours-tab"><?php echo $this->lang->line('tours'); ?></a></li>
+                        <li><a href="#hotels-tab"><?php echo $this->lang->line('hotels'); ?></a></li>
+                        <li><a href="#booking-tab"><?php echo $this->lang->line('booking'); ?></a></li>
+<!--                        <li><a href="#cars-tab">CARS</a></li>-->
+<!--                        <li><a href="#cruises-tab">CRUISES</a></li>-->
+<!--                        <li><a href="#flight-status-tab">FLIGHT STATUS</a></li>-->
+<!--                        <li><a href="#online-checkin-tab">ONLINE CHECK IN</a></li>-->
+                    </ul>
+                </div>
+
+                <div class="search-tab-content">
+
+                    <div class="tab-pane fade" id="tours-tab">
+                        <form action="flight-list-view.html" method="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h4 class="title">Where</h4>
+                                    <div class="form-group">
+                                        <label>Leaving From</label>
+                                        <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Going To</label>
+                                        <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <h4 class="title">When</h4>
+                                    <label>Departing On</label>
+                                    <div class="form-group row">
+                                        <div class="col-xs-6">
+                                            <div class="datepicker-wrap">
+                                                <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="selector">
+                                                <select class="full-width">
+                                                    <option value="1">anytime</option>
+                                                    <option value="2">morning</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label>Arriving On</label>
+                                    <div class="form-group row">
+                                        <div class="col-xs-6">
+                                            <div class="datepicker-wrap">
+                                                <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="selector">
+                                                <select class="full-width">
+                                                    <option value="1">anytime</option>
+                                                    <option value="2">morning</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <h4 class="title">Who</h4>
+                                    <div class="form-group row">
+                                        <div class="col-xs-3">
+                                            <label>Adults</label>
+                                            <div class="selector">
+                                                <select class="full-width">
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <label>Kids</label>
+                                            <div class="selector">
+                                                <select class="full-width">
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label>Promo Code</label>
+                                            <input type="text" class="input-text full-width" placeholder="type here" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-xs-3">
+                                            <label>Infants</label>
+                                            <div class="selector">
+                                                <select class="full-width">
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 pull-right">
+                                            <label>&nbsp;</label>
+                                            <button class="full-width icon-check">SERACH NOW</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane fade active in" id="hotels-tab">
+                        <form action="hotel-list-view.html" method="post">
+                            <div class="row">
+                                <div class="form-group col-sm-6 col-md-3">
+                                    <h4 class="title">Where</h4>
+                                    <label>Your Destination</label>
+                                    <input type="text" class="input-text full-width" placeholder="enter a destination or hotel name" />
+                                </div>
+
+                                <div class="form-group col-sm-6 col-md-4">
+                                    <h4 class="title">When</h4>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <label>Check In</label>
+                                            <div class="datepicker-wrap">
+                                                <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label>Check Out</label>
+                                            <div class="datepicker-wrap">
+                                                <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-sm-6 col-md-3">
+                                    <h4 class="title">Who</h4>
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <label>Rooms</label>
+                                            <div class="selector">
+                                                <select class="full-width">
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <label>Adults</label>
+                                            <div class="selector">
+                                                <select class="full-width">
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <label>Kids</label>
+                                            <div class="selector">
+                                                <select class="full-width">
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-sm-6 col-md-2 fixheight">
+                                    <label class="hidden-xs">&nbsp;</label>
+                                    <button type="submit" class="full-width icon-check animated" data-animation-type="bounce" data-animation-duration="1">SEARCH NOW</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane fade" id="booking-tab">
+                        <form action="flight-list-view.html" method="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h4 class="title">Where</h4>
+                                    <div class="form-group">
+                                        <label>Leaving From</label>
+                                        <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Going To</label>
+                                        <input type="text" class="input-text full-width" placeholder="city, distirct or specific airpot" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <h4 class="title">When</h4>
+                                    <label>Departing On</label>
+                                    <div class="form-group row">
+                                        <div class="col-xs-6">
+                                            <div class="datepicker-wrap">
+                                                <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="selector">
+                                                <select class="full-width">
+                                                    <option value="1">anytime</option>
+                                                    <option value="2">morning</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label>Arriving On</label>
+                                    <div class="form-group row">
+                                        <div class="col-xs-6">
+                                            <div class="datepicker-wrap">
+                                                <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="selector">
+                                                <select class="full-width">
+                                                    <option value="1">anytime</option>
+                                                    <option value="2">morning</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <h4 class="title">Who</h4>
+                                    <div class="form-group row">
+                                        <div class="col-xs-3">
+                                            <label>Adults</label>
+                                            <div class="selector">
+                                                <select class="full-width">
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <label>Kids</label>
+                                            <div class="selector">
+                                                <select class="full-width">
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label>Promo Code</label>
+                                            <input type="text" class="input-text full-width" placeholder="type here" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-xs-3">
+                                            <label>Rooms</label>
+                                            <div class="selector">
+                                                <select class="full-width">
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 pull-right">
+                                            <label>&nbsp;</label>
+                                            <button class="full-width icon-check">SERACH NOW</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane fade" id="online-checkin-tab">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4 class="title">Where</h4>
+                                    <div class="form-group row">
+                                        <div class="col-xs-6">
+                                            <label>Leaving From</label>
+                                            <input type="text" class="input-text full-width" placeholder="enter a city or place name" />
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <label>Going To</label>
+                                            <input type="text" class="input-text full-width" placeholder="enter a city or place name" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6 col-md-2">
+                                    <h4 class="title">When</h4>
+                                    <div class="form-group">
+                                        <label>Departure Date</label>
+                                        <div class="datepicker-wrap">
+                                            <input type="text" class="input-text full-width" placeholder="mm/dd/yy" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6 col-md-2">
+                                    <h4 class="title">Who</h4>
+                                    <div class="form-group">
+                                        <label>Full Name</label>
+                                        <input type="text" class="input-text full-width" placeholder="enter your full name" />
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-2 fixheight">
+                                    <label class="hidden-xs">&nbsp;</label>
+                                    <button class="icon-check full-width">SEARCH NOW</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>

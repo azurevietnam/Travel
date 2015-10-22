@@ -52,15 +52,6 @@ $lang['tours'] = "Tour";
 $lang['contact'] = "Contacts";
 $lang['aboutus'] = "About Us";
 $lang['payment'] = "Payment";
-$lang['commitment'] = "Commitments";
-$lang['organization'] = "Organizational";
-$lang['recruitment'] = "Careers";
-$lang['investment'] = "Investment Cooperation";
-$lang['linked'] = "Linked";
-$lang['agency'] = "Agency";
-$lang['headquarter'] = "Headquarter";
-$lang['branch'] = "Branch";
-$lang['oSupport'] = "Online Support";
 
 $lang['ourcompany'] = "Vung Chua Travel";
 $lang['openletter'] = "Open Letter";
@@ -158,11 +149,6 @@ $lang['tournote'] = "Tour Note";
  * Search Layer
  */
 $lang['booking'] = "Booking";
-$lang['where'] = "Where";
-$lang['destination'] = "Destination";
-$lang['pricefrom'] = "Price From";
-$lang['priceto'] = "Price To";
-$lang['search'] = "Search";
 
 /*
  * introduce
@@ -219,8 +205,6 @@ $lang['adult'] = "Adults";
 $lang['kids'] = "Kids";
 $lang['infant'] = "Infants";
 $lang['suscessmessage'] = "Your order successfully!";
-$lang['select'] = "SELECT";
-$lang['viewmap'] = "VIEW ON MAP";
 
     /*
      * footer
@@ -229,14 +213,11 @@ $lang['discover1'] = "Discover";
 $lang['travelnew'] = "Travel News";
 $lang['maillist'] = "Mailing List";
 $lang['aboutvctravel'] = "Vung Chua Travel";
-$lang['aboutvctravel'] = "Vung Chua Travel";
-
 
 $lang['maillistdesc'] = "Sign up for our mailing list to get latest updates and offers.";
 $lang['maillistdesc1'] = "We respect your privacy";
 $lang['aboutvctraveldesc'] = "VUNG CHUA SERVICES AND TRAVEL TRADING JOINT STOCK COMPANY";
 $lang['vcAddress'] = "96 Ly Thuong Kiet Street - Dong Hoi City - Quang Binh Province";
-$lang['brAddress'] = "08-5/337 Pham Van Dong st. Tu Liem North - Ha Noi";
 $lang['safety'] = "Safety";
 $lang['sitemap'] = "Site map";
 $lang['policies'] = "Policies";

@@ -5,10 +5,6 @@
  * Date: 4/14/2015
  * Time: 9:56 PM
  */
-if(!($this->session->userdata('language'))){
-    $this->session->set_userdata('language', 'vietnam');
-    $this->session->set_userdata('lang_code', 'VI');
-}
 
 $user_language = $this->session->userdata('language');
 if(strlen($this->session->userdata('language'))<1){
@@ -34,17 +30,6 @@ if(isset($metaData)){
 <!--[if gt IE 9]><!-->
 <html xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
-    <meta property="og:type" content="website" />
-
-    <meta property="og:site_name" content="Vung Chua Travel" />
-
-    <meta property="og:title" content="<?php echo (isset($metaTitle)) ? $metaTitle : $this->lang->line('title');?>" />
-
-    <meta property="fb:admins" content="vungchuatravel" />
-
-    <meta property="og:url" content="<?php echo base_url().uri_string()?>" />
-
-    <meta property="og:description" content="<?php echo (isset($metaDesc)) ? $metaDesc : $this->lang->line('description');?>"/>
     <!-- Page Title -->
     <title><?php echo (isset($metaTitle)) ? $metaTitle : $this->lang->line('title');?></title>
 
@@ -62,7 +47,7 @@ if(isset($metaData)){
 
     <link rel="stylesheet" href="<?php echo base_url()?>resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url()?>resources/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Arial:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url()?>resources/css/animate.min.css">
 
     <!-- Current Page Styles -->
@@ -92,7 +77,6 @@ if(isset($metaData)){
     <![endif]-->
 
 
-    <script type='text/javascript'> var pageUrl = "<?php echo base_url()?>"</script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -134,10 +118,6 @@ if(isset($metaData)){
                             </ul>
                         <?php } ?>
                     </li>
-                    <li class="googleplus"><a title="googleplus" href="#" data-toggle="tooltip"><i class="soap-icon-googleplus"> google+</i></a></li>
-                    <li class="facebook"><a title="facebook" href="https://www.facebook.com/vungchuatravel" data-toggle="tooltip"><i class="soap-icon-facebook"> facebook</i></a></li>
-                    <li class="skype"><a title="skype" href="#" data-toggle="tooltip"><i class="soap-icon-skype"></i> dieuhanh.vungchuatravel</a></li>
-                    <li class="phone"><a title="phone" href="#" data-toggle="tooltip"><i class="soap-icon-phone"></i> (052) 382 88 82</a></li>
                 </ul>
                 <ul class="quick-menu pull-right">
                     <li><a href="#travelo-login" class="soap-popupbox"><?php echo $this->lang->line('login'); ?></a></li>

@@ -53,15 +53,6 @@ $lang['tours'] = "Tours";
 $lang['contact'] = "Liên Hệ";
 $lang['aboutus'] = "Giới Thiệu";
 $lang['payment'] = "Thanh Toán";
-$lang['commitment'] = "Cam Kết";
-$lang['organization'] = "Cơ Cấu Tổ Chức";
-$lang['recruitment'] = "Tuyển Dụng";
-$lang['investment'] = "Hợp Tác Đầu Tư";
-$lang['linked'] = "Trao Đổi - Liên Kết";
-$lang['agency'] = "Đại Lý";
-$lang['headquarter'] = "Trụ Sở";
-$lang['branch'] = "Chi Nhánh";
-$lang['oSupport'] = "Hỗ Trợ Trực Tuyến";
 
 $lang['ourcompany'] = "Vũng Chùa Travel";
 $lang['openletter'] = "Thư Ngõ";
@@ -140,11 +131,7 @@ $lang['findOutMore'] = "XEM THÊM VỀ CHÚNG TÔI";
  * Search Layer
  */
 $lang['booking'] = "Booking";
-$lang['where'] = "Địa Điểm";
-$lang['destination'] = "Điểm Đến";
-$lang['pricefrom'] = "Giá Từ";
-$lang['priceto'] = "Giá Đến";
-$lang['search'] = "Tìm Kiếm";
+
 
 /*
  * content
@@ -222,8 +209,6 @@ $lang['adult'] = "Người lớn";
 $lang['kids'] = "Trẻ em";
 $lang['infant'] = "Trẻ sơ sinh";
 $lang['suscessmessage'] = "Yêu cầu của bạn đã được hoàn thành!";
-$lang['select'] = "CHỌN";
-$lang['viewmap'] = "XEM BẢN ĐỒ";
 
     /*
      * footer
@@ -237,7 +222,6 @@ $lang['maillistdesc'] = "Đăng ký nhận thông tin và cập nhật mới nh�
 $lang['maillistdesc1'] = "Chúng tôi tôn trọng quyền riêng tư của bạn";
 $lang['aboutvctraveldesc'] = "CÔNG TY CỔ PHẦN THƯƠNG MẠI DU LỊCH VÀ DỊCH VỤ VŨNG CHÙA";
 $lang['vcAddress'] = "96 Lý Thường Kiệt, TP. Đồng Hới, Quảng Bình";
-$lang['brAddress'] = "08-5/337 Phạm Văn Đồng - Bắc Từ Liêm - Hà Nội";
 $lang['safety'] = "An toàn";
 $lang['sitemap'] = "Site map";
 $lang['policies'] = "Chính sách";

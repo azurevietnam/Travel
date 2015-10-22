@@ -30,18 +30,8 @@ class Index_model extends CI_Model {
 
     public function loadMainCate($cateid)
     {
-        $Sql = "select CATEGORY_ID, CATEGORY_NM_".$this->session->userdata('lang_code')." AS CATEGORY_NAME, CATEGORY_DESC_".$this->session->userdata('lang_code')." AS CATEGORY_DESC,
-        (select count(TOURS_ID) from tours where CATEGORY_ID = cate.CATEGORY_ID ) as POST_COUNT, IMG_URL
-        from category cate WHERE  CATEGORY_ID = ?";
-        $query = $this->db->query($Sql,array($cateid));
-        return $query->result();
-    }
-    public function loadGuideCate($cateid)
-    {
-        $Sql = "select CATEGORY_ID, CATEGORY_NM_".$this->session->userdata('lang_code')." AS CATEGORY_NAME, CATEGORY_DESC_".$this->session->userdata('lang_code')." AS CATEGORY_DESC,
-        (select count(TRAVEL_GUIDE_ID) from travel_guides where CATEGORY_ID = cate.CATEGORY_ID ) as POST_COUNT, IMG_URL
-        from category cate WHERE  CATEGORY_ID = ?";
-        $query = $this->db->query($Sql,array($cateid));
+        $hotDesSql = "select CATEGORY_ID, CATEGORY_NM_".$this->session->userdata('lang_code')." AS CATEGORY_NAME from category WHERE  CATEGORY_ID = ?";
+        $query = $this->db->query($hotDesSql,array($cateid));
         return $query->result();
     }
 
@@ -63,4 +53,5 @@ class Index_model extends CI_Model {
         $query = $this->db->query($toursSql,array($cateID));
         return $query->result();
     }
+
 }

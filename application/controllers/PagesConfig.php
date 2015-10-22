@@ -36,27 +36,14 @@ class PagesConfig extends CI_Controller {
 
         $data['baseURL'] = base_url();
 //        Main categories
-        $data['TourCate1']= $this->Index_model->loadMainCate('T00001');
+        $data['TourCate1']= $this->Index_model->loadMainCate('T00003');
         $data['TourCate2']= $this->Index_model->loadMainCate('T00002');
-        $data['TourCate3']= $this->Index_model->loadMainCate('T00003');
-        $data['TourCate4']= $this->Index_model->loadMainCate('T00004');
-        $data['TourCate5']= $this->Index_model->loadMainCate('T00005');
-        $data['GuideCate']= $this->Index_model->loadGuideCate('D00001');
-        $data['TourCate6']= $this->Index_model->loadMainCate('T00006');
-        $data['TourCate7']= $this->Index_model->loadMainCate('T00007');
-        $data['TourCate8']= $this->Index_model->loadMainCate('T00008');
+        $data['TourCate3']= $this->Index_model->loadMainCate('T00001');
 
-//        $data['hotDesQryRsl'] = $this->Index_model->loadMainHotDest('D00001');
-//        $data['Tour1'] = $this->Index_model->loadMainCateDetail('T00001');
-//        $data['Tour2'] = $this->Index_model->loadMainCateDetail('T00002');
-//        $data['Tour3'] = $this->Index_model->loadMainCateDetail('T00003');
-//        $data['Tour3'] = $this->Index_model->loadHorMainCateDetail('T00003');
-//        $data['Tour4'] = $this->Index_model->loadMainCateDetail('T00004');
-//        $data['Tour5'] = $this->Index_model->loadMainCateDetail('T00005');
-//        $data['Guide'] = $this->Index_model->loadMainHotDest('D00001');
-//        $data['Tour6'] = $this->Index_model->loadMainCateDetail('T00006');
-//        $data['Tour7'] = $this->Index_model->loadMainCateDetail('T00007');
-//        $data['Tour8'] = $this->Index_model->loadMainCateDetail('T00008');
+        //$data['hotDesQryRsl'] = $this->Index_model->loadMainHotDest('D00001');
+        $data['Tour1'] = $this->Index_model->loadMainCateDetail('T00003');
+        $data['Tour2'] = $this->Index_model->loadMainCateDetail('T00002');
+        $data['Tour3'] = $this->Index_model->loadHorMainCateDetail('T00001');
 
         $this->load->view('includes/header',$data);
         $this->load->view('index',$data);
