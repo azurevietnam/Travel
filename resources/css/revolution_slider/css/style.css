@@ -4,7 +4,7 @@
  */
 
 .fullwidthbanner-container {
-    max-height: 700px !important;
+    max-height: 400px !important;
     overflow: hidden;
     padding: 0;
     position: relative;
@@ -20,9 +20,10 @@
 .caption-medium-title strong, .tp-caption .caption-medium-title i { font-size: 25px; }
 
 .caption-small-title { font-size: 20px; line-height: 1.1667em; margin: 0; }
+
 .caption-medium-title strong, .tp-caption .caption-medium-title i { font-size: 20px; }
 
-.tp-caption .button-group { text-align: left; margin: 0; }
+.tp-caption p { text-align: left; margin: 0;}
 
 .tp-caption a { color: #fff; }
 

@@ -50,6 +50,34 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <label class="col-md-3 control-label">Giới Thiệu</label>
+                            <div class="col-md-4">
+                                <textarea class="form-control" rows="3" id="cate_desc_vi" name="cate_desc_vi" placeholder="Giới Thiệu - Vi" required="required"></textarea>
+                            </div>
+                            <div class="col-md-4">
+                                <textarea class="form-control" rows="3" id="cate_desc_en" name="cate_desc_en" placeholder="Giới Thiệu - En" required="required"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Hình Đại Diện</label>
+                            <div class="col-md-6">
+                                <div class="fileupload fileupload-new" data-provides="fileupload">
+                                    <div class="input-append">
+                                        <div class="uneditable-input">
+                                            <i class="fa fa-file fileupload-exists"></i>
+                                            <span class="fileupload-preview"></span>
+                                        </div>
+                                                <span class="btn btn-default btn-file">
+                                                    <span class="fileupload-exists">Change</span>
+                                                    <span class="fileupload-new">Select file</span>
+                                                    <input type="file" name="rpv_img" required/>
+                                                </span>
+                                        <a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="col-md-3 control-label">Nhóm - Danh Mục</label>
                             <div class="col-md-4">
                                 <select class="form-control" data-plugin-multiselect id="cate_grp" name="cate_grp">
