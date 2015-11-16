@@ -168,7 +168,7 @@ if(isset($status)){
                             <div class="form-group">
                                 <label class="col-md-3 control-label">Phân Loại Bài Đăng</label>
                                 <div class="col-md-3">
-                                    <label control-label">Bài Đăng Nổi Bật:</label>
+                                    <label class="col-md-3 control-label">Bài Đăng Nổi Bật:</label>
                                     <select class="form-control" data-plugin-multiselect id="rpv_yn" name="rpv_yn">
                                         <optgroup label="Bài Đăng Nổi Bật">
                                             <option value="Y" selected>Có</option>
@@ -177,7 +177,7 @@ if(isset($status)){
                                     </select>
                                 </div>
                                 <div class="col-md-3">
-                                    <label control-label">Hiển Thị:</label>
+                                    <label class="col-md-3 control-label">Hiển Thị:</label>
                                     <select class="form-control" data-plugin-multiselect id="display_yn" name="display_yn">
                                         <optgroup label="Hiển Thị Bài Đăng">
                                             <option value="Y" selected>Có</option>

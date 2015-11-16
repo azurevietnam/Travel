@@ -1,5 +1,5 @@
 /*
- * Title:   Travelo | Responsive HTML5 Travel Template - Page Loading Js
+ * Title:   VungChuaTravel | Responsive HTML5 Travel Template - Page Loading Js
  * Author:  http://themeforest.net/user/soaptheme
  */
 
@@ -7,7 +7,7 @@
 
 if (typeof Pace != "undefined") {
     var soapPageLoadingContent = false;
-    //document.write('<img alt="" src="images/logo2.png" style="display: none;">');
+    //document.write('<img alt="" src="resources/images/logo2.png" style="display: none;">');
     var logoImg = new Image();
     logoImg.src = "resources/images/logo2.png";
     var soapPageLoadingProgressInterval = setInterval(function() {
@@ -23,8 +23,8 @@ if (typeof Pace != "undefined") {
                                                 '<div class="loading-page-wrapper">' +
                                                     '<div class="container">' +
                                                             '<h1 class="logo block">' +
-                                                                '<a title="Travelo" href="#">' +
-                                                                    '<img alt="" src="images/logo2.png">' +
+                                                                '<a title="VungChuaTravel" href="#">' +
+                                                                    '<img alt="" src="resources/images/logo2.png">' +
                                                                 '</a>' +
                                                             '</h1>' +
                                                             '<div class="loading-progress-bar block col-sm-10 col-md-9 col-lg-8">' +

@@ -76,14 +76,14 @@ if(isset($guideDetail)){
                     </div>
                 </div>
 
-                <div id="tour-details" class="travelo-box">
+                <div id="tour-details" class="VungChuaTravel-box">
                     <div class="intro small-box table-wrapper full-width hidden-table-sms">
-                        <div class="col-sm-4 table-cell travelo-box">
+                        <div class="col-sm-4 table-cell VungChuaTravel-box">
                             <dl class="term-description">
                                 <dt><?php echo $this->lang->line('location')?>:</dt><dd><?php echo $LOCATION?> - <?php echo $NATIONAL?></dd>
                             </dl>
                         </div>
-                        <div class="col-sm-8 table-cell travelo-box" align="center">
+                        <div class="col-sm-8 table-cell VungChuaTravel-box" align="center">
                                     <div class="box-title" >
                                         <span class="title1"><?php echo $GUIDE_TITLE?></span>
                                     </div>
@@ -95,7 +95,7 @@ if(isset($guideDetail)){
                 <div class="fb-comments" data-href="<?php echo base_url('guides/guide_detail/'.$guideID)?>" data-width="800px" data-numposts="5" data-colorscheme="light"></div>
             </div>
             <div class="sidebar col-md-3">
-                <div class="travelo-box">
+                <div class="VungChuaTravel-box">
                     <h4 class="box-title"><?php echo $this->lang->line('tourrelated'); ?></h4>
                     <div class="image-box style14">
                         <?php foreach($guideRelation as $row){?>
@@ -110,7 +110,7 @@ if(isset($guideDetail)){
                             <?php ;}?>
                     </div>
                 </div>
-                <div class="travelo-box book-with-us-box">
+                <div class="VungChuaTravel-box book-with-us-box">
                     <h4><?php echo $this->lang->line('whychose'); ?></h4>
                     <ul>
                         <li>
@@ -130,7 +130,7 @@ if(isset($guideDetail)){
                         </li>
                     </ul>
                 </div>
-                <div class="travelo-box contact-box">
+                <div class="VungChuaTravel-box contact-box">
                     <h4 class="box-title"><?php echo $this->lang->line('needhelp'); ?></h4>
                     <p><?php echo $this->lang->line('needhelpcnt'); ?></p>
                     <address class="contact-details">

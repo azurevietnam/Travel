@@ -55,7 +55,7 @@ $MAP_PLACE_Y = "";
     <div class="container tour-detail-page">
         <div class="row">
             <div id="main" class="col-sms-6 col-sm-8 col-md-9">
-                <div class="booking-section travelo-box">
+                <div class="booking-section VungChuaTravel-box">
 
                     <form name="booking" class="booking-form" onsubmit="return validateForm()" method="post" action="<?php echo base_url()?>tours/tours_order/<?php echo $tourID?>">
                         <div class="person-information">
@@ -128,7 +128,7 @@ $MAP_PLACE_Y = "";
                 </div>
             </div>
             <div class="sidebar col-sms-6 col-sm-4 col-md-3">
-                <div class="booking-details travelo-box">
+                <div class="booking-details VungChuaTravel-box">
                     <h4><?php echo $this->lang->line('bookingdetail');?></h4>
                     <?php foreach($tour_detail as $row){?>
                     <article class="tour-detail">
@@ -181,7 +181,7 @@ $MAP_PLACE_Y = "";
                     </dl>
                 </div>
 
-                <div class="travelo-box contact-box">
+                <div class="VungChuaTravel-box contact-box">
                     <h4 class="box-title"><?php echo $this->lang->line('needhelp'); ?></h4>
                     <p><?php echo $this->lang->line('needhelpcnt'); ?></p>
                     <address class="contact-details">

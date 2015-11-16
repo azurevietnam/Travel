@@ -80,9 +80,6 @@ if(isset($metaData)){
     <!-- Updated Styles -->
     <link rel="stylesheet" href="<?php echo base_url()?>resources/css/updates.css">
 
-    <!-- Updated Styles -->
-    <link rel="stylesheet" href="<?php echo base_url()?>resources/css/updates.css">
-
     <!-- Responsive Styles -->
     <link rel="stylesheet" href="<?php echo base_url()?>resources/css/responsive.css">
 
@@ -91,8 +88,7 @@ if(isset($metaData)){
     <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>resources/css/ie.css" />
     <![endif]-->
 
-
-    <script type='text/javascript'> var pageUrl = <?php echo base_url()?></script>
+    
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -145,8 +141,8 @@ if(isset($metaData)){
                 </ul>
 
                 <ul class="quick-menu pull-right">
-                    <li><a href="#travelo-login" class="soap-popupbox"><?php echo $this->lang->line('login'); ?></a></li>
-                    <li><a href="#travelo-signup" class="soap-popupbox"><?php echo $this->lang->line('singup'); ?></a></li>
+                    <li><a href="#VungChuaTravel-login" class="soap-popupbox"><?php echo $this->lang->line('login'); ?></a></li>
+                    <li><a href="#VungChuaTravel-signup" class="soap-popupbox"><?php echo $this->lang->line('singup'); ?></a></li>
                     <li class="ribbon currency">
                         <a href="#" title="">USD</a>
                         <ul class="menu mini">
@@ -319,8 +315,8 @@ if(isset($metaData)){
                             <li><a href="#" title="Svenska">Svenska</a></li>
                         </ul>
                     </li>
-                    <li><a href="#travelo-login" class="soap-popupbox">LOGIN</a></li>
-                    <li><a href="#travelo-signup" class="soap-popupbox">SIGNUP</a></li>
+                    <li><a href="#VungChuaTravel-login" class="soap-popupbox">LOGIN</a></li>
+                    <li><a href="#VungChuaTravel-signup" class="soap-popupbox">SIGNUP</a></li>
                     <li class="ribbon currency menu-color-skin">
                         <a href="#">USD</a>
                         <ul class="menu mini">
@@ -343,7 +339,7 @@ if(isset($metaData)){
 
             </nav>
         </div>
-        <div id="travelo-signup" class="travelo-signup-box travelo-box">
+        <div id="VungChuaTravel-signup" class="VungChuaTravel-signup-box VungChuaTravel-box">
             <div class="login-social">
                 <a href="#" class="button login-facebook"><i class="soap-icon-facebook"></i><?php echo $this->lang->line('loginfacebook'); ?></a>
                 <a href="#" class="button login-googleplus"><i class="soap-icon-googleplus"></i><?php echo $this->lang->line('logingoogle'); ?></a>
@@ -386,9 +382,9 @@ if(isset($metaData)){
                 </form>
             </div>
             <div class="seperator"></div>
-            <p><?php echo $this->lang->line('askmember'); ?><a href="#travelo-login" class="goto-login soap-popupbox"><?php echo $this->lang->line('login'); ?></a></p>
+            <p><?php echo $this->lang->line('askmember'); ?><a href="#VungChuaTravel-login" class="goto-login soap-popupbox"><?php echo $this->lang->line('login'); ?></a></p>
         </div>
-        <div id="travelo-login" class="travelo-login-box travelo-box">
+        <div id="VungChuaTravel-login" class="VungChuaTravel-login-box VungChuaTravel-box">
             <div class="login-social">
                 <a href="#" class="button login-facebook"><i class="soap-icon-facebook"></i><?php echo $this->lang->line('loginfacebook'); ?></a>
                 <a href="#" class="button login-googleplus"><i class="soap-icon-googleplus"></i><?php echo $this->lang->line('logingoogle'); ?></a>
@@ -412,7 +408,7 @@ if(isset($metaData)){
                 <button type="submit" class="full-width btn-medium"><?php echo $this->lang->line('login'); ?></button>
             </form>
             <div class="seperator"></div>
-            <p><?php echo $this->lang->line('donthaveacc'); ?><a href="#travelo-signup" class="goto-signup soap-popupbox"><?php echo $this->lang->line('singup'); ?></a></p>
+            <p><?php echo $this->lang->line('donthaveacc'); ?><a href="#VungChuaTravel-signup" class="goto-signup soap-popupbox"><?php echo $this->lang->line('singup'); ?></a></p>
         </div>
     </header>
 
