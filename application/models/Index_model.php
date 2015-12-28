@@ -63,4 +63,78 @@ class Index_model extends CI_Model {
         $query = $this->db->query($toursSql,array($cateID));
         return $query->result();
     }
+
+    /*
+     * load tour category
+     */
+    public function loadTourCate(){
+        $tourCate = "SELECT CATEGORY_ID, CATEGORY_NM_".$this->session->userdata('lang_code')." AS CATE_NAME FROM `category` WHERE `GROUP_ID` = 'T' ";
+        $query = $this->db->query($tourCate);
+        return $query->result();
+    }
+
+    /*
+     * load 3 main Category in home page
+     */
+    public function loadMainHomeCate(){
+        $mainCate = "SELECT CATEGORY_ID, CATEGORY_NM_".$this->session->userdata('lang_code')." AS CATE_NAME
+                    , CATEGORY_DESC_".$this->session->userdata('lang_code')." AS CATE_DESC, MAIN_CATE, COLOR_CD
+                    FROM `category` WHERE `MAIN_CATE` <> 0  ORDER BY MAIN_CATE ASC";
+        $query = $this->db->query($mainCate);
+        return $query->result();
+    }
+
+    /*
+     * load all tour by category
+     */
+
+    public function loadTourbyCategory($cateID){
+        $sql = "SELECT TOURS_ID, CATEGORY_ID, TOURS_TIT_".$this->session->userdata('lang_code')." AS TOURS_TITLE FROM Tours WHERE CATEGORY_ID = ? AND DISPLAY_YN = 'Y'";
+        $query = $this->db->query($sql, $cateID);
+        return $query->result();
+    }
+
+    /*
+     * Insert Hotel request
+     */
+    public function insertHotelRequest($data){
+        if($this->db->insert('hotel_order',$data)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    /*
+     * Insert Restaurant request
+     */
+    public function insertRestaurantRequest($data){
+        if($this->db->insert('restaurant_order',$data)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    /*
+     * Insert Car request
+     */
+    public function insertCarRequest($data){
+        if($this->db->insert('car_order',$data)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    /*
+     * Insert Tour request
+     */
+    public function insertTourRequest($data){
+        if($this->db->insert('tours_order',$data)){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

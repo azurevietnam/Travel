@@ -254,7 +254,7 @@ font-size:62.5%;-webkit-tap-highlight-color:rgba(0,0,0,0)
 }
 body
 {
-    font:75%/150% "Lato",Arial,Helvetica,sans-serif;background-color:#fff;color:#838383;overflow-x:hidden;-webkit-font-smoothing:antialiased;-ms-overflow-style:scrollbar;oveflow-y:scroll
+    font:75%/150% Arial,Helvetica,sans-serif;background-color:#fff;color:#838383;overflow-x:hidden;-webkit-font-smoothing:antialiased;-ms-overflow-style:scrollbar;oveflow-y:scroll
 }
 input,button,select,textarea
 {

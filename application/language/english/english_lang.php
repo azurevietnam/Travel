@@ -24,6 +24,7 @@ $lang['hotels'] = "Hotels";
 
 $lang['hotelsQB'] = "Hotel in QuangBinh";
 $lang['homestay'] = "Homestay";
+$lang['motel'] = "Motel";
 $lang['1star'] = "1 star hotel";
 $lang['2star'] = "2 star hotel";
 $lang['3star'] = "3 star hotel";
@@ -37,6 +38,23 @@ $lang['danang'] = "Da Nang";
 $lang['nhatrang'] = "Nha Trang";
 $lang['hochiminh'] = "Ho Chi Minh";
 
+/*
+ * Content
+ */
+$lang['reg'] = "Register";
+$lang['submit'] = "Submit";
+$lang['email'] = "Email";
+$lang['room'] = "Room";
+$lang['fromdate'] = "From Date";
+$lang['todate'] = "To Date";
+$lang['amountofpeople'] = "Amout of People";
+$lang['meal'] = "Meals";
+$lang['news'] = "News";
+$lang['promotion'] = "Promotion";
+$lang['faq'] = "Faq";
+$lang['seats'] = "Seats";
+$lang['car'] = "Car";
+$lang['quantity'] = "Quantity";
 
 $lang['restaurant'] = "Restaurant";
 $lang['rtrQB'] = "In QuangBinh";

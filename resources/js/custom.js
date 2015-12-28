@@ -1,6 +1,21 @@
 /**
  * Created by POSCO_ICT_HAILONG on 9/9/2015.
  */
+var currUrl = 'http://localhost/Travel/';
+//var currUrl = 'http://'+window.location.hostname+'/';
+
+$(document).ready(function() {
+    $(document.body).on("change","#drb_cateGrp",function(){
+        $.ajax({
+            url:currUrl+"home/loadTourCate",
+            data: {cateid: $('#drb_cateGrp option:selected').val()},
+            type: "POST",
+            success: function(data){
+                $("#drb_tourGrp").html(data);
+            }
+        });
+    });
+});
 tjq(document).ready(function() {
     tjq("#price-range").slider({
         range: true,

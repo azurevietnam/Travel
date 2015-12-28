@@ -97,7 +97,7 @@ if(isset($metaData)){
 
     <!-- Javascript Page Loader -->
     <script type="text/javascript" src="<?php echo base_url()?>resources/js/pace.min.js" data-pace-options='{ "ajax": false }'></script>
-    <script type="text/javascript" src="<?php echo base_url()?>resources/js/page-loading.js"></script>
+<!--    <script type="text/javascript" src="--><!--resources/js/page-loading.js"></script>-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
     <!-- jQuery REVOLUTION Slider -->
@@ -417,21 +417,21 @@ if(isset($metaData)){
             <div class="revolution-slider" style="height: 0; overflow: hidden;">
                 <ul>    <!-- SLIDE  -->
                     <!-- Slide1 -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
+                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1500">
                         <!-- MAIN IMAGE -->
                         <img src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider4/slide1/bg.png"  alt="" data-bgposition="0% 0%" data-bgfit="100% 100%" data-bgrepeat="repeat-y">
                         <!-- LAYERS -->
                     </li>
 
                     <!-- Slide2 -->
-                    <li data-masterspeed="500" data-slotamount="7" data-transition="curtain-3">
+                    <li data-masterspeed="500" data-slotamount="1" data-transition="curtain-3">
                         <!-- MAIN IMAGE -->
                         <img src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider2/slide2/bg.png" alt="">
                         <!-- LAYERS -->
                     </li>
 
                     <!-- Slide3 -->
-                    <li data-transition="slidedown" data-slotamount="7" data-masterspeed="1500">
+                    <li data-transition="slidedown" data-slotamount="1" data-masterspeed="1500">
                         <!-- MAIN IMAGE -->
                         <img src="<?php echo base_url()?>resources/images/sliders/revolution_slider/slider1/slide3/bg.jpg" alt="">
                         <!-- LAYERS -->

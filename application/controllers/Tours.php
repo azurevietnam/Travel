@@ -112,7 +112,7 @@ class tours extends CI_Controller
                 'CUST_PHONE' => $this->input->post('phone_number'),
                 'CUST_ADDRESS' => $this->input->post('address'),
                 'CUST_CONTENT' => $this->input->post('request'),
-                'DEPARTING_DATE' =>  date('Y-m-d',strtotime($this->input->post('departure_date'))),
+                'FROM_DATE' =>  date('Y-m-d',strtotime($this->input->post('departure_date'))),
                 'ADULTS' => $this->input->post('adultnumber'),
                 'KIDS' => $this->input->post('kidnumber'),
                 'INFANTS' => $this->input->post('infantnumber'),

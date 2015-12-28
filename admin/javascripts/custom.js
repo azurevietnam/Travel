@@ -1,5 +1,5 @@
-//var currUrl = 'http://localhost/Travel/';
-var currUrl = 'http://'+window.location.hostname+'/';
+var currUrl = 'http://localhost/Travel/';
+//var currUrl = 'http://'+window.location.hostname+'/';
 //post form setting
 var postForm = function() {
     var content_vi = $('textarea[name="content_vi"]').html($('#summernote').code());
@@ -65,6 +65,17 @@ $(document).ready(function() {
             success: function(data){
 
                 $("#end_dpt_province").html(data);
+            }
+        });
+    });
+    $(document.body).on("change","#drb_newCate",function(){
+        $.ajax({
+            url:currUrl+"admin_news/getAllPostByCateId",
+            data: {cateId: $(this).val()},
+            type: "POST",
+            success: function(data){
+
+                $("#newsListCnt1").html(data);
             }
         });
     });

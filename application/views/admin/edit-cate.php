@@ -63,6 +63,22 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label class="col-md-3 control-label">Vị trí hiển thị</label>
+                                <div class="col-md-4">
+                                    <select class="form-control" data-plugin-multiselect id="main_cate" name="main_cate">
+                                        <optgroup label="Nhóm danh mục">
+                                            <option value="0" <?php if($row->MAIN_CATE == 0){echo 'selected';}?>>Không hiển thị</option>
+                                            <option value="1" <?php if($row->MAIN_CATE == 1){echo 'selected';}?>>Vị trí 1</option>
+                                            <option value="2" <?php if($row->MAIN_CATE == 2){echo 'selected';}?>>Vị trí 2</option>
+                                            <option value="3" <?php if($row->MAIN_CATE == 3){echo 'selected';}?>>Vị trí 3</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" data-plugin-colorpicker class="colorpicker-rgba form-control" value="<?php echo $row->COLOR_CD?>" data-horizontal="true" name="color_cd" id="color_cd"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label class="col-md-3 control-label">Hình Đại Diện</label>
                                 <div class="col-md-6">
                                     <input type="hidden" name="rpv_img_old" id="rpv_img_old" value="<?php echo $row->IMG_URL?>">
@@ -86,12 +102,11 @@
                             <div class="form-group">
                                 <label class="col-md-3 control-label">Nhóm - Danh Mục</label>
                                 <div class="col-md-4">
-                                    <select class="form-control" data-plugin-multiselect id="cate_grp" name="cate_grp">
+                                    <select class="form-control" data-plugin-selectTwo id="cate_grp" name="cate_grp">
                                         <optgroup label="Nhóm danh mục">
-                                            <option value="<?php echo $row->GROUP_ID?>" selected><?php echo $row->GROUP_NAME?></option>
                                             <?php if(isset($cateGroup)){
                                                 foreach($cateGroup as $grp){?>
-                                                    <option value="<?php echo $grp->GROUP_ID?>"><?php echo $grp->GROUP_NAME?></option>
+                                                    <option value="<?php echo $grp->GROUP_ID?>" <?php if($grp->GROUP_ID == $row->GROUP_ID){echo 'selected';}?>><?php echo $grp->GROUP_NAME?></option>
                                                 <?php }}?>
                                         </optgroup>
                                     </select>
@@ -109,4 +124,3 @@
     </div>
     <!-- end: page -->
 </section>
-</div>

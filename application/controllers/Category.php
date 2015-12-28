@@ -61,7 +61,9 @@ class Category extends CI_Controller
             'CATEGORY_DESC_EN'    => $this->input->post('cate_desc_en'),
             'CATEGORY_DESC_VI'    => $this->input->post('cate_desc_vi'),
             'IMG_URL'           => $urlImg,
-            'GROUP_ID'          => $cateGrp
+            'GROUP_ID'          => $cateGrp,
+            'MAIN_CATE'    => $this->input->post('main_cate'),
+            'COLOR_CD'    => $this->input->post('color_cd')
         );
         if($this->Cate_model->updateCate($cateID, $cateData) == true){
             $this->index();
@@ -102,7 +104,9 @@ class Category extends CI_Controller
             'CATEGORY_DESC_EN'    => $this->input->post('cate_desc_en'),
             'CATEGORY_DESC_VI'    => $this->input->post('cate_desc_vi'),
             'IMG_URL'           => $urlImg,
-            'GROUP_ID'          => $cateGrp
+            'GROUP_ID'          => $cateGrp,
+            'MAIN_CATE'    => $this->input->post('main_cate'),
+            'COLOR_CD'    => $this->input->post('color_cd')
         );
         if($this->Cate_model->insertCate($cateData) == true){
             $this->index();

@@ -23,7 +23,10 @@ class order_mode extends CI_Model
         return $query->result();
     }
 
-    public function loadOrderList(){
+    /*
+     * Load Tour order list
+     */
+    public function loadOrderList($table){
         $query = '
             SELECT
                 ORDER_ID
@@ -32,19 +35,20 @@ class order_mode extends CI_Model
                 , CUST_NAME
                 , CUST_EMAIL
                 , CUST_PHONE
-                , DEPARTING_DATE
+                , FROM_DATE
+                , TO_DATE
                 , STATUS
             FROM
-              tours_order o
+              '.$table.' o
             ORDER BY
-              DEPARTING_DATE DESC
-              , STATUS ASC
+              STATUS ASC
+              ,FROM_DATE DESC
         ';
         $result = $this->db->query($query);
         return $result->result();
     }
 
-    public function loadOrderById($orderID){
+    public function loadTourOrderById($orderID){
         $query = '
             SELECT
                 ORDER_ID
@@ -55,7 +59,9 @@ class order_mode extends CI_Model
                 , CUST_PHONE
                 , CUST_ADDRESS
                 , CUST_CONTENT
-                , DEPARTING_DATE
+                , USER_NOTE
+                , FROM_DATE
+                , TO_DATE
                 , ADULTS
                 , KIDS
                 , INFANTS
@@ -69,8 +75,188 @@ class order_mode extends CI_Model
         return $result->result();
     }
 
-    public function updateOrder($orderID, $orderData){
+    public function updateTourOrder($orderID, $orderData){
         $this->db->where('ORDER_ID', $orderID);
         $this->db->update('tours_order', $orderData);
+    }
+
+    /*
+     * Load hotel order list
+     */
+    public function loadHotelOrderList(){
+        $query = '
+            SELECT
+                ORDER_ID
+                , HOTEL_ID
+                , (SELECT HOTEL_NAME_VI FROM HOTELS WHERE HOTEL_ID = H.HOTEL_ID) AS HOTEL_NM
+                , CUST_NAME
+                , CUST_EMAIL
+                , CUST_PHONE
+                , FROM_DATE
+                , TO_DATE
+                , HOTEL_TP
+                , ROOM_QTY
+                , STATUS
+            FROM
+              hotel_order H
+            ORDER BY
+              STATUS ASC
+              ,FROM_DATE DESC
+        ';
+        $result = $this->db->query($query);
+        return $result->result();
+    }
+
+    /*
+     * Load RESTAURANT order list
+     */
+    public function loadRestOrderList(){
+        $query = '
+            SELECT
+                ORDER_ID
+                , RESTAURANT_ID
+                , (SELECT RESTAURANT_NAME_VI FROM RESTAURANT WHERE RESTAURANT_ID = O.RESTAURANT_ID) AS REST_NM
+                , CUST_NAME
+                , CUST_EMAIL
+                , CUST_PHONE
+                , FROM_DATE
+                , TO_DATE
+                , RESTAURANT_TP
+                , MEALS
+                , STATUS
+            FROM
+              RESTAURANT_ORDER O
+            ORDER BY
+              STATUS ASC
+              ,FROM_DATE DESC
+        ';
+        $result = $this->db->query($query);
+        return $result->result();
+    }
+
+    /*
+     * Load CAR order list
+     */
+    public function loadCarOrderList(){
+        $query = '
+            SELECT
+                ORDER_ID
+                , CUST_NAME
+                , CUST_EMAIL
+                , CUST_PHONE
+                , FROM_DATE
+                , TO_DATE
+                , CAR_TP
+                , CAR_CLASS
+                , STATUS
+            FROM
+              CAR_ORDER
+            ORDER BY
+              STATUS ASC
+              ,FROM_DATE DESC
+        ';
+        $result = $this->db->query($query);
+        return $result->result();
+    }
+
+    /*
+     * Load hotel order by ID
+     */
+    public function loadHotelOrderById($orderID){
+        $query = '
+            SELECT
+                ORDER_ID
+                , HOTEL_ID
+                , (SELECT HOTEL_NAME_VI FROM HOTELS WHERE HOTEL_ID = H.HOTEL_ID) AS HOTEL_NM
+                , CUST_NAME
+                , CUST_EMAIL
+                , CUST_PHONE
+                , CUST_ADDRESS
+                , CUST_CONTENT
+                , USER_NOTE
+                , FROM_DATE
+                , TO_DATE
+                , HOTEL_TP
+                , ROOM_TP
+                , ROOM_QTY
+                , ADULT_QTY
+                , KID_QTY
+                , INFAN_QTY
+                , STATUS
+            FROM
+              hotel_order H
+            WHERE
+              ORDER_ID = ?
+        ';
+        $result = $this->db->query($query,$orderID);
+        return $result->result();
+    }
+
+    /*
+     * Load restaurant order by ID
+     */
+    public function loadRestOrderById($orderID){
+        $query = '
+            SELECT
+                ORDER_ID
+                , RESTAURANT_ID
+                , (SELECT RESTAURANT_NAME_VI FROM RESTAURANT WHERE RESTAURANT_ID = O.RESTAURANT_ID) AS REST_NM
+                , CUST_NAME
+                , CUST_EMAIL
+                , CUST_PHONE
+                , CUST_ADDRESS
+                , CUST_CONTENT
+                , USER_NOTE
+                , FROM_DATE
+                , TO_DATE
+                , RESTAURANT_TP
+                , MEALS
+                , ADULT_QTY
+                , KID_QTY
+                , INFAN_QTY
+                , STATUS
+            FROM
+              restaurant_order O
+            WHERE
+              ORDER_ID = ?
+        ';
+        $result = $this->db->query($query,$orderID);
+        return $result->result();
+    }
+
+    /*
+     * Load car order by ID
+     */
+    public function loadCarOrderById($orderID){
+        $query = '
+            SELECT
+                ORDER_ID
+                , CUST_NAME
+                , CUST_EMAIL
+                , CUST_PHONE
+                , CUST_ADDRESS
+                , CUST_CONTENT
+                , USER_NOTE
+                , FROM_DATE
+                , TO_DATE
+                , CAR_TP
+                , CAR_CLASS
+                , CAR_QTY
+                , STATUS
+            FROM
+              car_order
+            WHERE
+              ORDER_ID = ?
+        ';
+        $result = $this->db->query($query,$orderID);
+        return $result->result();
+    }
+
+    /*
+     * update order
+     */
+    public function updateOrder($orderID, $orderData, $table){
+        $this->db->where('ORDER_ID', $orderID);
+        $this->db->update($table, $orderData);
     }
 }

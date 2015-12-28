@@ -43,10 +43,9 @@ if(isset($status)){
                         <a href="#" class="fa fa-caret-<?php if($locationStatus=='ok' || $locationStatus==''){echo 'up';}else{echo 'down';}?>"></a>
                         <a href="#" class="fa fa-times"></a>
                     </div>
-
                     <h2 class="panel-title">Thêm Mới Địa Điểm</h2>
                 </header>
-                <div class="panel-body" <?php if($locationStatus=='ok' || $locationStatus==''){echo 'style="display: none';}else{echo '';}?>">
+                <div class="panel-body" <?php if($locationStatus=='ok' || $locationStatus==''){echo 'style="display: none"';}else{echo '';}?>>
                     <form class="form-horizontal form-bordered" action="<?php echo base_url('admin_tours/addNational')?>" method="post">
                         <div class="row">
                             <div class="form-group">
@@ -168,7 +167,7 @@ if(isset($status)){
                             <div class="form-group">
                                 <label class="col-md-3 control-label">Phân Loại Bài Đăng</label>
                                 <div class="col-md-3">
-                                    <label class="col-md-3 control-label">Bài Đăng Nổi Bật:</label>
+                                    <label class="col-md-8 control-label">Bài Đăng Nổi Bật:</label>
                                     <select class="form-control" data-plugin-multiselect id="rpv_yn" name="rpv_yn">
                                         <optgroup label="Bài Đăng Nổi Bật">
                                             <option value="Y" selected>Có</option>
@@ -177,7 +176,7 @@ if(isset($status)){
                                     </select>
                                 </div>
                                 <div class="col-md-3">
-                                    <label class="col-md-3 control-label">Hiển Thị:</label>
+                                    <label class="col-md-8 control-label">Hiển Thị:</label>
                                     <select class="form-control" data-plugin-multiselect id="display_yn" name="display_yn">
                                         <optgroup label="Hiển Thị Bài Đăng">
                                             <option value="Y" selected>Có</option>
@@ -470,4 +469,3 @@ if(isset($status)){
     </div>
     <!-- end: page -->
 </section>
-</div>

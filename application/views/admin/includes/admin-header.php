@@ -77,7 +77,7 @@ if(!$username)
     <!-- start: header -->
     <header class="header">
         <div class="logo-container">
-            <a href="../" class="logo">
+            <a href="<?php echo base_url('admin/index')?>" class="logo">
                 <img src="<?php echo base_url()?>admin/images/logo.png" height="35" alt="Vung Chua Travel Admin" />
             </a>
             <div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
@@ -313,16 +313,41 @@ if(!$username)
                     <nav id="menu" class="nav-main" role="navigation">
                         <ul class="nav nav-main">
                             <li class="nav-active">
-                                <a href="index.html">
+                                <a href="<?php echo base_url('admin/index')?>">
                                     <i class="fa fa-home" aria-hidden="true"></i>
                                     <span>Trang Tổng Quan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo base_url('order/getNewOrder')?>">
-                                    <span class="pull-right label label-primary"><?php echo $orderNum?></span>
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="<?php echo base_url('order/getNewTourOrder')?>">
+                                    <span class="pull-right label label-danger"><?php echo $tourOrderNum?></span>
+                                    <span class="pull-right label label-warning"><?php echo $tourOrderNumInPrc?></span>
+                                    <i class="fa fa-plane" aria-hidden="true"></i>
                                     <span>Đặt Tour</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo base_url('order/getNewHotelOrder')?>">
+                                    <span class="pull-right label label-danger"><?php echo $hotelOrderNum?></span>
+                                    <span class="pull-right label label-warning"><?php echo $hotelOrderNumInPrc?></span>
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                    <span>Đặt khách sạn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo base_url('order/getNewRestOrder')?>">
+                                    <span class="pull-right label label-danger"><?php echo $restOrderNum?></span>
+                                    <span class="pull-right label label-warning"><?php echo $restOrderNumInPrc?></span>
+                                    <i class="fa fa-reddit-square" aria-hidden="true"></i>
+                                    <span>Đặt nhà hàng</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo base_url('order/getNewCarOrder')?>">
+                                    <span class="pull-right label label-danger"><?php echo $carOrderNum?></span>
+                                    <span class="pull-right label label-warning"><?php echo $carOrderNumInPrc?></span>
+                                    <i class="fa fa-car" aria-hidden="true"></i>
+                                    <span>Đặt xe</span>
                                 </a>
                             </li>
                             <li class="nav-parent">
@@ -339,6 +364,11 @@ if(!$username)
                                     <li>
                                         <a href="<?php echo base_url('admin_tours/adminTours')?>">
                                             Tours
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo base_url('admin_news/newsList')?>">
+                                            Tin Tức
                                         </a>
                                     </li>
                                     <li>

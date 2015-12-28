@@ -2,39 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a0d783e-a507-4c94-888e-00d08b54a5e2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="DELETED" beforePath="E:\xampp\htdocs\Travel\resources\images\editor\tab-bg2-blue.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\xampp\htdocs\Travel\resources\images\editor\tab-bg2.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\xampp\htdocs\Travel\resources\images\global-map.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\xampp\htdocs\Travel\resources\images\homepage9_bg.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/images/editor/tab-bg-white-ver.png" afterPath="$PROJECT_DIR$/resources/images/editor/tab-bg-white-ver.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/images/editor/tab-bg-white.png" afterPath="$PROJECT_DIR$/resources/images/editor/tab-bg-white.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/_base.scss" afterPath="$PROJECT_DIR$/resources/sass/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/_mixin.scss" afterPath="$PROJECT_DIR$/resources/sass/_mixin.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/Admin_news.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/admin_models/Admin_news_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/Home.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/admin/news-edit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/admin/news-list.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tours-group.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/admin_models/Cate_model.php" afterPath="$PROJECT_DIR$/application/models/admin_models/Cate_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Category.php" afterPath="$PROJECT_DIR$/application/controllers/Category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/admin_models/Header_mode.php" afterPath="$PROJECT_DIR$/application/models/admin_models/Header_mode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Index_model.php" afterPath="$PROJECT_DIR$/application/models/Index_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Order.php" afterPath="$PROJECT_DIR$/application/controllers/Order.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/admin_models/Order_mode.php" afterPath="$PROJECT_DIR$/application/models/admin_models/Order_mode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/PagesConfig.php" afterPath="$PROJECT_DIR$/application/controllers/PagesConfig.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Tours.php" afterPath="$PROJECT_DIR$/application/controllers/Tours.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/add-cate.php" afterPath="$PROJECT_DIR$/application/views/admin/add-cate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/add-images.php" afterPath="$PROJECT_DIR$/application/views/admin/add-images.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/add-tours.php" afterPath="$PROJECT_DIR$/application/views/admin/add-tours.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/includes/admin-header.php" afterPath="$PROJECT_DIR$/application/views/admin/includes/admin-header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/resources/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/calendar.js" afterPath="$PROJECT_DIR$/resources/js/calendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/javascripts/custom.js" afterPath="$PROJECT_DIR$/admin/javascripts/custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/custom.js" afterPath="$PROJECT_DIR$/resources/js/custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/edit-cate.php" afterPath="$PROJECT_DIR$/application/views/admin/edit-cate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/edit-tours.php" afterPath="$PROJECT_DIR$/application/views/admin/edit-tours.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/language/english/english_lang.php" afterPath="$PROJECT_DIR$/application/language/english/english_lang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/guide-detail.php" afterPath="$PROJECT_DIR$/application/views/guide-detail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ajax/header-style.html" afterPath="$PROJECT_DIR$/resources/ajax/header-style.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ajax/header-style1.html" afterPath="$PROJECT_DIR$/resources/ajax/header-style1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ajax/header-style2.html" afterPath="$PROJECT_DIR$/resources/ajax/header-style2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ajax/header-style3.html" afterPath="$PROJECT_DIR$/resources/ajax/header-style3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ajax/header-style4.html" afterPath="$PROJECT_DIR$/resources/ajax/header-style4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ajax/header-style5.html" afterPath="$PROJECT_DIR$/resources/ajax/header-style5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ajax/header-style6.html" afterPath="$PROJECT_DIR$/resources/ajax/header-style6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ajax/header-style7.html" afterPath="$PROJECT_DIR$/resources/ajax/header-style7.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/includes/header.php" afterPath="$PROJECT_DIR$/application/views/includes/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/ie.scss" afterPath="$PROJECT_DIR$/resources/sass/ie.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/ie8.js" afterPath="$PROJECT_DIR$/resources/js/ie8.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/index.php" afterPath="$PROJECT_DIR$/application/views/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/page-loading.js" afterPath="$PROJECT_DIR$/resources/js/page-loading.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/responsive.css" afterPath="$PROJECT_DIR$/resources/css/responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/responsive.scss" afterPath="$PROJECT_DIR$/resources/sass/responsive.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/scripts.js" afterPath="$PROJECT_DIR$/resources/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/includes/short-header.php" afterPath="$PROJECT_DIR$/application/views/includes/short-header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/soap-icon.scss" afterPath="$PROJECT_DIR$/resources/sass/soap-icon.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/order-detail.php" afterPath="$PROJECT_DIR$/application/views/admin/order-detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/order-list.php" afterPath="$PROJECT_DIR$/application/views/admin/order-list.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/style-dark-blue.css" afterPath="$PROJECT_DIR$/resources/css/style-dark-blue.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/style-dark-orange.css" afterPath="$PROJECT_DIR$/resources/css/style-dark-orange.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/style-light-blue.css" afterPath="$PROJECT_DIR$/resources/css/style-light-blue.css" />
@@ -45,16 +42,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/style-red.css" afterPath="$PROJECT_DIR$/resources/css/style-red.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/style-sea-blue.css" afterPath="$PROJECT_DIR$/resources/css/style-sea-blue.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/style-sky-blue.css" afterPath="$PROJECT_DIR$/resources/css/style-sky-blue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/components/revolution_slider/css/style.css" afterPath="$PROJECT_DIR$/resources/components/revolution_slider/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/style.css" afterPath="$PROJECT_DIR$/resources/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/revolution_slider/css/style.css" afterPath="$PROJECT_DIR$/resources/css/revolution_slider/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/style.scss" afterPath="$PROJECT_DIR$/resources/sass/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/theme-scripts.js" afterPath="$PROJECT_DIR$/resources/js/theme-scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tours-booking.php" afterPath="$PROJECT_DIR$/application/views/tours-booking.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tours-detail.php" afterPath="$PROJECT_DIR$/application/views/tours-detail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ajax/travelo.htm" afterPath="$PROJECT_DIR$/resources/ajax/travelo.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/stylesheets/theme.css" afterPath="$PROJECT_DIR$/admin/stylesheets/theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/language/vietnam/vietnam_lang.php" afterPath="$PROJECT_DIR$/application/language/vietnam/vietnam_lang.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ajax/www.soaptheme.net.html" afterPath="$PROJECT_DIR$/resources/ajax/www.soaptheme.net.html" />
     </list>
     <ignored path="Travel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,58 +70,155 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="615" column="34" selection-start-line="615" selection-start-column="34" selection-end-line="615" selection-end-column="34" />
+            <state vertical-scroll-proportion="-7.8461537">
+              <caret line="46" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="581" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add-tours.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/admin/add-tours.php">
+      <file leaf-file-name="tours-group.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/tours-group.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.93436295">
+              <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+              <folding>
+                <element signature="e#6#95#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news-list.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/admin/news-list.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="153" column="70" selection-start-line="153" selection-start-column="32" selection-end-line="153" selection-end-column="70" />
+              <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+              <folding>
+                <element signature="e#6#96#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Admin_news_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/admin_models/Admin_news_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+              <folding>
+                <marker date="1450776408367" expanded="true" signature="278:355" placeholder="SELECT CATEG..CATEGORY..." />
+                <marker date="1450776408367" expanded="true" signature="521:742" placeholder="SELECT NEWS_..." />
+                <marker date="1450776408367" expanded="true" signature="521:773" placeholder="SELECT NEWS_..." />
+                <marker date="1450776408367" expanded="true" signature="1055:1093" placeholder="SELECT * FRO..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Admin_news.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Admin_news.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.5">
+              <caret line="185" column="34" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
+              <folding>
+                <marker date="1450777469961" expanded="true" signature="1344:1613" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="1368:1589" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="1389:1564" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="1713:1755" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="1713:1756" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="1713:1792" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="1713:1793" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="1713:1857" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="1713:1858" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="1713:2025" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="1713:2066" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="1713:2067" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="1713:2127" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="1713:2232" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="1921:1922" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="1921:1944" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="1921:1975" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="2024:2025" placeholder="..." />
+                <marker date="1450777469961" expanded="true" signature="2150:2159" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news-edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/admin/news-edit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="47" column="124" selection-start-line="47" selection-start-column="124" selection-end-line="47" selection-end-column="124" />
+              <folding>
+                <element signature="e#6#96#0#PHP" expanded="true" />
+                <element signature="e#2664#3085#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin-tours.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/admin/admin-tours.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="159" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/css/bootstrap.min.css">
+      <file leaf-file-name="Admin_tours.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Admin_tours.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4320" column="43" selection-start-line="4320" selection-start-column="43" selection-end-line="4320" selection-end-column="43" />
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/includes/header.php">
+      <file leaf-file-name="Admin_tour_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/admin_models/Admin_tour_model.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
-              <folding />
+              <caret line="209" column="4" selection-start-line="209" selection-start-column="4" selection-end-line="215" selection-end-column="5" />
+              <folding>
+                <marker date="1440557356777" expanded="true" signature="368:933" placeholder="SELECT TOURS..tours..." />
+                <marker date="1440557356777" expanded="true" signature="443:515" placeholder="SELECT CATEG..category..." />
+                <marker date="1440557356777" expanded="true" signature="682:745" placeholder="SELECT COUNT..tours_detail..." />
+                <marker date="1440557356777" expanded="true" signature="793:854" placeholder="SELECT COUNT..img_grp..." />
+                <marker date="1440557356777" expanded="true" signature="1106:1338" placeholder="SELECT NATIO..national..." />
+                <marker date="1440557356777" expanded="true" signature="1526:1875" placeholder="SELECT LOCAT..location..." />
+                <marker date="1440557356777" expanded="true" signature="2060:2294" placeholder="SELECT CATEG..category..." />
+                <marker date="1440557356777" expanded="true" signature="2811:6605" placeholder="SELECT TOURS..tours..." />
+                <marker date="1440557356777" expanded="true" signature="2862:2931" placeholder="SELECT NATIO..location..." />
+                <marker date="1440557356777" expanded="true" signature="2967:3098" placeholder="SELECT NATIO..national..." />
+                <marker date="1440557356777" expanded="true" signature="3166:3238" placeholder="SELECT LOCAT..location..." />
+                <marker date="1440557356777" expanded="true" signature="3304:3376" placeholder="SELECT CATEG..category..." />
+                <marker date="1440557356777" expanded="true" signature="4081:4163" placeholder="SELECT NATIO..location..." />
+                <marker date="1440557356777" expanded="true" signature="4215:4359" placeholder="SELECT NATIO..national..." />
+                <marker date="1440557356777" expanded="true" signature="4413:4498" placeholder="SELECT LOCAT..location..." />
+                <marker date="1440557356777" expanded="true" signature="4632:4712" placeholder="SELECT NATIO..location..." />
+                <marker date="1440557356777" expanded="true" signature="4762:4904" placeholder="SELECT NATIO..national..." />
+                <marker date="1440557356777" expanded="true" signature="4956:5039" placeholder="SELECT LOCAT..location..." />
+                <marker date="1440557356777" expanded="true" signature="5167:5247" placeholder="SELECT NATIO..location..." />
+                <marker date="1440557356777" expanded="true" signature="5297:5439" placeholder="SELECT NATIO..national..." />
+                <marker date="1440557356777" expanded="true" signature="5491:5574" placeholder="SELECT LOCAT..location..." />
+                <marker date="1440557356777" expanded="true" signature="5702:5780" placeholder="SELECT NATIO..location..." />
+                <marker date="1440557356777" expanded="true" signature="5828:5968" placeholder="SELECT NATIO..national..." />
+                <marker date="1440557356777" expanded="true" signature="6018:6099" placeholder="SELECT LOCAT..location..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="short-header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/includes/short-header.php">
+      <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/javascripts/custom.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="142" column="54" selection-start-line="142" selection-start-column="49" selection-end-line="142" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24107143">
-              <caret line="11125" column="16" selection-start-line="11125" selection-start-column="16" selection-end-line="11125" selection-end-column="16" />
+              <caret line="77" column="32" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -152,43 +240,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/models/admin_models/CateModel.php" />
-        <option value="$PROJECT_DIR$/application/views/includes/tours-list.php" />
-        <option value="$PROJECT_DIR$/application/models/Tour_model.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Tours.php" />
-        <option value="$PROJECT_DIR$/resources/js/custom.js" />
-        <option value="$PROJECT_DIR$/application/views/tours-list.php" />
-        <option value="$PROJECT_DIR$/resources/css/revolution_slider/css/style.css" />
-        <option value="$PROJECT_DIR$/application/models/admin_models/Cate_model.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Category.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/add-cate.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/edit-cate.php" />
-        <option value="$PROJECT_DIR$/application/controllers/PagesConfig.php" />
-        <option value="$PROJECT_DIR$/application/models/Index_model.php" />
-        <option value="$PROJECT_DIR$/application/language/vietnam/vietnam_lang.php" />
-        <option value="$PROJECT_DIR$/application/views/includes/footer.php" />
-        <option value="$PROJECT_DIR$/resources/components/revolution_slider/css/style.css" />
-        <option value="$PROJECT_DIR$/resources/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/resources/js/page-loading.js" />
-        <option value="$PROJECT_DIR$/resources/ajax/header-style2.html" />
-        <option value="$PROJECT_DIR$/resources/ajax/header-style3.html" />
-        <option value="$PROJECT_DIR$/resources/ajax/header-style4.html" />
-        <option value="$PROJECT_DIR$/resources/ajax/header-style5.html" />
-        <option value="$PROJECT_DIR$/resources/ajax/travelo.htm" />
-        <option value="$PROJECT_DIR$/resources/ajax/header-style7.html" />
-        <option value="$PROJECT_DIR$/resources/ajax/header-style6.html" />
         <option value="$PROJECT_DIR$/resources/js/theme-scripts.js" />
-        <option value="$PROJECT_DIR$/application/language/english/english_lang.php" />
         <option value="$PROJECT_DIR$/application/views/guide-detail.php" />
         <option value="$PROJECT_DIR$/application/views/includes/short-header.php" />
-        <option value="$PROJECT_DIR$/application/views/tours-booking.php" />
         <option value="$PROJECT_DIR$/application/views/tours-detail.php" />
         <option value="$PROJECT_DIR$/resources/ajax/header-style.html" />
         <option value="$PROJECT_DIR$/resources/ajax/header-style1.html" />
+        <option value="$PROJECT_DIR$/application/views/tours-booking.php" />
+        <option value="$PROJECT_DIR$/resources/js/custom.js" />
+        <option value="$PROJECT_DIR$/application/language/english/english_lang.php" />
+        <option value="$PROJECT_DIR$/application/language/vietnam/vietnam_lang.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Tours.php" />
+        <option value="$PROJECT_DIR$/application/models/admin_models/Header_mode.php" />
+        <option value="$PROJECT_DIR$/admin/stylesheets/theme.css" />
+        <option value="$PROJECT_DIR$/application/controllers/Home.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/order-list.php" />
+        <option value="$PROJECT_DIR$/application/models/admin_models/Order_mode.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/order-detail.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Order.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/includes/news-list.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/includes/admin-header.php" />
         <option value="$PROJECT_DIR$/application/views/includes/header.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/add-tours.php" />
+        <option value="$PROJECT_DIR$/resources/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/resources/css/style-dark-blue.css" />
+        <option value="$PROJECT_DIR$/resources/css/style-dark-orange.css" />
+        <option value="$PROJECT_DIR$/resources/css/style-light-blue.css" />
+        <option value="$PROJECT_DIR$/resources/css/style-light-orange.css" />
+        <option value="$PROJECT_DIR$/resources/css/style-light-yellow.css" />
+        <option value="$PROJECT_DIR$/resources/css/style-orange.css" />
+        <option value="$PROJECT_DIR$/resources/css/style-purple.css" />
+        <option value="$PROJECT_DIR$/resources/css/style-red.css" />
+        <option value="$PROJECT_DIR$/resources/css/style-sea-blue.css" />
+        <option value="$PROJECT_DIR$/resources/css/style-sky-blue.css" />
+        <option value="$PROJECT_DIR$/application/models/admin_models/Admin_news.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/add-images.php" />
+        <option value="$PROJECT_DIR$/application/controllers/PagesConfig.php" />
+        <option value="$PROJECT_DIR$/application/models/Index_model.php" />
         <option value="$PROJECT_DIR$/application/views/index.php" />
         <option value="$PROJECT_DIR$/resources/css/style.css" />
+        <option value="$PROJECT_DIR$/application/models/admin_models/Cate_model.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Category.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/edit-cate.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/add-cate.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/add-tours.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/edit-tours.php" />
+        <option value="$PROJECT_DIR$/admin/javascripts/custom.js" />
+        <option value="$PROJECT_DIR$/application/views/admin/news-list.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Admin_tours.php" />
+        <option value="$PROJECT_DIR$/application/models/admin_models/Admin_news_model.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/news-edit.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Admin_news.php" />
+        <option value="$PROJECT_DIR$/application/views/tours-group.php" />
       </list>
     </option>
   </component>
@@ -204,10 +306,24 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Blade files</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -232,8 +348,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -313,28 +427,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Travel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Travel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -458,22 +550,57 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/xampp/htdocs/Travel/application/models/admin_models/Cate_model.php" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/xampp/htdocs/Travel/resources/css/style-dark-orange.css" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\xampp\htdocs\Travel\application\views\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\Travel\application\views\admin" />
       <recent name="E:\xampp\htdocs\Travel\application\views" />
     </key>
   </component>
@@ -528,17 +655,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23524962" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2588055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -546,7 +673,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44727892" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42857143" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -583,327 +710,18 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/views/admin/news-list.php</url>
+          <line>15</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/admin/admin-tours.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="91" selection-start-line="37" selection-start-column="74" selection-end-line="37" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Tour_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="148" column="166" selection-start-line="148" selection-start-column="166" selection-end-line="148" selection-end-column="166" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32945737">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tours-list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4456929">
-          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/components/revolution_slider/css/settings.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.0392857">
-          <caret line="1239" column="35" selection-start-line="1239" selection-start-column="35" selection-end-line="1239" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/revolution_slider/css/settings.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.57857144">
-          <caret line="1185" column="28" selection-start-line="1185" selection-start-column="28" selection-end-line="1185" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/revolution_slider/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.082143">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tours.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04494382">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Guides.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5093633">
-          <caret line="41" column="32" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Tours.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Admin_tours.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6348315">
-          <caret line="251" column="13" selection-start-line="237" selection-start-column="12" selection-end-line="251" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73220974">
-          <caret line="62" column="43" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/edit-tours.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462">
-          <caret line="245" column="34" selection-start-line="225" selection-start-column="28" selection-end-line="245" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/add-cate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5411985">
-          <caret line="57" column="138" selection-start-line="57" selection-start-column="138" selection-end-line="57" selection-end-column="138" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/edit-cate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2752809">
-          <caret line="61" column="142" selection-start-line="61" selection-start-column="142" selection-end-line="61" selection-end-column="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/language/vietnam/vietnam_lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/includes/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3052435">
-          <caret line="41" column="89" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/PagesConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="24" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Index_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="104" selection-start-line="33" selection-start-column="104" selection-end-line="33" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/admin_models/Cate_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20411985">
-          <caret line="81" column="34" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="13.259259">
-          <caret line="0" column="3744" selection-start-line="0" selection-start-column="3744" selection-end-line="0" selection-end-column="3744" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/components/revolution_slider/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/jquery-1.11.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="1" column="2058" selection-start-line="1" selection-start-column="2056" selection-end-line="1" selection-end-column="2058" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/includes/admin-header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.4391144">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/ajax/header-style2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36531365">
-          <caret line="307" column="48" selection-start-line="307" selection-start-column="48" selection-end-line="307" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/ajax/header-style3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36531365">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/ajax/header-style4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31365314">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/ajax/header-style7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8076923">
-          <caret line="62" column="66" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/ajax/header-style6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2509225">
-          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/ajax/travelo.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.597786">
-          <caret line="129" column="66" selection-start-line="129" selection-start-column="66" selection-end-line="129" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/ajax/header-style5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36531365">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/theme-scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="410" column="67" selection-start-line="410" selection-start-column="67" selection-end-line="410" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/vendor/style-switcher/style.switcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36666667">
-          <caret line="0" column="8428" selection-start-line="0" selection-start-column="8428" selection-end-line="0" selection-end-column="8428" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/guide-detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="80" column="56" selection-start-line="80" selection-start-column="56" selection-end-line="80" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/ajax/header-style1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/ajax/header-style.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19101124">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45535713">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/javascripts/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51607144">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/page-loading.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6964286">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tours-detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09550562">
-          <caret line="101" column="46" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/includes/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/language/english/english_lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="49" selection-start-line="110" selection-start-column="49" selection-end-line="110" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/includes/short-header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="142" column="54" selection-start-line="142" selection-start-column="49" selection-end-line="142" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33214286">
@@ -911,42 +729,420 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/bootstrap.min.css">
+    <entry file="file://$PROJECT_DIR$/application/views/includes/short-header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4320" column="43" selection-start-line="4320" selection-start-column="43" selection-end-line="4320" selection-end-column="43" />
-          <folding />
+          <caret line="142" column="54" selection-start-line="142" selection-start-column="49" selection-end-line="142" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/tours-booking.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/includes/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6970297">
+          <caret line="118" column="76" selection-start-line="118" selection-start-column="72" selection-end-line="118" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/language/english/english_lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Tours.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.8039603">
+          <caret line="113" column="29" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/stylesheets/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45357144">
+          <caret line="2364" column="28" selection-start-line="2364" selection-start-column="28" selection-end-line="2364" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/language/vietnam/vietnam_lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26779026">
+          <caret line="133" column="68" selection-start-line="133" selection-start-column="68" selection-end-line="133" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/order-list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07677902">
+          <caret line="206" column="25" selection-start-line="206" selection-start-column="25" selection-end-line="206" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/includes/admin-header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="365" column="49" selection-start-line="365" selection-start-column="49" selection-end-line="365" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5050505">
+          <caret line="256" column="18" selection-start-line="256" selection-start-column="18" selection-end-line="256" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/style-dark-blue.css">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
-          <caret line="109" column="93" selection-start-line="109" selection-start-column="61" selection-end-line="109" selection-end-column="93" />
+          <caret line="0" column="158144" selection-start-line="0" selection-start-column="158144" selection-end-line="0" selection-end-column="158144" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/add-tours.php">
+    <entry file="file://$PROJECT_DIR$/resources/css/style-light-blue.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="153" column="70" selection-start-line="153" selection-start-column="32" selection-end-line="153" selection-end-column="70" />
-          <folding />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="0" column="158144" selection-start-line="0" selection-start-column="158144" selection-end-line="0" selection-end-column="158144" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/index.php">
+    <entry file="file://$PROJECT_DIR$/resources/css/style-light-orange.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="0" column="158150" selection-start-line="0" selection-start-column="158150" selection-end-line="0" selection-end-column="158150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/style-light-yellow.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="0" column="158144" selection-start-line="0" selection-start-column="158144" selection-end-line="0" selection-end-column="158144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/style-orange.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="0" column="158145" selection-start-line="0" selection-start-column="158145" selection-end-line="0" selection-end-column="158145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/style-purple.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="0" column="158150" selection-start-line="0" selection-start-column="158150" selection-end-line="0" selection-end-column="158150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/style-red.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="0" column="158144" selection-start-line="0" selection-start-column="158144" selection-end-line="0" selection-end-column="158144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/style-sea-blue.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="0" column="158147" selection-start-line="0" selection-start-column="158147" selection-end-line="0" selection-end-column="158147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/style-sky-blue.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="0" column="158150" selection-start-line="0" selection-start-column="158150" selection-end-line="0" selection-end-column="158150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/style-dark-orange.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7335835">
+          <caret line="0" column="159686" selection-start-line="0" selection-start-column="159686" selection-end-line="0" selection-end-column="159686" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/admin_models/Header_mode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6985019">
+          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/admin_models/Admin_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87265915">
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/add-images.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12734082">
+          <caret line="114" column="10" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/admin-category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="615" column="34" selection-start-line="615" selection-start-column="34" selection-end-line="615" selection-end-column="34" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/order-detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.038462">
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24107143">
-          <caret line="11125" column="16" selection-start-line="11125" selection-start-column="16" selection-end-line="11125" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10973" column="43" selection-start-line="10973" selection-start-column="43" selection-end-line="10973" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/includes/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5730337">
+          <caret line="131" column="140" selection-start-line="131" selection-start-column="140" selection-end-line="131" selection-end-column="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/admin_models/Cate_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7621723">
+          <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/edit-cate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29962546">
+          <caret line="67" column="102" selection-start-line="67" selection-start-column="93" selection-end-line="67" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/add-cate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3483146">
+          <caret line="63" column="98" selection-start-line="63" selection-start-column="98" selection-end-line="63" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5543071">
+          <caret line="63" column="43" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/edit-tours.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6011236">
+          <caret line="157" column="72" selection-start-line="157" selection-start-column="72" selection-end-line="157" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/add-tours.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70037454">
+          <caret line="178" column="73" selection-start-line="178" selection-start-column="42" selection-end-line="178" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/PagesConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5730337">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/admin_models/Order_mode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.131086">
+          <caret line="257" column="52" selection-start-line="257" selection-start-column="42" selection-end-line="257" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Tour_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.807116">
+          <caret line="151" column="41" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Index_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.5468166">
+          <caret line="80" column="90" selection-start-line="80" selection-start-column="81" selection-end-line="80" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/javascripts/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="32" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/admin_models/Admin_tour_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="209" column="4" selection-start-line="209" selection-start-column="4" selection-end-line="215" selection-end-column="5" />
+          <folding>
+            <marker date="1440557356777" expanded="true" signature="368:933" placeholder="SELECT TOURS..tours..." />
+            <marker date="1440557356777" expanded="true" signature="443:515" placeholder="SELECT CATEG..category..." />
+            <marker date="1440557356777" expanded="true" signature="682:745" placeholder="SELECT COUNT..tours_detail..." />
+            <marker date="1440557356777" expanded="true" signature="793:854" placeholder="SELECT COUNT..img_grp..." />
+            <marker date="1440557356777" expanded="true" signature="1106:1338" placeholder="SELECT NATIO..national..." />
+            <marker date="1440557356777" expanded="true" signature="1526:1875" placeholder="SELECT LOCAT..location..." />
+            <marker date="1440557356777" expanded="true" signature="2060:2294" placeholder="SELECT CATEG..category..." />
+            <marker date="1440557356777" expanded="true" signature="2811:6605" placeholder="SELECT TOURS..tours..." />
+            <marker date="1440557356777" expanded="true" signature="2862:2931" placeholder="SELECT NATIO..location..." />
+            <marker date="1440557356777" expanded="true" signature="2967:3098" placeholder="SELECT NATIO..national..." />
+            <marker date="1440557356777" expanded="true" signature="3166:3238" placeholder="SELECT LOCAT..location..." />
+            <marker date="1440557356777" expanded="true" signature="3304:3376" placeholder="SELECT CATEG..category..." />
+            <marker date="1440557356777" expanded="true" signature="4081:4163" placeholder="SELECT NATIO..location..." />
+            <marker date="1440557356777" expanded="true" signature="4215:4359" placeholder="SELECT NATIO..national..." />
+            <marker date="1440557356777" expanded="true" signature="4413:4498" placeholder="SELECT LOCAT..location..." />
+            <marker date="1440557356777" expanded="true" signature="4632:4712" placeholder="SELECT NATIO..location..." />
+            <marker date="1440557356777" expanded="true" signature="4762:4904" placeholder="SELECT NATIO..national..." />
+            <marker date="1440557356777" expanded="true" signature="4956:5039" placeholder="SELECT LOCAT..location..." />
+            <marker date="1440557356777" expanded="true" signature="5167:5247" placeholder="SELECT NATIO..location..." />
+            <marker date="1440557356777" expanded="true" signature="5297:5439" placeholder="SELECT NATIO..national..." />
+            <marker date="1440557356777" expanded="true" signature="5491:5574" placeholder="SELECT LOCAT..location..." />
+            <marker date="1440557356777" expanded="true" signature="5702:5780" placeholder="SELECT NATIO..location..." />
+            <marker date="1440557356777" expanded="true" signature="5828:5968" placeholder="SELECT NATIO..national..." />
+            <marker date="1440557356777" expanded="true" signature="6018:6099" placeholder="SELECT LOCAT..location..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/news-list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+          <folding>
+            <element signature="e#6#96#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/admin-tours.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="159" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Admin_tours.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/admin_models/Admin_news_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding>
+            <marker date="1450776408367" expanded="true" signature="278:355" placeholder="SELECT CATEG..CATEGORY..." />
+            <marker date="1450776408367" expanded="true" signature="521:742" placeholder="SELECT NEWS_..." />
+            <marker date="1450776408367" expanded="true" signature="521:773" placeholder="SELECT NEWS_..." />
+            <marker date="1450776408367" expanded="true" signature="1055:1093" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/news-edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="124" selection-start-line="47" selection-start-column="124" selection-end-line="47" selection-end-column="124" />
+          <folding>
+            <element signature="e#6#96#0#PHP" expanded="true" />
+            <element signature="e#2664#3085#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Admin_news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.5">
+          <caret line="185" column="34" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
+          <folding>
+            <marker date="1450777469961" expanded="true" signature="1344:1613" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="1368:1589" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="1389:1564" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="1713:1755" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="1713:1756" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="1713:1792" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="1713:1793" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="1713:1857" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="1713:1858" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="1713:2025" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="1713:2066" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="1713:2067" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="1713:2127" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="1713:2232" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="1921:1922" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="1921:1944" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="1921:1975" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="2024:2025" placeholder="..." />
+            <marker date="1450777469961" expanded="true" signature="2150:2159" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="46" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="581" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tours-group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.93436295">
+          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+          <folding>
+            <element signature="e#6#95#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

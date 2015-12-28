@@ -59,6 +59,22 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <label class="col-md-3 control-label">Vị trí hiển thị</label>
+                            <div class="col-md-4">
+                                <select class="form-control" data-plugin-multiselect id="main_cate" name="main_cate">
+                                    <optgroup label="Nhóm danh mục">
+                                        <option value="0" selected>Không hiển thị</option>
+                                        <option value="1">Vị trí 1</option>
+                                        <option value="2">Vị trí 2</option>
+                                        <option value="3">Vị trí 3</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" data-plugin-colorpicker class="colorpicker-rgba form-control" value="#2196f3" data-horizontal="true" name="color_cd" id="color_cd"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="col-md-3 control-label">Hình Đại Diện</label>
                             <div class="col-md-6">
                                 <div class="fileupload fileupload-new" data-provides="fileupload">
@@ -80,7 +96,7 @@
                         <div class="form-group">
                             <label class="col-md-3 control-label">Nhóm - Danh Mục</label>
                             <div class="col-md-4">
-                                <select class="form-control" data-plugin-multiselect id="cate_grp" name="cate_grp">
+                                <select class="form-control input-sm mb-md" id="cate_grp" name="cate_grp">
                                     <optgroup label="Nhóm danh mục">
                                         <?php if(isset($cateGroup)){
                                             foreach($cateGroup as $grp){?>

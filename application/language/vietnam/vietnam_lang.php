@@ -25,6 +25,7 @@ $lang['hotels'] = "Khách Sạn";
 
 $lang['hotelsQB'] = "Khách Sạn tại Quảng Bình";
 $lang['homestay'] = "Lưu Trú";
+$lang['motel'] = "Nhà Nghỉ";
 $lang['1star'] = "Khách Sạn 1 Sao";
 $lang['2star'] = "Khách Sạn 2 Sao";
 $lang['3star'] = "Khách Sạn 3 Sao";
@@ -37,6 +38,24 @@ $lang['hue'] = "Huế";
 $lang['danang'] = "Đà Nẵng";
 $lang['nhatrang'] = "Nha Trang";
 $lang['hochiminh'] = "Hồ Chí Minh";
+
+/*
+ * Content
+ */
+$lang['reg'] = "Đăng Ký";
+$lang['submit'] = "Gửi";
+$lang['email'] = "Email";
+$lang['room'] = "Phòng";
+$lang['fromdate'] = "Từ Ngày";
+$lang['todate'] = "Đến Ngày";
+$lang['amountofpeople'] = "Số Người";
+$lang['meal'] = "Số Bữa Ăn";
+$lang['news'] = "Tin Tức";
+$lang['promotion'] = "Khuyến Mãi";
+$lang['faq'] = "Hỏi Đáp";
+$lang['seats'] = "Chổ";
+$lang['car'] = "Xe";
+$lang['quantity'] = "Số lượng";
 
 
 $lang['restaurant'] = "Nhà Hàng";

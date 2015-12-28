@@ -46,7 +46,7 @@ if(isset($status)){
 
                     <h2 class="panel-title">Thêm Mới Địa Điểm</h2>
                 </header>
-                <div class="panel-body" <?php if($locationStatus=='ok' || $locationStatus==''){echo 'style="display: none';}else{echo '';}?>">
+                <div class="panel-body" <?php if($locationStatus=='ok' || $locationStatus==''){echo 'style="display: none"';}else{echo '';}?>>
                     <form class="form-horizontal form-bordered" action="<?php echo base_url('admin_tours/addNational')?>" method="post">
                         <div class="row">
                             <div class="form-group">
@@ -135,13 +135,10 @@ if(isset($status)){
                                     <?php echo form_error('nationaChk'); ?><?php echo form_error('sysError'); ?>
                                     <select required data-plugin-selectTwo class="form-control populate" name="drb_national" id="drb_national">
                                         <optgroup label="Chọn Quốc Gia">
-                                            <option value="<?php echo $row->NATIONAL_ID?>"><?php echo $row->NATIONAL_NAME?></option>
                                             <?php if(isset($national)){
-                                                foreach ($national as $nation) {
-                                                    echo '<option value="'.$nation->NATIONAL_ID.'">'.$nation->NATIONAL_NAME.'</option>';
-                                                }
-                                            }
-                                            ?>
+                                                foreach ($national as $nation) { ?>
+                                                    <option value="<?php echo $nation->NATIONAL_ID ?>" <?php if($nation->NATIONAL_ID == $row->NATIONAL_ID){echo 'selected';}?>><?php echo $nation->NATIONAL_NAME ?></option>;
+                                                <?php }}?>
                                         </optgroup>
                                     </select>
                                 </div>
@@ -159,13 +156,10 @@ if(isset($status)){
                                 <div class="col-md-6">
                                     <select data-plugin-selectTwo class="form-control populate" name="drb_category" id="drb_category" required="required">
                                         <optgroup label="Chọn Danh Mục">
-                                            <option value="<?php echo $row->CATEGORY_ID?>"><?php echo $row->CATEGORY_NM?></option>
                                             <?php if(isset($category)){
-                                                foreach($category as $cate){
-                                                    echo '<option value="'.$cate->CATEGORY_ID.'">'.$cate->CATEGORY_NM_VI.'</option>';
-                                                }
-                                            }
-                                            ?>
+                                                foreach($category as $cate){ ?>
+                                                    <option value="<?php echo $cate->CATEGORY_ID?>" <?php if($row->CATEGORY_ID = $cate->CATEGORY_ID){echo 'selected';}?>><?php echo $cate->CATEGORY_NM_VI?></option>;
+                                                <?php }}?>
                                         </optgroup>
                                     </select>
                                 </div>
@@ -173,7 +167,7 @@ if(isset($status)){
                             <div class="form-group">
                                 <label class="col-md-3 control-label">Phân Loại Bài Đăng</label>
                                 <div class="col-md-3">
-                                    <label control-label">Bài Đăng Nổi Bật:</label>
+                                    <label  class="col-md-8 control-label"">Bài Đăng Nổi Bật:</label>
                                     <select class="form-control" data-plugin-multiselect id="rpv_yn" name="rpv_yn">
                                         <optgroup label="Bài Đăng Nổi Bật">
                                             <option value="Y" selected>Có</option>
@@ -182,7 +176,7 @@ if(isset($status)){
                                     </select>
                                 </div>
                                 <div class="col-md-3">
-                                    <label control-label">Hiển Thị:</label>
+                                    <label  class="col-md-8 control-label"">Hiển Thị:</label>
                                     <select class="form-control" data-plugin-multiselect id="display_yn" name="display_yn">
                                         <optgroup label="Hiển Thị Bài Đăng">
                                             <option value="Y" selected>Có</option>
@@ -490,4 +484,3 @@ if(isset($status)){
     </div>
     <!-- end: page -->
 </section>
-</div>

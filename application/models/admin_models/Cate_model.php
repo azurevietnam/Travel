@@ -80,6 +80,8 @@ class Cate_model extends CI_Model
                     , cate.GROUP_ID
                     , grp.GROUP_NAME
                     , cate.IMG_URL
+                    , cate.MAIN_CATE
+                    , cate.COLOR_CD
                 FROM
                     category cate
                     , cate_group grp
