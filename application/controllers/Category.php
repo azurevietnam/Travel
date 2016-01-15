@@ -63,7 +63,8 @@ class Category extends CI_Controller
             'IMG_URL'           => $urlImg,
             'GROUP_ID'          => $cateGrp,
             'MAIN_CATE'    => $this->input->post('main_cate'),
-            'COLOR_CD'    => $this->input->post('color_cd')
+            'COLOR_CD'    => $this->input->post('color_cd'),
+            'FONT_COLOR_CD'    => $this->input->post('font_color_cd')
         );
         if($this->Cate_model->updateCate($cateID, $cateData) == true){
             $this->index();
@@ -106,7 +107,8 @@ class Category extends CI_Controller
             'IMG_URL'           => $urlImg,
             'GROUP_ID'          => $cateGrp,
             'MAIN_CATE'    => $this->input->post('main_cate'),
-            'COLOR_CD'    => $this->input->post('color_cd')
+            'COLOR_CD'    => $this->input->post('color_cd'),
+            'FONT_COLOR_CD'    => $this->input->post('font_color_cd')
         );
         if($this->Cate_model->insertCate($cateData) == true){
             $this->index();

@@ -88,7 +88,7 @@ class order_mode extends CI_Model
             SELECT
                 ORDER_ID
                 , HOTEL_ID
-                , (SELECT HOTEL_NAME_VI FROM HOTELS WHERE HOTEL_ID = H.HOTEL_ID) AS HOTEL_NM
+                , (SELECT HOTEL_NAME_VI FROM hotels WHERE HOTEL_ID = H.HOTEL_ID) AS HOTEL_NM
                 , CUST_NAME
                 , CUST_EMAIL
                 , CUST_PHONE
@@ -115,7 +115,7 @@ class order_mode extends CI_Model
             SELECT
                 ORDER_ID
                 , RESTAURANT_ID
-                , (SELECT RESTAURANT_NAME_VI FROM RESTAURANT WHERE RESTAURANT_ID = O.RESTAURANT_ID) AS REST_NM
+                , (SELECT RESTAURANT_NAME_VI FROM restaurant WHERE RESTAURANT_ID = O.RESTAURANT_ID) AS REST_NM
                 , CUST_NAME
                 , CUST_EMAIL
                 , CUST_PHONE
@@ -125,7 +125,7 @@ class order_mode extends CI_Model
                 , MEALS
                 , STATUS
             FROM
-              RESTAURANT_ORDER O
+              restaurant_order O
             ORDER BY
               STATUS ASC
               ,FROM_DATE DESC
@@ -150,7 +150,7 @@ class order_mode extends CI_Model
                 , CAR_CLASS
                 , STATUS
             FROM
-              CAR_ORDER
+              car_order
             ORDER BY
               STATUS ASC
               ,FROM_DATE DESC
@@ -167,7 +167,7 @@ class order_mode extends CI_Model
             SELECT
                 ORDER_ID
                 , HOTEL_ID
-                , (SELECT HOTEL_NAME_VI FROM HOTELS WHERE HOTEL_ID = H.HOTEL_ID) AS HOTEL_NM
+                , (SELECT HOTEL_NAME_VI FROM hotels WHERE HOTEL_ID = H.HOTEL_ID) AS HOTEL_NM
                 , CUST_NAME
                 , CUST_EMAIL
                 , CUST_PHONE
@@ -200,7 +200,7 @@ class order_mode extends CI_Model
             SELECT
                 ORDER_ID
                 , RESTAURANT_ID
-                , (SELECT RESTAURANT_NAME_VI FROM RESTAURANT WHERE RESTAURANT_ID = O.RESTAURANT_ID) AS REST_NM
+                , (SELECT RESTAURANT_NAME_VI FROM restaurant WHERE RESTAURANT_ID = O.RESTAURANT_ID) AS REST_NM
                 , CUST_NAME
                 , CUST_EMAIL
                 , CUST_PHONE

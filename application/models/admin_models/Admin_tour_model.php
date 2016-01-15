@@ -18,6 +18,7 @@ class Admin_Tour_Model extends CI_Model
     public function getAllTour(){
         $sqlQuery = "  SELECT
                             TOURS_ID
+                            , TEXT_LINK
                             , (SELECT CATEGORY_NM_VI FROM category WHERE CATEGORY_ID = TOUR.CATEGORY_ID) AS CATE_NAME
                             , TOURS_TIT_VI
                             , RPV_YN
@@ -92,6 +93,7 @@ class Admin_Tour_Model extends CI_Model
     public function loadTour($tourID){
         $sqlQurey = ("SELECT
                 TOURS_ID
+                , TEXT_LINK
                 , (SELECT NATIONAL_ID FROM location WHERE LOCATION_ID = TOUR.LOCATION_ID) AS NATIONAL_ID
                 , (SELECT NATIONAL_NAME FROM national NAL, location LOC WHERE NAL.NATIONAL_ID = LOC.NATIONAL_ID AND LOC.LOCATION_ID = TOUR.LOCATION_ID) AS NATIONAL_NAME
                 , LOCATION_ID

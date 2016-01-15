@@ -49,7 +49,7 @@
                 <?php if(isset($alltour)) {
                     foreach ($alltour as $tour) { ?>
                         <tr class="gradeX">
-                            <td><a href="<?php echo base_url('admin_tours/editTour/'.$tour->TOURS_ID) ?>"><?php echo $tour->TOURS_TIT_VI ?></a></td>
+                            <td><a href="<?php echo base_url('tours/tours_detail/'.$tour->TEXT_LINK) ?>"><?php echo $tour->TOURS_TIT_VI ?></a></td>
                             <td><?php echo $tour->CATE_NAME ?></td>
                             <td>
                                 <div class="form-group" align="center">

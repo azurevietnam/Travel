@@ -82,6 +82,7 @@ class Cate_model extends CI_Model
                     , cate.IMG_URL
                     , cate.MAIN_CATE
                     , cate.COLOR_CD
+                    , cate.FONT_COLOR_CD
                 FROM
                     category cate
                     , cate_group grp

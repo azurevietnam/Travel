@@ -24,6 +24,10 @@ class popup extends CI_Controller
     function __construct()
     {
         parent::__construct();
+        if(!($this->session->userdata('language'))){
+            $this->session->set_userdata('language', 'vietnam');
+            $this->session->set_userdata('lang_code', 'VI');
+        }
         $this->load->model('Popup_model');
     }
     public function index($imgGrp){

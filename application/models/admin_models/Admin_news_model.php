@@ -14,7 +14,7 @@ class Admin_news_model extends CI_Model
     }
 
     public function loadAllCateByGroup($cateGrp){
-        $query = 'SELECT CATEGORY_ID, CATEGORY_NM_VI, GROUP_ID FROM CATEGORY WHERE GROUP_ID = ?';
+        $query = 'SELECT CATEGORY_ID, CATEGORY_NM_VI, GROUP_ID FROM category WHERE GROUP_ID = ?';
         $result = $this->db->query($query, $cateGrp);
         return $result->result();
     }
@@ -32,8 +32,8 @@ class Admin_news_model extends CI_Model
     }
 
     public function loadNewsByID($newsID){
-        $result = $this->db->get('news');
         $this->db->where('NEWS_ID', $newsID);
+        $result = $this->db->get('news');
         return $result->result();
 //        $query = 'SELECT * FROM `news` WHERE NEWS_ID = ?';
 //        $result = $this->db->query($query, $newsID);
@@ -48,4 +48,14 @@ class Admin_news_model extends CI_Model
             return false;
         }
     }
+
+    public function updateNews($newsData, $newsID){
+        $this->db->where('NEWS_ID', $newsID);
+        if($this->db->update('news',$newsData)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 }

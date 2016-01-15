@@ -47,6 +47,10 @@ class PagesConfig extends CI_Controller {
 //        $data['TourCate8']= $this->Index_model->loadMainCate('T00008');
 
         $data['toursCate'] = $this->Index_model->loadTourCate();
+        $data['toursQBCate'] = $this->Index_model->tourGroup('Q');
+        $data['newsData'] = $this->Index_model->loadNewsListByCateID('N00001',7);
+        $data['promotionData'] = $this->Index_model->loadNewsListByCateID('N00002',7);
+        $data['generalData'] = $this->Index_model->loadNewsListByCateID('N00003',4);
 
         $data['mainCate'] = $this->Index_model->loadMainHomeCate('D00001');
 //        $data['Tour1'] = $this->Index_model->loadMainCateDetail('T00001');
@@ -71,11 +75,11 @@ class PagesConfig extends CI_Controller {
         {
             $this->session->set_userdata('language', 'english');
             $this->session->set_userdata('lang_code', 'EN');
-            redirect(site_url());
+            header('Location: ' . $_SERVER['HTTP_REFERER']);
         }else if($lang == 'vi'){
             $this->session->set_userdata('language', 'vietnam');
             $this->session->set_userdata('lang_code', 'VI');
-            redirect(site_url());
+            header('Location: ' . $_SERVER['HTTP_REFERER']);
         }
 
     }

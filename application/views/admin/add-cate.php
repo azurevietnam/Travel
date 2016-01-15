@@ -70,8 +70,15 @@
                                     </optgroup>
                                 </select>
                             </div>
-                            <div class="col-md-4">
-                                <input type="text" data-plugin-colorpicker class="colorpicker-rgba form-control" value="#2196f3" data-horizontal="true" name="color_cd" id="color_cd"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Màu nền:</label>
+                            <div class="col-md-2">
+                                <input type="text" data-plugin-colorpicker class="colorpicker-rgba form-control" value="" data-horizontal="true" name="font_color_cd" id="font_color_cd"/>
+                            </div>
+                            <label class="col-md-2 control-label">Màu font chữ</label>
+                            <div class="col-md-2">
+                                <input type="text" data-plugin-colorpicker class="colorpicker-rgba form-control" value="" data-horizontal="true" name="color_cd" id="color_cd"/>
                             </div>
                         </div>
                         <div class="form-group">

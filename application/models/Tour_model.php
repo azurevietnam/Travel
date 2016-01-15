@@ -43,8 +43,6 @@ class Tour_model extends CI_Model
         return $row->P_RECORDS;
     }
 
-
-
     //load images gallery
     public function loadImgUrl($imgGrp){
         $imgSql = "SELECT IMG_ID, IMG_GRP_ID, IMG_URL, IMG_ALT FROM img_grp WHERE IMG_GRP_ID = ?";
@@ -53,7 +51,7 @@ class Tour_model extends CI_Model
     }
 
     //load tour detail
-    public function loadTourDetail($tourID){
+    public function loadTourDetail($textLink){
         $Sql = "SELECT
                     TOURS_ID
                     , CATEGORY_ID
@@ -82,8 +80,8 @@ class Tour_model extends CI_Model
                     , MAP_PLACE_Y
                     , IMG_GRP_ID
                 FROM tours TOUR
-                WHERE TOURS_ID = ?";
-        $query = $this->db->query($Sql,$tourID);
+                WHERE TEXT_LINK = ?";
+        $query = $this->db->query($Sql,$textLink);
         return $query->result();
     }
 

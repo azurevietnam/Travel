@@ -88,6 +88,7 @@ class admin_tours extends CI_Controller
         $this->form_validation->set_rules('display_yn', 'Post bài', 'required');
         $this->form_validation->set_rules('vi_title', 'Tiêu đề', 'required');
         $this->form_validation->set_rules('en_title', 'Tiêu đề', 'required');
+        $this->form_validation->set_rules('text_link', 'text link', 'required');
         $this->form_validation->set_rules('shrt_cnt_vi', 'Nội dung ngắn', 'required');
         $this->form_validation->set_rules('shrt_cnt_en', 'Nội dung ngắn', 'required');
         $this->form_validation->set_rules('content_vi', 'Nội dung', 'required');
@@ -147,6 +148,7 @@ class admin_tours extends CI_Controller
                 'RPV_YN'						=> $this->input->post('rpv_yn'),
                 'TOURS_TIT_EN'					=> $this->input->post('en_title'),
                 'TOURS_TIT_VI'					=> $this->input->post('vi_title'),
+                'TEXT_LINK'					    => $this->input->post('text_link'),
                 'TOURS_SHRT_CNT_EN'				=> $this->input->post('shrt_cnt_en'),
                 'TOURS_SHRT_CNT_VI'				=> $this->input->post('shrt_cnt_vi'),
                 'TOURS_CNT_EN'					=> $this->input->post('content_en'),
@@ -199,6 +201,7 @@ class admin_tours extends CI_Controller
         $this->form_validation->set_rules('drb_category', 'Danh Mục', 'required');
         $this->form_validation->set_rules('vi_title', 'Tiêu đề', 'required');
         $this->form_validation->set_rules('en_title', 'Tiêu đề', 'required');
+        $this->form_validation->set_rules('text_link', 'text link', 'required');
         $this->form_validation->set_rules('shrt_cnt_vi', 'Nội dung ngắn', 'required');
         $this->form_validation->set_rules('shrt_cnt_en', 'Nội dung ngắn', 'required');
         $this->form_validation->set_rules('content_vi', 'Nội dung', 'required');
@@ -257,6 +260,7 @@ class admin_tours extends CI_Controller
                 'RPV_YN'						=> $this->input->post('rpv_yn'),
                 'TOURS_TIT_EN'					=> $this->input->post('en_title'),
                 'TOURS_TIT_VI'					=> $this->input->post('vi_title'),
+                'TEXT_LINK'					    => $this->input->post('text_link'),
                 'TOURS_SHRT_CNT_EN'				=> $this->input->post('shrt_cnt_en'),
                 'TOURS_SHRT_CNT_VI'				=> $this->input->post('shrt_cnt_vi'),
                 'TOURS_CNT_EN'					=> $this->input->post('content_en'),

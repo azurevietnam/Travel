@@ -195,6 +195,12 @@ if(isset($status)){
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label class="col-md-3 control-label">Text Link</label>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="text_link" id="text_link" placeholder="Đường Link" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label class="col-md-3 control-label">Nội Dung Ngắn</label>
                                 <div class="col-md-4">
                                     <textarea class="form-control" rows="3" id="shrt_cnt_vi" name="shrt_cnt_vi" placeholder="Tiếng Việt" required="required"></textarea>

@@ -24,7 +24,12 @@ class guides extends CI_Controller
     function __construct()
     {
         parent::__construct();
+        if(!($this->session->userdata('language'))){
+            $this->session->set_userdata('language', 'vietnam');
+            $this->session->set_userdata('lang_code', 'VI');
+        }
         $this->load->model('Guide_model');
+        $this->load->model('Index_model');
     }
 
     public function guides_list($cateID)
@@ -32,8 +37,10 @@ class guides extends CI_Controller
         if(isset($cateID)){
             $data['pages'] = ceil($this->Guide_model->pagesPaging($cateID) / 4);
             $data['CATE_ID'] = $cateID;
+            $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
 
-            $this->load->view('includes/short-header');
+            $this->load->view('includes/short-header',$hData);
             $this->load->view('guides', $data);
             $this->load->view('includes/footer');
         }
@@ -45,9 +52,11 @@ class guides extends CI_Controller
             $data['imgData'] = $this->Guide_model->loadImgUrl($guideID);
             $data['guideDetail'] = $this->Guide_model->getGuideDetail($guideID);
             $data['guideRelation'] = $this->Guide_model->guideRelation($guideID);
-            $SEOdata['metaData'] = $this->Guide_model->tourSEOkey($guideID);
+            $hData['metaData'] = $this->Guide_model->tourSEOkey($guideID);
+            $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
 
-            $this->load->view('includes/short-header',$SEOdata);
+            $this->load->view('includes/short-header',$hData);
             $this->load->view('guide-detail', $data);
             $this->load->view('includes/footer');
         }

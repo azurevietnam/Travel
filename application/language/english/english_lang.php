@@ -14,6 +14,24 @@ $lang['description'] = "Vung Chua Travel Co.ltd.,";
 $lang['keyword'] = "Vung Chua Travel";
 
 /*
+ * Content
+ */
+$lang['reg'] = "Register";
+$lang['submit'] = "Submit";
+$lang['email'] = "Email";
+$lang['room'] = "Room";
+$lang['fromdate'] = "From Date";
+$lang['todate'] = "To Date";
+$lang['amountofpeople'] = "Amout of People";
+$lang['meal'] = "Meals";
+$lang['news'] = "News";
+$lang['promotion'] = "Promotion";
+$lang['faq'] = "Faq";
+$lang['seats'] = "Seats";
+$lang['car'] = "Car";
+$lang['quantity'] = "Quantity";
+
+/*
  * login and sign up form
  */
 $lang['account'] = "My Account";
@@ -37,24 +55,6 @@ $lang['hue'] = "Hue";
 $lang['danang'] = "Da Nang";
 $lang['nhatrang'] = "Nha Trang";
 $lang['hochiminh'] = "Ho Chi Minh";
-
-/*
- * Content
- */
-$lang['reg'] = "Register";
-$lang['submit'] = "Submit";
-$lang['email'] = "Email";
-$lang['room'] = "Room";
-$lang['fromdate'] = "From Date";
-$lang['todate'] = "To Date";
-$lang['amountofpeople'] = "Amout of People";
-$lang['meal'] = "Meals";
-$lang['news'] = "News";
-$lang['promotion'] = "Promotion";
-$lang['faq'] = "Faq";
-$lang['seats'] = "Seats";
-$lang['car'] = "Car";
-$lang['quantity'] = "Quantity";
 
 $lang['restaurant'] = "Restaurant";
 $lang['rtrQB'] = "In QuangBinh";

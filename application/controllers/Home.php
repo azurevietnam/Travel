@@ -13,6 +13,10 @@ class Home extends CI_Controller
     function __construct()
     {
         parent::__construct();
+        if(!($this->session->userdata('language'))){
+            $this->session->set_userdata('language', 'vietnam');
+            $this->session->set_userdata('lang_code', 'VI');
+        }
         $this->load->model('Index_model');
     }
 
@@ -55,20 +59,29 @@ class Home extends CI_Controller
             );
             if ($this->Index_model->insertHotelRequest($reqData) == true) {
                 $data['message'] = "success";
-                $this->load->view('includes/short-header');
+                $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+
+                $this->load->view('includes/short-header',$hData);
                 $this->load->view('success',$data);
                 $this->load->view('includes/footer');
             } else {
                 $data['error'] = validation_errors();
                 $data['message'] = "fail";
-                $this->load->view('includes/short-header');
+                $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+
+                $this->load->view('includes/short-header',$hData);
                 $this->load->view('success',$data);
                 $this->load->view('includes/footer');
             }
         }else{
             $data['error'] = validation_errors();
             $data['message'] = "fail";
-            $this->load->view('includes/short-header');
+            $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+
+            $this->load->view('includes/short-header',$hData);
             $this->load->view('success',$data);
             $this->load->view('includes/footer');
         }
@@ -98,20 +111,26 @@ class Home extends CI_Controller
             );
             if ($this->Index_model->insertRestaurantRequest($reqData) == true) {
                 $data['message'] = "success";
-                $this->load->view('includes/short-header');
+                $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+                $this->load->view('includes/short-header',$hData);
                 $this->load->view('success',$data);
                 $this->load->view('includes/footer');
             } else {
                 $data['error'] = validation_errors();
                 $data['message'] = "fail";
-                $this->load->view('includes/short-header');
+                $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+                $this->load->view('includes/short-header',$hData);
                 $this->load->view('success',$data);
                 $this->load->view('includes/footer');
             }
         }else{
             $data['error'] = validation_errors();
             $data['message'] = "fail";
-            $this->load->view('includes/short-header');
+            $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+            $this->load->view('includes/short-header',$hData);
             $this->load->view('success',$data);
             $this->load->view('includes/footer');
         }
@@ -140,20 +159,26 @@ class Home extends CI_Controller
             );
             if ($this->Index_model->insertCarRequest($reqData) == true) {
                 $data['message'] = "success";
-                $this->load->view('includes/short-header');
+                $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+                $this->load->view('includes/short-header',$hData);
                 $this->load->view('success',$data);
                 $this->load->view('includes/footer');
             } else {
                 $data['error'] = validation_errors();
                 $data['message'] = "fail";
-                $this->load->view('includes/short-header');
+                $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+                $this->load->view('includes/short-header',$hData);
                 $this->load->view('success',$data);
                 $this->load->view('includes/footer');
             }
         }else{
             $data['error'] = validation_errors();
             $data['message'] = "fail";
-            $this->load->view('includes/short-header');
+            $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+            $this->load->view('includes/short-header',$hData);
             $this->load->view('success',$data);
             $this->load->view('includes/footer');
         }
@@ -183,22 +208,55 @@ class Home extends CI_Controller
             );
             if ($this->Index_model->insertTourRequest($reqData) == true) {
                 $data['message'] = "success";
-                $this->load->view('includes/short-header');
+                $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+                $this->load->view('includes/short-header',$hData);
                 $this->load->view('success',$data);
                 $this->load->view('includes/footer');
             } else {
                 $data['error'] = validation_errors();
                 $data['message'] = "fail";
-                $this->load->view('includes/short-header');
+                $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+                $this->load->view('includes/short-header',$hData);
                 $this->load->view('success',$data);
                 $this->load->view('includes/footer');
             }
         }else{
             $data['error'] = validation_errors();
             $data['message'] = "fail";
-            $this->load->view('includes/short-header');
+            $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+            $this->load->view('includes/short-header',$hData);
             $this->load->view('success',$data);
             $this->load->view('includes/footer');
         }
+    }
+
+    /*
+     * load tour group
+     */
+    public function tourGroup($grpID){
+        $data['tourGroup'] = $this->Index_model->tourGroup($grpID);
+        $hData['toursCate'] = $this->Index_model->loadTourCate();
+        $hData['toursQBCate'] = $this->Index_model->tourGroup($grpID);
+
+        $this->load->view('includes/short-header',$hData);
+        $this->load->view('tours-group', $data);
+        $this->load->view('includes/footer');
+    }
+
+    /*
+     * load news by id
+     */
+    public function news($newsID){
+        $data['newsData'] = $this->Index_model->loadNewsByID($newsID);
+        $data['newsRelation'] = $this->Index_model->newsRelation($newsID);
+        $hData['toursCate'] = $this->Index_model->loadTourCate();
+        $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+
+        $this->load->view('includes/short-header',$hData);
+        $this->load->view('news-detail', $data);
+        $this->load->view('includes/footer');
     }
 }

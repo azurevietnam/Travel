@@ -5,19 +5,8 @@
  * Date: 4/14/2015
  * Time: 9:56 PM
  */
-if(!($this->session->userdata('language'))){
-    $this->session->set_userdata('language', 'vietnam');
-    $this->session->set_userdata('lang_code', 'VI');
-}
-
 $user_language = $this->session->userdata('language');
-if(strlen($this->session->userdata('language'))<1){
-    $user_language = $this->session->userdata('language');
-    $this->lang->load('vietnam', $user_language);
-}else{
-    $user_language = $this->session->userdata('language');
-    $this->lang->load($user_language, $user_language);
-}
+$this->lang->load($user_language, $user_language);
 
 if(isset($metaData)){
     foreach($metaData as $metaRow){
@@ -52,7 +41,7 @@ if(isset($metaData)){
     <meta charset="utf-8">
     <meta name="keywords" content="<?php echo (isset($metaKey)) ? $metaKey : $this->lang->line('keyword');?>" />
     <meta name="description" content="<?php echo (isset($metaDesc)) ? $metaDesc : $this->lang->line('description');?>"/>
-    <meta name="author" content="Hai Long">
+    <meta name="author" content="Chu Hai Long - chuhailong89@gmail.com">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -85,6 +74,7 @@ if(isset($metaData)){
 
     <!-- Responsive Styles -->
     <link rel="stylesheet" href="<?php echo base_url()?>resources/css/responsive.css">
+    <link rel="stylesheet" href="<?php echo base_url()?>resources/css/waves.min.css">
 
     <!-- CSS for IE -->
     <!--[if lte IE 9]>
@@ -107,6 +97,7 @@ if(isset($metaData)){
     <!-- jQuery REVOLUTION Slider -->
     <script type="text/javascript" src="<?php echo base_url()?>resources/js/jquery.themepunch.tools.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url()?>resources/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>resources/js/waves.min.js"></script>
 
     <!-- REVOLUTION BANNER CSS SETTINGS -->
     <!--    <link rel="stylesheet" type="text/css" href="--><?php //echo base_url()?><!--resources/css/revolution_slider/jssettings.css" media="screen" />-->
@@ -190,12 +181,31 @@ if(isset($metaData)){
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="<?php echo base_url()?>tours/tours_list/all"><?php echo $this->lang->line('tours'); ?></a>
+                            <a href="<?php echo base_url('home/tourGroup')?>"><?php echo $this->lang->line('tours'); ?></a>
                             <ul>
-                                <li><a href="#"><?php echo $this->lang->line('toquangbinh'); ?></a></li>
-                                <li><a href="#"><?php echo $this->lang->line('fromquangbinh'); ?></a></li>
-                                <li><a href="#"><?php echo $this->lang->line('dailytour'); ?></a></li>
-                                <li><a href="#"><?php echo $this->lang->line('requesttour'); ?></a></li>
+                                <?php if(isset($toursCate)){
+                                    foreach ($toursCate as $row){
+                                        if($row->GROUP_ID != 'T'){?>
+                                            <li><a href="<?php echo base_url('home/tourGroup/Q')?>"><?php echo $row->CATE_NAME ?></a>
+                                                <ul>
+                                                    <?php if(isset($toursQBCate)){
+                                                        foreach($toursQBCate as $row1){
+                                                            ?>
+                                                            <li><a href="<?php echo base_url('tours/tours_list/'.$row1->CATEGORY_ID)?>"><?php echo $row1->CATE_NM ?></a></li>
+                                                        <?php }} ?>
+                                                </ul>
+                                            </li>
+                                        <?php }else {?>
+                                            <li><a href="<?php echo base_url('tours/tours_list/'.$row->CATEGORY_ID)?>"><?php echo $row->CATE_NAME ?></a></li>
+                                        <?php }}}?>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="<?php echo base_url('home/News')?>"><?php echo $this->lang->line('news'); ?></a>
+                            <ul>
+                                <li><a href="#"><?php echo $this->lang->line('news'); ?></a></li>
+                                <li><a href="#"><?php echo $this->lang->line('promotion'); ?></a></li>
+                                <li><a href="#"><?php echo $this->lang->line('vonguyengiap-cate'); ?></a></li>
                             </ul>
                         </li>
                         <li class="menu-item-has-children">

@@ -30,7 +30,7 @@
                             <hr/>
                             <span><?php echo $row->CATE_DESC ?></span>
                         </figcaption>
-                        <a href="#"><img src="<?php echo base_url('resources/images/icon/arrow.png')?>" ></a>
+                        <a href="<?php if($row->CATEGORY_ID == 'T00001'){echo base_url('home/tourGroup/Q');}else { echo base_url('tours/tours_list/'.$row->CATEGORY_ID);}?>"><img src="<?php echo base_url('resources/images/icon/arrow.png')?>" ></a>
                     </figure>
                 </article>
             </div>
@@ -356,77 +356,47 @@
                         <div class="tab-top-content">
                             <div class="tab-pane active" id="a4">
                                 <ul class="list-group pull-left">
+                                    <?php if(isset($newsData)){
+                                        foreach ($newsData as $row){?>
                                     <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
+                                        <a href="<?php echo base_url('home/news/'.$row->NEWS_ID)?>"><?php echo $row->NEWS_TITLE?></a>
                                     </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
+                                    <?php } }?>
                                 </ul>
                             </div>
                             <div class="tab-pane" id="b4">
                                 <ul class="list-group pull-left">
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
+                                    <?php if(isset($promotionData)){
+                                        foreach ($promotionData as $row){?>
+                                            <li class="list-group-item">
+                                                <a href="<?php echo base_url('home/news/'.$row->NEWS_ID)?>"><?php echo $row->NEWS_TITLE?></a>
+                                            </li>
+                                        <?php } }?>
                                 </ul>
                             </div>
                             <div class="tab-pane" id="c4">
                                 <ul class="list-group pull-left">
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>
-                                    </li>
+<!--                                    <li class="list-group-item">-->
+<!--                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="list-group-item">-->
+<!--                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="list-group-item">-->
+<!--                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="list-group-item">-->
+<!--                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="list-group-item">-->
+<!--                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="list-group-item">-->
+<!--                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="list-group-item">-->
+<!--                                        <a href="#"> tin tuc khuyen mai hoi dap tin tuc khuyen mai hoi daptin tuc khuyen mai hoi dap</a>-->
+<!--                                    </li>-->
                                 </ul>
                             </div>
                         </div><!-- /tab-content -->
@@ -434,70 +404,27 @@
                 </div>
                 <div class="col-sms-6 col-sm-6 col-md-4">
                     <ul class="box-new">
-                        <h4>Dai Tuong</h4>
+                        <h4><?php echo $this->lang->line('vonguyengiap-cate')?></h4>
                         <hr/>
+                        <?php if(isset($generalData)){
+                            foreach($generalData as $row){?>
                         <li>
                             <div class="box-new-block">
                                 <div class="box-img">
-                                    <a href="#">
-                                        <img src="<?php echo base_url("resources/images/news01.png")?>" alt="" width="63" height="63" />
+                                    <a href="<?php echo base_url('home/news/'.$row->NEWS_ID)?>">
+                                        <img src="<?php echo base_url($row->NEWS_RPV_IMG)?>" alt="" width="63" height="63" />
                                     </a>
                                 </div>
                                 <div class="box-content">
-                                    <h5 class="box-new-title"><a href="#">Amazing Places</a></h5>
+                                    <h5 class="box-new-title"><a href="<?php echo base_url('home/news/'.$row->NEWS_ID)?>"><?php echo $row->NEWS_TITLE?></a></h5>
                                     <div class="box-description">
-                                        <p>Purus ac congue arcu cursus ut vitae pulvinar massaidp.</p>
-                                        <span class="date">25 Sep, 2013</span>
+                                        <p><?php echo $row->NEWS_SHRT_CNT?></p>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="box-new-block">
-                                <div class="box-img">
-                                    <a href="#">
-                                        <img src="<?php echo base_url("resources/images/news01.png")?>" alt="" width="63" height="63" />
-                                    </a>
-                                </div>
-                                <div class="box-content">
-                                    <h5 class="box-new-title"><a href="#">Amazing Places</a></h5>
-                                    <div class="box-description">
-                                        <p>Purus ac congue arcu cursus ut vitae pulvinar massaidp.</p>
-                                        <span class="date">25 Sep, 2013</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="box-new-block">
-                                <div class="box-img">
-                                    <a href="#">
-                                        <img src="<?php echo base_url("resources/images/news01.png")?>" alt="" width="63" height="63" />
-                                    </a>
-                                </div>
-                                <div class="box-content">
-                                    <h5 class="box-new-title"><a href="#">Amazing Places</a></h5>
-                                    <div class="box-description">
-                                        <p>Purus ac congue arcu cursus ut vitae pulvinar massaidp.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="box-new-block">
-                                <div class="box-img">
-                                    <a href="#">
-                                        <img src="<?php echo base_url("resources/images/news01.png")?>" alt="" width="63" height="63" />
-                                    </a>
-                                </div>
-                                <div class="box-content">
-                                    <h5 class="box-new-title"><a href="#">Amazing Places</a></h5>
-                                    <div class="box-description">
-                                        <p>Purus ac congue arcu cursus ut vitae pulvinar massaidp.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        <?php }
+                        }?>
                         <div class="box-element" align="center">
                             <a href="#" title="" class="button">SEE ALL</a>
                         </div>

@@ -50,7 +50,7 @@ class admin_news extends CI_Controller
             foreach($newList as $row){
                 echo'
                  <tr class="gradeX">
-                            <td><a href="'.base_url('news/').$row->NEWS_ID.'">'.$row->NEWS_TITLE_VI.'</a></td>
+                            <td><a href="'.base_url('home/news/'.$row->NEWS_ID).'">'.$row->NEWS_TITLE_VI.'</a></td>
                             <td>'.$row->CREATE_TIMESTAMP.'</td>
                             <td>'.($row->STATUS == "1"? "Kích hoạt" :"Hết hạn").'</td>
                             <td class="actions">
@@ -163,7 +163,11 @@ class admin_news extends CI_Controller
             $this->load->library('upload', $config);
             $this->upload->initialize($config);
             $this->upload->do_upload('rpv_img');
-            $urlImg .= $this->upload->data('file_name');
+            if(strlen($this->upload->data('file_name')) > 1){
+                $urlImg .= $this->upload->data('file_name');
+            }else{
+                $urlImg = $this->input->post('rpv_img_old');
+            }
 
             $newsData = array(
                 'CATEGORY_ID'       =>      $this->input->post('drb_category'),
@@ -181,8 +185,9 @@ class admin_news extends CI_Controller
                 'META_DESC_VI'       =>      $this->input->post('vi_description'),
                 'META_KEYWORD_VI'       =>      $this->input->post('vi_keywords')
             );
+            $newsID = $this->input->post('news_id');
 
-            if($this->Admin_news_model->insertNews($newsData) == true){
+            if($this->Admin_news_model->updateNews($newsData, $newsID) == true){
                 $this->newsList();
             }else{
                 $this->addNews();

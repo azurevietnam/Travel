@@ -14,6 +14,24 @@ $lang['description'] = "Công Ty Thương Mại Cổ Phần Dịch Vụ Du Lịc
 $lang['keyword'] = "Công Ty Thương Mại Cổ Phần Dịch Vụ Du Lịch Vũng Chùa";
 
 /*
+ * Content
+ */
+$lang['reg'] = "Đăng Ký";
+$lang['submit'] = "Gửi";
+$lang['email'] = "Email";
+$lang['room'] = "Phòng";
+$lang['fromdate'] = "Từ Ngày";
+$lang['todate'] = "Đến Ngày";
+$lang['amountofpeople'] = "Số Người";
+$lang['meal'] = "Số Bữa Ăn";
+$lang['news'] = "Tin Tức";
+$lang['promotion'] = "Khuyến Mãi";
+$lang['faq'] = "Hỏi Đáp";
+$lang['seats'] = "Chổ";
+$lang['car'] = "Xe";
+$lang['quantity'] = "Số lượng";
+
+/*
  * login and sign up form
  */
 
@@ -38,24 +56,6 @@ $lang['hue'] = "Huế";
 $lang['danang'] = "Đà Nẵng";
 $lang['nhatrang'] = "Nha Trang";
 $lang['hochiminh'] = "Hồ Chí Minh";
-
-/*
- * Content
- */
-$lang['reg'] = "Đăng Ký";
-$lang['submit'] = "Gửi";
-$lang['email'] = "Email";
-$lang['room'] = "Phòng";
-$lang['fromdate'] = "Từ Ngày";
-$lang['todate'] = "Đến Ngày";
-$lang['amountofpeople'] = "Số Người";
-$lang['meal'] = "Số Bữa Ăn";
-$lang['news'] = "Tin Tức";
-$lang['promotion'] = "Khuyến Mãi";
-$lang['faq'] = "Hỏi Đáp";
-$lang['seats'] = "Chổ";
-$lang['car'] = "Xe";
-$lang['quantity'] = "Số lượng";
 
 
 $lang['restaurant'] = "Nhà Hàng";

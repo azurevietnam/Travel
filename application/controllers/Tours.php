@@ -24,7 +24,12 @@ class tours extends CI_Controller
     function __construct()
     {
         parent::__construct();
+        if(!($this->session->userdata('language'))){
+            $this->session->set_userdata('language', 'vietnam');
+            $this->session->set_userdata('lang_code', 'VI');
+        }
         $this->load->model('Tour_model');
+        $this->load->model('Index_model');
     }
 // tours list
     public function tours_list($cateID)
@@ -32,8 +37,10 @@ class tours extends CI_Controller
         if(isset($cateID)){
             $data['pages'] = ceil($this->Tour_model->pagesPaging($cateID) / 4);
             $data['CATE_ID'] = $cateID;
+            $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
 
-            $this->load->view('includes/short-header');
+            $this->load->view('includes/short-header',$hData);
             $this->load->view('tours', $data);
             $this->load->view('includes/footer');
         }
@@ -47,8 +54,10 @@ class tours extends CI_Controller
         if(isset($cateID)){
             $data['pages'] = ceil($this->Tour_model->pagesPaging($cateID) / 9);
             $data['CATE_ID'] = $cateID;
+            $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
 
-            $this->load->view('includes/short-header');
+            $this->load->view('includes/short-header',$hData);
             $this->load->view('tours-list', $data);
             $this->load->view('includes/footer');
         }
@@ -62,9 +71,11 @@ class tours extends CI_Controller
             $data['tour_detail'] = $this->Tour_model->loadTourDetail($tourID);
             $data['tour_schedule'] = $this->Tour_model->loadTourSchedule($tourID);
             $data['tour_relation'] = $this->Tour_model->tourRelation($tourID);
-            $SEOdata['metaData'] = $this->Tour_model->tourSEOkey($tourID);
+            $hData['metaData'] = $this->Tour_model->tourSEOkey($tourID);
+            $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
 
-            $this->load->view('includes/short-header',$SEOdata);
+            $this->load->view('includes/short-header',$hData);
             $this->load->view('tours-detail', $data);
             $this->load->view('includes/footer');
         }
@@ -79,15 +90,19 @@ class tours extends CI_Controller
             $data['tour_detail'] = $this->Tour_model->loadTourDetail($tourID);
             $data['tour_schedule'] = $this->Tour_model->loadTourSchedule($tourID);
             $data['tour_relation'] = $this->Tour_model->tourRelation($tourID);
-            $SEOdata['metaData'] = $this->Tour_model->tourSEOkey($tourID);
+            $hData['metaData'] = $this->Tour_model->tourSEOkey($tourID);
+            $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
 
-            $this->load->view('includes/short-header',$SEOdata);
+            $this->load->view('includes/short-header',$hData);
             $this->load->view('tours-booking',$data);
             $this->load->view('includes/footer');
         }
         else
         {
-            $this->load->view('includes/header');
+            $hData['toursCate'] = $this->Index_model->loadTourCate();
+
+            $this->load->view('includes/header',$hData);
             $this->load->view('index');
             $this->load->view('includes/footer');
         }
@@ -121,20 +136,27 @@ class tours extends CI_Controller
             );
             if($this->Tour_model->Tour_model->addTourOrder($data) == true){
                 $data['message'] = "success";
-                $this->load->view('includes/short-header');
+                $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+
+                $this->load->view('includes/short-header',$hData);
                 $this->load->view('success',$data);
                 $this->load->view('includes/footer');
             }else{
                 $data['error'] = validation_errors();
                 $data['message'] = "fail";
-                $this->load->view('includes/short-header');
+                $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+                $this->load->view('includes/short-header',$hData);
                 $this->load->view('success',$data);
                 $this->load->view('includes/footer');
             }
         }else{
             $data['error'] = validation_errors();
             $data['message'] = "fail";
-            $this->load->view('includes/short-header');
+            $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+            $this->load->view('includes/short-header',$hData);
             $this->load->view('success',$data);
             $this->load->view('includes/footer');
         }
