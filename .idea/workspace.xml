@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a0d783e-a507-4c94-888e-00d08b54a5e2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/news-list.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/admin_models/Cate_model.php" afterPath="$PROJECT_DIR$/application/models/admin_models/Cate_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Category.php" afterPath="$PROJECT_DIR$/application/controllers/Category.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Guides.php" afterPath="$PROJECT_DIR$/application/controllers/Guides.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Home.php" afterPath="$PROJECT_DIR$/application/controllers/Home.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Index_model.php" afterPath="$PROJECT_DIR$/application/models/Index_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/PagesConfig.php" afterPath="$PROJECT_DIR$/application/controllers/PagesConfig.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Tour_model.php" afterPath="$PROJECT_DIR$/application/models/Tour_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Tours.php" afterPath="$PROJECT_DIR$/application/controllers/Tours.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/add-cate.php" afterPath="$PROJECT_DIR$/application/views/admin/add-cate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="$PROJECT_DIR$/application/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/edit-cate.php" afterPath="$PROJECT_DIR$/application/views/admin/edit-cate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/includes/header.php" afterPath="$PROJECT_DIR$/application/views/includes/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/includes/short-header.php" afterPath="$PROJECT_DIR$/application/views/includes/short-header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tours-group.php" afterPath="$PROJECT_DIR$/application/views/tours-group.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tours-list.php" afterPath="$PROJECT_DIR$/application/views/tours-list.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/index.php" afterPath="$PROJECT_DIR$/application/views/index.php" />
     </list>
     <ignored path="Travel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,10 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45945945">
+            <state vertical-scroll-proportion="-9.153846">
               <caret line="95" column="20" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
               <folding />
             </state>
@@ -112,8 +97,8 @@
       <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0181818">
-              <caret line="293" column="91" selection-start-line="293" selection-start-column="91" selection-end-line="293" selection-end-column="91" />
+            <state vertical-scroll-proportion="-15.072727">
+              <caret line="314" column="27" selection-start-line="314" selection-start-column="19" selection-end-line="314" selection-end-column="27" />
               <folding>
                 <element signature="n#__construct#0;n#Home#0;n#!!top" expanded="false" />
                 <element signature="n#loadTourCate#0;n#Home#0;n#!!top" expanded="false" />
@@ -133,56 +118,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Index_model.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PagesConfig.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/PagesConfig.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6545455">
+              <caret line="51" column="68" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Index_model.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/Index_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.181818">
-              <caret line="266" column="21" selection-start-line="266" selection-start-column="21" selection-end-line="266" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.22903885">
+              <caret line="149" column="6" selection-start-line="149" selection-start-column="6" selection-end-line="149" selection-end-column="6" />
               <folding>
-                <marker date="1453194730315" expanded="true" signature="572:1180" placeholder="SELECT TRAVE..." />
-                <marker date="1453194730315" expanded="true" signature="597:718" placeholder="SELECT n.NAT..national..." />
-                <marker date="1453194730315" expanded="true" signature="2345:3025" placeholder="SELECT TOURS..." />
-                <marker date="1453194730315" expanded="true" signature="2363:2486" placeholder="SELECT n.NAT..national..." />
-                <marker date="1453194730315" expanded="true" signature="3206:3887" placeholder="SELECT TOURS..." />
-                <marker date="1453194730315" expanded="true" signature="3224:3347" placeholder="SELECT n.NAT..national..." />
-                <marker date="1453194730315" expanded="true" signature="11302:11377" placeholder="SELECT COUNT..news..." />
+                <marker date="1453197421328" expanded="true" signature="572:1180" placeholder="SELECT TRAVE..." />
+                <marker date="1453197421328" expanded="true" signature="597:718" placeholder="SELECT n.NAT..national..." />
+                <marker date="1453197421328" expanded="true" signature="2345:3025" placeholder="SELECT TOURS..." />
+                <marker date="1453197421328" expanded="true" signature="2363:2486" placeholder="SELECT n.NAT..national..." />
+                <marker date="1453197421328" expanded="true" signature="3206:3887" placeholder="SELECT TOURS..." />
+                <marker date="1453197421328" expanded="true" signature="3224:3347" placeholder="SELECT n.NAT..national..." />
+                <marker date="1453197421328" expanded="true" signature="11313:11388" placeholder="SELECT COUNT..news..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tour_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/Tour_model.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.818182">
-              <caret line="33" column="5" selection-start-line="24" selection-start-column="3" selection-end-line="33" selection-end-column="5" />
-              <folding>
-                <element signature="n#__construct#0;n#Tour_model#0;n#!!top" expanded="false" />
-                <element signature="n#addTourOrder#0;n#Tour_model#0;n#!!top" expanded="false" />
-                <element signature="n#loadImgUrl#0;n#Tour_model#0;n#!!top" expanded="false" />
-                <element signature="n#loadTourDetail#0;n#Tour_model#0;n#!!top" expanded="false" />
-                <element signature="n#tourRelation#0;n#Tour_model#0;n#!!top" expanded="false" />
-                <element signature="n#tourSEOkey#0;n#Tour_model#0;n#!!top" expanded="false" />
-                <marker date="1453186636073" expanded="true" signature="1279:1357" placeholder="SELECT COUNT..tours..." />
-                <marker date="1453186636073" expanded="true" signature="1403:1461" placeholder="SELECT COUNT..tours..." />
-                <marker date="1453186636073" expanded="true" signature="1694:1771" placeholder="SELECT IMG_I..img_grp..." />
-                <marker date="1453186636073" expanded="true" signature="1958:4211" placeholder="SELECT TOURS..." />
-                <marker date="1453186636073" expanded="true" signature="2117:2240" placeholder="SELECT n.NAT..national..." />
-                <marker date="1453186636073" expanded="true" signature="4915:4963" placeholder="SELECT LOCAT..tours..." />
-                <marker date="1453186636073" expanded="true" signature="6639:7447" placeholder="SELECT TOURS..." />
-                <marker date="1453186636073" expanded="true" signature="6680:6803" placeholder="SELECT n.NAT..national..." />
-                <marker date="1453186636073" expanded="true" signature="7488:8276" placeholder="SELECT TOURS..." />
-                <marker date="1453186636073" expanded="true" signature="7529:7652" placeholder="SELECT n.NAT..national..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add-tours.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/admin/add-tours.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="196" column="28" selection-start-line="196" selection-start-column="28" selection-end-line="201" selection-end-column="34" />
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="368" column="65" selection-start-line="368" selection-start-column="51" selection-end-line="368" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -232,7 +200,6 @@
         <option value="$PROJECT_DIR$/resources/css/revolution_slider/css/settings.css" />
         <option value="$PROJECT_DIR$/resources/css/style.css" />
         <option value="$PROJECT_DIR$/resources/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/application/views/index.php" />
         <option value="$PROJECT_DIR$/application/views/admin/add-tours.php" />
         <option value="$PROJECT_DIR$/application/controllers/Admin_tours.php" />
         <option value="$PROJECT_DIR$/application/models/admin_models/Admin_tour_model.php" />
@@ -252,9 +219,10 @@
         <option value="$PROJECT_DIR$/application/views/includes/header.php" />
         <option value="$PROJECT_DIR$/application/views/includes/short-header.php" />
         <option value="$PROJECT_DIR$/application/views/news-list.php" />
-        <option value="$PROJECT_DIR$/application/models/Index_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/Home.php" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
+        <option value="$PROJECT_DIR$/application/views/index.php" />
+        <option value="$PROJECT_DIR$/application/models/Index_model.php" />
       </list>
     </option>
   </component>
@@ -565,8 +533,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="728" extended-state="1" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18070444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -814,13 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="105" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/admin_models/Admin_news_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -965,14 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/PagesConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.542471">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Order.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.85328186">
@@ -1071,32 +1024,16 @@
             <element signature="n#loadTourDetail#0;n#Tour_model#0;n#!!top" expanded="false" />
             <element signature="n#tourRelation#0;n#Tour_model#0;n#!!top" expanded="false" />
             <element signature="n#tourSEOkey#0;n#Tour_model#0;n#!!top" expanded="false" />
-            <marker date="1453186636073" expanded="true" signature="1279:1357" placeholder="SELECT COUNT..tours..." />
-            <marker date="1453186636073" expanded="true" signature="1403:1461" placeholder="SELECT COUNT..tours..." />
-            <marker date="1453186636073" expanded="true" signature="1694:1771" placeholder="SELECT IMG_I..img_grp..." />
-            <marker date="1453186636073" expanded="true" signature="1958:4211" placeholder="SELECT TOURS..." />
-            <marker date="1453186636073" expanded="true" signature="2117:2240" placeholder="SELECT n.NAT..national..." />
-            <marker date="1453186636073" expanded="true" signature="4915:4963" placeholder="SELECT LOCAT..tours..." />
-            <marker date="1453186636073" expanded="true" signature="6639:7447" placeholder="SELECT TOURS..." />
-            <marker date="1453186636073" expanded="true" signature="6680:6803" placeholder="SELECT n.NAT..national..." />
-            <marker date="1453186636073" expanded="true" signature="7488:8276" placeholder="SELECT TOURS..." />
-            <marker date="1453186636073" expanded="true" signature="7529:7652" placeholder="SELECT n.NAT..national..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Index_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.181818">
-          <caret line="266" column="21" selection-start-line="266" selection-start-column="21" selection-end-line="266" selection-end-column="21" />
-          <folding>
-            <marker date="1453194730315" expanded="true" signature="572:1180" placeholder="SELECT TRAVE..." />
-            <marker date="1453194730315" expanded="true" signature="597:718" placeholder="SELECT n.NAT..national..." />
-            <marker date="1453194730315" expanded="true" signature="2345:3025" placeholder="SELECT TOURS..." />
-            <marker date="1453194730315" expanded="true" signature="2363:2486" placeholder="SELECT n.NAT..national..." />
-            <marker date="1453194730315" expanded="true" signature="3206:3887" placeholder="SELECT TOURS..." />
-            <marker date="1453194730315" expanded="true" signature="3224:3347" placeholder="SELECT n.NAT..national..." />
-            <marker date="1453194730315" expanded="true" signature="11302:11377" placeholder="SELECT COUNT..news..." />
+            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tours..." />
+            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tours..." />
+            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT IMG_I..img_grp..." />
+            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT TOURS..." />
+            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT n.NAT..national..." />
+            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT LOCAT..tours..." />
+            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT TOURS..." />
+            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT n.NAT..national..." />
+            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT TOURS..." />
+            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT n.NAT..national..." />
           </folding>
         </state>
       </provider>
@@ -1109,10 +1046,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="95" column="20" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="368" column="65" selection-start-line="368" selection-start-column="51" selection-end-line="368" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0181818">
-          <caret line="293" column="91" selection-start-line="293" selection-start-column="91" selection-end-line="293" selection-end-column="91" />
+        <state vertical-scroll-proportion="-15.072727">
+          <caret line="314" column="27" selection-start-line="314" selection-start-column="19" selection-end-line="314" selection-end-column="27" />
           <folding>
             <element signature="n#__construct#0;n#Home#0;n#!!top" expanded="false" />
             <element signature="n#loadTourCate#0;n#Home#0;n#!!top" expanded="false" />
@@ -1131,11 +1084,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/PagesConfig.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45945945">
-          <caret line="95" column="20" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+        <state vertical-scroll-proportion="-2.6545455">
+          <caret line="51" column="68" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="68" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Index_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22903885">
+          <caret line="149" column="6" selection-start-line="149" selection-start-column="6" selection-end-line="149" selection-end-column="6" />
+          <folding>
+            <marker date="1453197421328" expanded="true" signature="572:1180" placeholder="SELECT TRAVE..." />
+            <marker date="1453197421328" expanded="true" signature="597:718" placeholder="SELECT n.NAT..national..." />
+            <marker date="1453197421328" expanded="true" signature="2345:3025" placeholder="SELECT TOURS..." />
+            <marker date="1453197421328" expanded="true" signature="2363:2486" placeholder="SELECT n.NAT..national..." />
+            <marker date="1453197421328" expanded="true" signature="3206:3887" placeholder="SELECT TOURS..." />
+            <marker date="1453197421328" expanded="true" signature="3224:3347" placeholder="SELECT n.NAT..national..." />
+            <marker date="1453197421328" expanded="true" signature="11313:11388" placeholder="SELECT COUNT..news..." />
+          </folding>
         </state>
       </provider>
     </entry>

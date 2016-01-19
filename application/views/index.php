@@ -359,7 +359,7 @@
                                     <?php if(isset($newsData)){
                                         foreach ($newsData as $row){?>
                                     <li class="list-group-item">
-                                        <a href="<?php echo base_url('home/news/'.$row->NEWS_ID)?>"><?php echo $row->NEWS_TITLE?></a>
+                                        <a href="<?php echo base_url('home/news/'.$row->TEXT_LINK)?>"><?php echo $row->NEWS_TITLE?></a>
                                     </li>
                                     <?php } }?>
                                 </ul>
@@ -369,7 +369,7 @@
                                     <?php if(isset($promotionData)){
                                         foreach ($promotionData as $row){?>
                                             <li class="list-group-item">
-                                                <a href="<?php echo base_url('home/news/'.$row->NEWS_ID)?>"><?php echo $row->NEWS_TITLE?></a>
+                                                <a href="<?php echo base_url('home/news/'.$row->TEXT_LINK)?>"><?php echo $row->NEWS_TITLE?></a>
                                             </li>
                                         <?php } }?>
                                 </ul>
@@ -411,12 +411,12 @@
                         <li>
                             <div class="box-new-block">
                                 <div class="box-img">
-                                    <a href="<?php echo base_url('home/news/'.$row->NEWS_ID)?>">
+                                    <a href="<?php echo base_url('home/news/'.$row->TEXT_LINK)?>">
                                         <img src="<?php echo base_url($row->NEWS_RPV_IMG)?>" alt="" width="63" height="63" />
                                     </a>
                                 </div>
                                 <div class="box-content">
-                                    <h5 class="box-new-title"><a href="<?php echo base_url('home/news/'.$row->NEWS_ID)?>"><?php echo $row->NEWS_TITLE?></a></h5>
+                                    <h5 class="box-new-title"><a href="<?php echo base_url('home/news/'.$row->TEXT_LINK)?>"><?php echo $row->NEWS_TITLE?></a></h5>
                                     <div class="box-description">
                                         <p><?php echo $row->NEWS_SHRT_CNT?></p>
                                     </div>

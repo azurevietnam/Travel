@@ -152,7 +152,7 @@ class Index_model extends CI_Model {
      */
     public function loadNewsListByCateID($cateID, $limit){
         $sql = "
-            SELECT NEWS_ID, CATEGORY_ID, NEWS_TITLE_".$this->session->userdata('lang_code')."  AS NEWS_TITLE,
+            SELECT NEWS_ID, TEXT_LINK, CATEGORY_ID, NEWS_TITLE_".$this->session->userdata('lang_code')."  AS NEWS_TITLE,
             NEWS_SHRT_CNT_".$this->session->userdata('lang_code')." AS NEWS_SHRT_CNT,
             NEWS_CONTENT_".$this->session->userdata('lang_code')." AS NEW_CNT,
             NEWS_RPV_IMG,
