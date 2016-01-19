@@ -38,6 +38,7 @@ class guides extends CI_Controller
             $data['pages'] = ceil($this->Guide_model->pagesPaging($cateID) / 4);
             $data['CATE_ID'] = $cateID;
             $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['newsCate'] = $this->Index_model->loadNewsCate();
             $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
 
             $this->load->view('includes/short-header',$hData);
@@ -54,6 +55,7 @@ class guides extends CI_Controller
             $data['guideRelation'] = $this->Guide_model->guideRelation($guideID);
             $hData['metaData'] = $this->Guide_model->tourSEOkey($guideID);
             $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['newsCate'] = $this->Index_model->loadNewsCate();
             $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
 
             $this->load->view('includes/short-header',$hData);

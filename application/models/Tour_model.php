@@ -22,6 +22,17 @@ class Tour_model extends CI_Model
         $this->lang->load($user_language, $user_language);
     }
 
+    public function getTourIDbyTextLink($textLink){
+        $this->db->select('TOURS_ID');
+        $this->db->where('TEXT_LINK', $textLink);
+        $query = $this->db->get('tours');
+        $tourID = '';
+        foreach($query->result() as $row){
+            $tourID = $row->TOURS_ID;
+        }
+        return $tourID;
+    }
+
     public function addTourOrder($data){
         if($this->db->insert('tours_order',$data)){
             return true;
@@ -51,9 +62,10 @@ class Tour_model extends CI_Model
     }
 
     //load tour detail
-    public function loadTourDetail($textLink){
+    public function loadTourDetail($tourID){
         $Sql = "SELECT
                     TOURS_ID
+                    , TEXT_LINK
                     , CATEGORY_ID
                     , LOCATION_ID
                     , (SELECT n.NATIONAL_NAME FROM national n, location l WHERE l.NATIONAL_ID = n.NATIONAL_ID AND l.LOCATION_ID = TOUR.LOCATION_ID ) AS NATIONAL
@@ -80,8 +92,8 @@ class Tour_model extends CI_Model
                     , MAP_PLACE_Y
                     , IMG_GRP_ID
                 FROM tours TOUR
-                WHERE TEXT_LINK = ?";
-        $query = $this->db->query($Sql,$textLink);
+                WHERE TOURS_ID = ?";
+        $query = $this->db->query($Sql,$tourID);
         return $query->result();
     }
 
@@ -108,6 +120,7 @@ class Tour_model extends CI_Model
         $locationID =  $row->LOCATION_ID;
         $Sql ="SELECT
                     TOURS_ID
+                    , TEXT_LINK
                     , LOCATION_ID
                     , (SELECT LOCATION_NM_" . $this->session->userdata('lang_code') . " FROM location WHERE LOCATION_ID = TOUR.LOCATION_ID) AS LOCATION
                     , (SELECT n.NATIONAL_NAME FROM national n, location l WHERE l.NATIONAL_ID = n.NATIONAL_ID AND l.LOCATION_ID = TOUR.LOCATION_ID ) AS NATIONAL
@@ -136,12 +149,12 @@ class Tour_model extends CI_Model
 
     public function loadPostTour($cateID,$position){
         if($cateID != 'all') {
-            $SqlStr = "SELECT TOURS_ID,CATEGORY_ID, (SELECT n.NATIONAL_NAME FROM national n, location l WHERE l.NATIONAL_ID = n.NATIONAL_ID AND l.LOCATION_ID = TOUR.LOCATION_ID ) AS NATIONAL
+            $SqlStr = "SELECT TOURS_ID, TEXT_LINK,CATEGORY_ID, (SELECT n.NATIONAL_NAME FROM national n, location l WHERE l.NATIONAL_ID = n.NATIONAL_ID AND l.LOCATION_ID = TOUR.LOCATION_ID ) AS NATIONAL
                 , (SELECT LOCATION_NM_" . $this->session->userdata('lang_code') . " FROM location WHERE LOCATION_ID = TOUR.LOCATION_ID) as LOCATION, TOURS_TIT_" . $this->session->userdata('lang_code') . " as TOURS_TIT,
                 SUBSTRING(TOURS_SHRT_CNT_" . $this->session->userdata('lang_code') . ",1,150) AS SHORT_CNT, TOURS_RPV_IMG_URL, TOURS_LENGTH, FORMAT(TOURS_PRICE_" . $this->session->userdata('lang_code') . ",0) as TOURS_PRICE
                 , IMG_GRP_ID, MAP_PLACE_X, MAP_PLACE_Y FROM tours TOUR WHERE CATEGORY_ID = ? AND DISPLAY_YN='Y' ORDER BY TOURS_CREATE_TIME DESC, TOURS_UPDATE_TIME DESC LIMIT $position, 9";
         }else{
-            $SqlStr = "SELECT TOURS_ID,CATEGORY_ID, (SELECT n.NATIONAL_NAME FROM national n, location l WHERE l.NATIONAL_ID = n.NATIONAL_ID AND l.LOCATION_ID = TOUR.LOCATION_ID ) AS NATIONAL
+            $SqlStr = "SELECT TOURS_ID, TEXT_LINK,CATEGORY_ID, (SELECT n.NATIONAL_NAME FROM national n, location l WHERE l.NATIONAL_ID = n.NATIONAL_ID AND l.LOCATION_ID = TOUR.LOCATION_ID ) AS NATIONAL
                 , (SELECT LOCATION_NM_" . $this->session->userdata('lang_code') . " FROM location WHERE LOCATION_ID = TOUR.LOCATION_ID) as LOCATION, TOURS_TIT_" . $this->session->userdata('lang_code') . " as TOURS_TIT,
                 SUBSTRING(TOURS_SHRT_CNT_" . $this->session->userdata('lang_code') . ",1,150) AS SHORT_CNT, TOURS_RPV_IMG_URL, TOURS_LENGTH, FORMAT(TOURS_PRICE_" . $this->session->userdata('lang_code') . ",0) as TOURS_PRICE
                 , IMG_GRP_ID, MAP_PLACE_X, MAP_PLACE_Y FROM tours TOUR WHERE DISPLAY_YN='Y' ORDER BY TOURS_CREATE_TIME DESC, TOURS_UPDATE_TIME DESC LIMIT $position, 9";

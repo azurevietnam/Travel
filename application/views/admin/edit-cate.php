@@ -76,13 +76,17 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-md-3 control-label">Màu nền:</label>
+                                <label class="col-md-2 control-label">Màu nền:</label>
                                 <div class="col-md-2">
-                                    <input type="text" data-plugin-colorpicker class="colorpicker-rgba form-control" value="<?php echo $row->COLOR_CD?>" data-horizontal="true" name="font_color_cd" id="font_color_cd"/>
+                                    <input type="text" data-plugin-colorpicker class="colorpicker-rgba form-control" value="<?php echo $row->COLOR_CD?>" data-horizontal="true" name="color_cd" id="color_cd"/>
                                 </div>
-                                <label class="col-md-2 control-label">Màu font chữ</label>
+                                <label class="col-md-2 control-label">Màu Tiêu Đề</label>
                                 <div class="col-md-2">
-                                    <input type="text" data-plugin-colorpicker class="colorpicker-rgba form-control" value="<?php echo $row->FONT_COLOR_CD?>" data-horizontal="true" name="color_cd" id="color_cd"/>
+                                    <input type="text" data-plugin-colorpicker class="colorpicker-rgba form-control" value="<?php echo $row->TITLE_COLOR_CD?>" data-horizontal="true" name="title_color_cd" id="title_color_cd"/>
+                                </div>
+                                <label class="col-md-2 control-label">Màu Nội Dung</label>
+                                <div class="col-md-2">
+                                    <input type="text" data-plugin-colorpicker class="colorpicker-rgba form-control" value="<?php echo $row->FONT_COLOR_CD?>" data-horizontal="true" name="font_color_cd" id="font_color_cd"/>
                                 </div>
                             </div>
                             <div class="form-group">

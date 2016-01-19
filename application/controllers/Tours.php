@@ -38,6 +38,7 @@ class tours extends CI_Controller
             $data['pages'] = ceil($this->Tour_model->pagesPaging($cateID) / 4);
             $data['CATE_ID'] = $cateID;
             $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['newsCate'] = $this->Index_model->loadNewsCate();
             $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
 
             $this->load->view('includes/short-header',$hData);
@@ -55,6 +56,7 @@ class tours extends CI_Controller
             $data['pages'] = ceil($this->Tour_model->pagesPaging($cateID) / 9);
             $data['CATE_ID'] = $cateID;
             $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['newsCate'] = $this->Index_model->loadNewsCate();
             $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
 
             $this->load->view('includes/short-header',$hData);
@@ -64,7 +66,8 @@ class tours extends CI_Controller
     }
 
 // tours detail.
-    public function tours_detail($tourID){
+    public function tours_detail($textLink){
+        $tourID = $this->Tour_model->getTourIDbyTextLink($textLink);
         if(isset($tourID)){
             $data['imgData'] = $this->Tour_model->loadImgUrl($tourID);
             $data['tourID'] = $tourID;
@@ -73,6 +76,7 @@ class tours extends CI_Controller
             $data['tour_relation'] = $this->Tour_model->tourRelation($tourID);
             $hData['metaData'] = $this->Tour_model->tourSEOkey($tourID);
             $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['newsCate'] = $this->Index_model->loadNewsCate();
             $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
 
             $this->load->view('includes/short-header',$hData);
@@ -92,6 +96,7 @@ class tours extends CI_Controller
             $data['tour_relation'] = $this->Tour_model->tourRelation($tourID);
             $hData['metaData'] = $this->Tour_model->tourSEOkey($tourID);
             $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['newsCate'] = $this->Index_model->loadNewsCate();
             $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
 
             $this->load->view('includes/short-header',$hData);
@@ -182,7 +187,7 @@ class tours extends CI_Controller
                                     <img src="'.base_url().$row->TOURS_RPV_IMG_URL.'" alt="">
                                 </a>
                             <div class="details">
-                                <h4 class="box-title"><a href="'.base_url().'tours/tours_detail/'. $row->TOURS_ID.'"><div class="title-height">'. $row->TOURS_TIT.'</div><small>'. $row->LOCATION.' - '.$row->NATIONAL.'</small></a></h4>
+                                <h4 class="box-title"><a href="'.base_url().'tours/tours_detail/'. $row->TEXT_LINK.'"><div class="title-height">'. $row->TOURS_TIT.'</div><small>'. $row->LOCATION.' - '.$row->NATIONAL.'</small></a></h4>
                                 <div class="content-height">
                                     '.$row->SHORT_CNT.'...
                                 </div>
@@ -195,7 +200,7 @@ class tours extends CI_Controller
                                         <span>'.$row->TOURS_LENGTH.' '.$this->lang->line('day').'</span>
                                     </div>
                                 </div>
-                                <a href="'.base_url().'tours/tours_detail/'. $row->TOURS_ID.'" class="button btn-small full-width">'.$this->lang->line('booknow').'</a>
+                                <a href="'.base_url().'tours/tours_detail/'. $row->TEXT_LINK.'" class="button btn-small full-width">'.$this->lang->line('booknow').'</a>
                             </div>
                         </article>
                     </div>';

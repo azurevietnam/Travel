@@ -25,7 +25,7 @@
                         <img src="<?php echo base_url($row->IMG_URL)?>">
                         <figure class="animated" data-animation-type="fadeInDown" data-animation-delay="0">
                             <figcaption>
-                                <h3 class="caption-title" style="color: <?php echo $row->FONT_COLOR_CD?>"><?php echo $row->CATE_NM?></h3>
+                                <h3 class="caption-title" style="color: <?php echo $row->TITLE_COLOR_CD?>"><?php echo $row->CATE_NM?></h3>
                                 <hr/>
                                 <span style="color:<?php echo $row->FONT_COLOR_CD?>;"><?php echo $row->CATE_DESC?></span>
                             </figcaption>

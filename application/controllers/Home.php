@@ -60,6 +60,7 @@ class Home extends CI_Controller
             if ($this->Index_model->insertHotelRequest($reqData) == true) {
                 $data['message'] = "success";
                 $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['newsCate'] = $this->Index_model->loadNewsCate();
                 $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
 
                 $this->load->view('includes/short-header',$hData);
@@ -69,6 +70,7 @@ class Home extends CI_Controller
                 $data['error'] = validation_errors();
                 $data['message'] = "fail";
                 $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['newsCate'] = $this->Index_model->loadNewsCate();
                 $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
 
                 $this->load->view('includes/short-header',$hData);
@@ -79,6 +81,7 @@ class Home extends CI_Controller
             $data['error'] = validation_errors();
             $data['message'] = "fail";
             $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['newsCate'] = $this->Index_model->loadNewsCate();
             $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
 
             $this->load->view('includes/short-header',$hData);
@@ -112,6 +115,7 @@ class Home extends CI_Controller
             if ($this->Index_model->insertRestaurantRequest($reqData) == true) {
                 $data['message'] = "success";
                 $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['newsCate'] = $this->Index_model->loadNewsCate();
                 $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
                 $this->load->view('includes/short-header',$hData);
                 $this->load->view('success',$data);
@@ -120,6 +124,7 @@ class Home extends CI_Controller
                 $data['error'] = validation_errors();
                 $data['message'] = "fail";
                 $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['newsCate'] = $this->Index_model->loadNewsCate();
                 $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
                 $this->load->view('includes/short-header',$hData);
                 $this->load->view('success',$data);
@@ -129,6 +134,7 @@ class Home extends CI_Controller
             $data['error'] = validation_errors();
             $data['message'] = "fail";
             $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['newsCate'] = $this->Index_model->loadNewsCate();
             $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
             $this->load->view('includes/short-header',$hData);
             $this->load->view('success',$data);
@@ -160,6 +166,7 @@ class Home extends CI_Controller
             if ($this->Index_model->insertCarRequest($reqData) == true) {
                 $data['message'] = "success";
                 $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['newsCate'] = $this->Index_model->loadNewsCate();
                 $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
                 $this->load->view('includes/short-header',$hData);
                 $this->load->view('success',$data);
@@ -168,6 +175,7 @@ class Home extends CI_Controller
                 $data['error'] = validation_errors();
                 $data['message'] = "fail";
                 $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['newsCate'] = $this->Index_model->loadNewsCate();
                 $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
                 $this->load->view('includes/short-header',$hData);
                 $this->load->view('success',$data);
@@ -177,6 +185,7 @@ class Home extends CI_Controller
             $data['error'] = validation_errors();
             $data['message'] = "fail";
             $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['newsCate'] = $this->Index_model->loadNewsCate();
             $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
             $this->load->view('includes/short-header',$hData);
             $this->load->view('success',$data);
@@ -209,6 +218,7 @@ class Home extends CI_Controller
             if ($this->Index_model->insertTourRequest($reqData) == true) {
                 $data['message'] = "success";
                 $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['newsCate'] = $this->Index_model->loadNewsCate();
                 $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
                 $this->load->view('includes/short-header',$hData);
                 $this->load->view('success',$data);
@@ -217,6 +227,7 @@ class Home extends CI_Controller
                 $data['error'] = validation_errors();
                 $data['message'] = "fail";
                 $hData['toursCate'] = $this->Index_model->loadTourCate();
+                $hData['newsCate'] = $this->Index_model->loadNewsCate();
                 $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
                 $this->load->view('includes/short-header',$hData);
                 $this->load->view('success',$data);
@@ -226,6 +237,7 @@ class Home extends CI_Controller
             $data['error'] = validation_errors();
             $data['message'] = "fail";
             $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['newsCate'] = $this->Index_model->loadNewsCate();
             $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
             $this->load->view('includes/short-header',$hData);
             $this->load->view('success',$data);
@@ -239,6 +251,7 @@ class Home extends CI_Controller
     public function tourGroup($grpID){
         $data['tourGroup'] = $this->Index_model->tourGroup($grpID);
         $hData['toursCate'] = $this->Index_model->loadTourCate();
+        $hData['newsCate'] = $this->Index_model->loadNewsCate();
         $hData['toursQBCate'] = $this->Index_model->tourGroup($grpID);
 
         $this->load->view('includes/short-header',$hData);
@@ -247,16 +260,69 @@ class Home extends CI_Controller
     }
 
     /*
+     * get news list
+     */
+    public function newsList($cateID){
+        if(isset($cateID)){
+            $data['pages'] = ceil($this->Index_model->pagesPaging($cateID) / 9);
+            $data['CATE_ID'] = $cateID;
+            $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['newsCate'] = $this->Index_model->loadNewsCate();
+            $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+
+            $this->load->view('includes/short-header',$hData);
+            $this->load->view('news-list', $data);
+            $this->load->view('includes/footer');
+        }
+    }
+
+    public function loadNews($cateID){
+        if($_POST) {
+            //sanitize post value
+            $group_number = filter_var($_POST["group_no"], FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH);
+            //throw HTTP error if group number is not valid
+            if(!is_numeric($group_number)){
+                header('HTTP/1.1 500 Invalid number!');
+                exit();
+            }
+            //get current starting point of records
+            $position = ($group_number * 4);
+            $queryResult = $this->Index_model->loadNews($cateID,$position);
+            foreach($queryResult as $row){
+                echo '<div class="col-sm-6 col-md-4 col-lg-3">
+                        <article class="box">
+                                <a href="'.base_url('home/News/'.$row->NEWS_ID).'" title="">
+                                    <img src="'.base_url($row->NEWS_RPV_IMG).'" alt="">
+                                </a>
+                            <div class="details">
+                                <h4 class="box-title"><a href="'.base_url('home/News/'. $row->TEXT_LINK).'"><div class="title-height">'. $row->NEWS_TITLE.'</div></a></h4>
+                                <div class="content-height">
+                                    '.$row->NEWS_SHRT_CNT.'...
+                                </div>
+                            </div>
+                        </article>
+                    </div>';
+            }
+        }
+    }
+
+    /*
      * load news by id
      */
-    public function news($newsID){
-        $data['newsData'] = $this->Index_model->loadNewsByID($newsID);
-        $data['newsRelation'] = $this->Index_model->newsRelation($newsID);
-        $hData['toursCate'] = $this->Index_model->loadTourCate();
-        $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
+    public function news($textLink){
+        $newsID = $this->Index_model->getNewsIDbyTextLink($textLink);
+        if(isset($newsID)){
+            $data['newsData'] = $this->Index_model->loadNewsByID($newsID);
+            $data['newsRelation'] = $this->Index_model->newsRelation($newsID);
+            $hData['toursCate'] = $this->Index_model->loadTourCate();
+            $hData['newsCate'] = $this->Index_model->loadNewsCate();
+            $hData['toursQBCate'] = $this->Index_model->tourGroup('Q');
 
-        $this->load->view('includes/short-header',$hData);
-        $this->load->view('news-detail', $data);
-        $this->load->view('includes/footer');
+            $this->load->view('includes/short-header',$hData);
+            $this->load->view('news-detail', $data);
+            $this->load->view('includes/footer');
+        }else{
+            echo 'Thông tin bài vi?t không t?n t?i.';
+        }
     }
 }

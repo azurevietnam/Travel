@@ -74,11 +74,20 @@ class Index_model extends CI_Model {
     }
 
     /*
+     * Load news category
+     */
+    public function loadNewsCate(){
+        $newsCate = "SELECT CATEGORY_ID, CATEGORY_NM_".$this->session->userdata('lang_code')." AS CATE_NAME, GROUP_ID FROM `category` WHERE `GROUP_ID` = 'N' ";
+        $query = $this->db->query($newsCate);
+        return $query->result();
+    }
+
+    /*
      * load 3 main Category in home page
      */
     public function loadMainHomeCate(){
         $mainCate = "SELECT CATEGORY_ID, CATEGORY_NM_".$this->session->userdata('lang_code')." AS CATE_NAME
-                    , CATEGORY_DESC_".$this->session->userdata('lang_code')." AS CATE_DESC, MAIN_CATE, COLOR_CD, GROUP_ID
+                    , CATEGORY_DESC_".$this->session->userdata('lang_code')." AS CATE_DESC, MAIN_CATE, COLOR_CD, TITLE_COLOR_CD, FONT_COLOR_CD, GROUP_ID
                     FROM `category` WHERE `MAIN_CATE` <> 0  ORDER BY MAIN_CATE ASC";
         $query = $this->db->query($mainCate);
         return $query->result();
@@ -165,12 +174,21 @@ class Index_model extends CI_Model {
      * load tour group
      */
     public function tourGroup($groupID){
-        $sql = "SELECT CATEGORY_ID, CATEGORY_NM_".$this->session->userdata('lang_code')." AS CATE_NM,
-                    CATEGORY_DESC_".$this->session->userdata('lang_code')." AS CATE_DESC,
-                    IMG_URL, GROUP_ID, COLOR_CD, FONT_COLOR_CD
+        if($groupID == 'all'){
+            $sql = "SELECT CATEGORY_ID, CATEGORY_NM_" . $this->session->userdata('lang_code') . " AS CATE_NM,
+                    CATEGORY_DESC_" . $this->session->userdata('lang_code') . " AS CATE_DESC,
+                    IMG_URL, GROUP_ID, COLOR_CD, TITLE_COLOR_CD, FONT_COLOR_CD
+                    FROM category
+                    ORDER BY CATEGORY_ID ASC
+        ";
+        }else {
+            $sql = "SELECT CATEGORY_ID, CATEGORY_NM_" . $this->session->userdata('lang_code') . " AS CATE_NM,
+                    CATEGORY_DESC_" . $this->session->userdata('lang_code') . " AS CATE_DESC,
+                    IMG_URL, GROUP_ID, COLOR_CD, TITLE_COLOR_CD, FONT_COLOR_CD
                     FROM category WHERE GROUP_ID = ?
                     ORDER BY CATEGORY_ID ASC
         ";
+        }
         $query = $this->db->query($sql, $groupID);
         return $query->result();
     }
@@ -202,14 +220,8 @@ class Index_model extends CI_Model {
             $cateID = $row->CATEGORY_ID;
         }
 
-//        $this->db->where('CATEGORY_ID', $cateID);
-//        $this->db->where('STATUS', 1);
-//        $this->db->where_not_in('NEWS_ID', $newsID);
-//        $this->db->order_by("CREATE_TIMESTAMP", "desc");
-//        $result = $this->db->get('news');
-//        return $result->result();
         $sql = "
-            SELECT NEWS_ID, CATEGORY_ID, NEWS_TITLE_".$this->session->userdata('lang_code')."  AS NEWS_TITLE,
+            SELECT NEWS_ID, TEXT_LINK, CATEGORY_ID, NEWS_TITLE_".$this->session->userdata('lang_code')."  AS NEWS_TITLE,
             NEWS_SHRT_CNT_".$this->session->userdata('lang_code')." AS NEWS_SHRT_CNT,
             NEWS_CONTENT_".$this->session->userdata('lang_code')." AS NEW_CNT,
             NEWS_RPV_IMG,
@@ -222,5 +234,40 @@ class Index_model extends CI_Model {
         ";
         $query = $this->db->query($sql, $cateID);
         return $query->result();
+    }
+
+    public function loadNews($cateID,$position){
+        $SqlStr = "
+        SELECT NEWS_ID,TEXT_LINK, CATEGORY_ID, NEWS_TITLE_".$this->session->userdata('lang_code')."  AS NEWS_TITLE,
+            NEWS_SHRT_CNT_".$this->session->userdata('lang_code')." AS NEWS_SHRT_CNT,
+            NEWS_CONTENT_".$this->session->userdata('lang_code')." AS NEW_CNT,
+            NEWS_RPV_IMG,
+            META_TITLE_".$this->session->userdata('lang_code')." AS META_TITLE,
+            META_DESC_".$this->session->userdata('lang_code')." AS META_DESC,
+            META_KEYWORD_".$this->session->userdata('lang_code')." AS META_KEYWORD
+            FROM news WHERE CATEGORY_ID = ? AND STATUS = 1
+            ORDER BY CREATE_TIMESTAMP DESC LIMIT $position, 9
+        ";
+
+        $query = $this->db->query($SqlStr, $cateID);
+        return $query->result();
+    }
+
+    public function pagesPaging($cateID){
+        $totalActSql = "SELECT COUNT(*) AS P_RECORDS FROM news WHERE CATEGORY_ID = ? AND STATUS = 1";
+        $query = $this->db->query($totalActSql, $cateID);
+        $row = $query->row();
+        return $row->P_RECORDS;
+    }
+
+    public function getNewsIDbyTextLink($textLink){
+        $this->db->select('NEWS_ID');
+        $this->db->where('TEXT_LINK', $textLink);
+        $query = $this->db->get('news');
+        $newsID = '';
+        foreach($query->result() as $row){
+            $newsID = $row->NEWS_ID;
+        }
+        return $newsID;
     }
 }

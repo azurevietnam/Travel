@@ -12,7 +12,7 @@
         var loading  = false; //to prevents multipal ajax loads
         var pages = <?php echo $pages ?>; //total record group(s)
 
-        $('#tourList').load("<?php echo base_url()?>tours/loadPost1/<?php echo $CATE_ID?>", {'group_no':track_load}, function() {track_load++;}); //load first group
+        $('#tourList').load("<?php echo base_url()?>tours/loadPost/<?php echo $CATE_ID?>", {'group_no':track_load}, function() {track_load++;}); //load first group
 
         $("#loadMore").click(function() { //detect page scroll
 
@@ -21,7 +21,7 @@
                 loading = true; //prevent further ajax loading
 
                 //load data from the server using a HTTP POST request
-                $.post('<?php echo base_url()?>tours/loadPost1/<?php echo $CATE_ID?>', {'group_no': track_load}, function (data) {
+                $.post('<?php echo base_url()?>tours/loadPost/<?php echo $CATE_ID?>', {'group_no': track_load}, function (data) {
 
                     $("#tourList").append(data); //append received data into the element
 
@@ -146,7 +146,7 @@
                         <div class="row image-box hotel listing-style1" id="tourList">
                         </div>
                     </div>
-                    <a href="#/" class="uppercase full-width button btn-large" id="loadMore" name="loadMore">load more listing</a>
+                    <a href="#" class="uppercase full-width button btn-large" id="loadMore" name="loadMore">load more listing</a>
                 </div>
             </div>
         </div>

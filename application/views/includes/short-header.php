@@ -181,7 +181,7 @@ if(isset($metaData)){
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="<?php echo base_url('home/tourGroup')?>"><?php echo $this->lang->line('tours'); ?></a>
+                            <a href="<?php echo base_url('home/tourGroup/all')?>"><?php echo $this->lang->line('tours'); ?></a>
                             <ul>
                                 <?php if(isset($toursCate)){
                                     foreach ($toursCate as $row){
@@ -201,11 +201,13 @@ if(isset($metaData)){
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="<?php echo base_url('home/News')?>"><?php echo $this->lang->line('news'); ?></a>
+                            <a href="#"><?php echo $this->lang->line('news'); ?></a>
                             <ul>
-                                <li><a href="#"><?php echo $this->lang->line('news'); ?></a></li>
-                                <li><a href="#"><?php echo $this->lang->line('promotion'); ?></a></li>
-                                <li><a href="#"><?php echo $this->lang->line('vonguyengiap-cate'); ?></a></li>
+                                <?php if(isset($newsCate)){
+                                    foreach($newsCate as $row){?>
+                                        <li><a href="<?php echo base_url('home/newsList/'.$row->CATEGORY_ID)?>"><?php echo $row->CATE_NAME ?></a></li>
+                                    <?php    }
+                                }?>
                             </ul>
                         </li>
                         <li class="menu-item-has-children">

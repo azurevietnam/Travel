@@ -47,6 +47,7 @@ class PagesConfig extends CI_Controller {
 //        $data['TourCate8']= $this->Index_model->loadMainCate('T00008');
 
         $data['toursCate'] = $this->Index_model->loadTourCate();
+        $data['newsCate'] = $this->Index_model->loadNewsCate();
         $data['toursQBCate'] = $this->Index_model->tourGroup('Q');
         $data['newsData'] = $this->Index_model->loadNewsListByCateID('N00001',7);
         $data['promotionData'] = $this->Index_model->loadNewsListByCateID('N00002',7);
