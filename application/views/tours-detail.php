@@ -5,54 +5,14 @@
  * Date: 5/27/2015
  * Time: 10:04 PM
  */
-$NATIONAL = "";
-$LOCATION = "";
-$CATEGORY_ID = "";
-$TOURS_TIT = "";
-$TOUR_CNT = "";
-$TOURS_LENGTH = "";
-$TRANSPORT = "";
-$PRICE_CNT = "";
-$REMARK = "";
-$TOUR_PRICE = "";
-$DISCOUNT = "";
-$START_ARRIVAL_LOCATION = "";
-$START_DEPARTURE_LOCATION = "";
-$START_ARRIVAL_TIME = "";
-$START_DEPARTURE_TIME = "";
-$END_ARRIVAL_LOCATION = "";
-$END_DEPARTURE_LOCATION = "";
-$END_ARRIVAL_TIME = "";
-$END_DEPARTURE_TIME = "";
-$MAP_PLACE_X = "";
-$MAP_PLACE_Y = "";
 
-if(isset($tour_detail)){
-    foreach ($tour_detail as $row) {
-        $NATIONAL = $row->NATIONAL;
-        $LOCATION = $row->LOCATION;
-        $CATEGORY_ID = $row->CATEGORY_ID;
-        $TOURS_TIT = $row->TOURS_TIT;
-        $TOUR_CNT = $row->TOUR_CNT;
-        $TOURS_LENGTH = $row->TOURS_LENGTH;
-        $TRANSPORT = $row->TRANSPORT;
-        $PRICE_CNT = $row->PRICE_CNT;
-        $REMARK = $row->REMARK;
-        $TOUR_PRICE = $row->TOUR_PRICE;
-        $DISCOUNT = $row->DISCOUNT;
-        $START_ARRIVAL_LOCATION = $row->START_ARRIVAL_LOCATION;
-        $START_DEPARTURE_LOCATION = $row->START_DEPARTURE_LOCATION;
-        $START_ARRIVAL_TIME = $row->START_ARRIVAL_TIME;
-        $START_DEPARTURE_TIME = $row->START_DEPARTURE_TIME;
-        $END_ARRIVAL_LOCATION = $row->END_ARRIVAL_LOCATION;
-        $END_DEPARTURE_LOCATION = $row->END_DEPARTURE_LOCATION;
-        $END_ARRIVAL_TIME = $row->END_ARRIVAL_TIME;
-        $END_DEPARTURE_TIME = $row->END_DEPARTURE_TIME;
-        $MAP_PLACE_X = $row->MAP_PLACE_X;
-        $MAP_PLACE_Y = $row->MAP_PLACE_Y;
-    }
-}
+
 ?>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer>
+    {lang: 'vi'}
+</script>
+
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -79,158 +39,118 @@ if(isset($tour_detail)){
 <section id="content">
     <div class="container tour-detail-page">
         <div class="row">
+            <?php if(isset($tour_detail)){
+                foreach($tour_detail as $row){ ?>
             <div id="main" class="col-md-9">
-                <div class="featured-gallery image-box">
+                <div class="col-md-7 featured-gallery image-box">
+                    <?php if(isset($imgData)){?>
                     <div class="flexslider photo-gallery style1" id="post-slideshow1" data-sync="#post-carousel1" data-func-on-start="showTourDetailedDiscount">
                         <ul class="slides">
-                            <?php foreach ($imgData as $store) { echo '
-                                <li ><img src = "'.base_url().$store->IMG_URL.'" alt = "'.$store->IMG_ALT.'" /></li >';
-                            }?>
+                            <?php foreach($imgData as $store){?>
+                            <li ><img src = "<?php echo base_url($store->IMG_URL) ?>" alt = "<?php echo $store->IMG_ALT ?>" /></li >
+                            <?php }?>
                         </ul>
                     </div>
                     <div class="flexslider image-carousel style1" id="post-carousel1"  data-animation="slide" data-item-width="70" data-item-margin="10" data-sync="#post-slideshow1">
                         <ul class="slides">
-                            <ul class="slides">
-                                <?php foreach ($imgData as $store) { echo '
-                                <li ><img src = "'.base_url().$store->IMG_URL.'" alt = "'.$store->IMG_ALT.'" /></li >';
-                                }?>
-                            </ul>
+                            <?php foreach($imgData as $store){?>
+                                    <li ><img src = "<?php echo base_url($store->IMG_URL) ?>" alt = "<?php echo $store->IMG_ALT ?>" /></li >
+                            <?php }?>
                         </ul>
                     </div>
+                <?php }?>
                 </div>
-
-                <div id="tour-details" class="VungChuaTravel-box">
-                    <div class="intro small-box table-wrapper full-width hidden-table-sms">
-                        <div class="col-sm-4 table-cell VungChuaTravel-box">
-                            <dl class="term-description">
-                                <dt><?php echo $this->lang->line('location')?>:</dt><dd><?php echo $LOCATION?> - <?php echo $NATIONAL?></dd>
-                                <dt><?php echo $this->lang->line('transportation')?>:</dt><dd><?php echo $TRANSPORT?></dd>
-                                <dt><?php echo $this->lang->line('price')?>:</dt><dd><?php echo $TOUR_PRICE?> <?php echo $this->lang->line('currency')?></dd>
-                                <dt><?php echo $this->lang->line('tourday')?>:</dt><dd><?php echo $TOURS_LENGTH?> - <?php echo $this->lang->line('day')?></dd>
-                                <dt><?php echo $this->lang->line('discount')?>:</dt><dd><?php echo $DISCOUNT?>%</dd>
-                            </dl>
-                        </div>
-                        <div class="col-sm-8 table-cell">
-                            <div class="detailed-features">
-                                <div class="price-section clearfix">
-                                    <div class="details">
-                                        <h4 class="box-title"><?php echo $TOURS_TIT?><small><?php echo $TOURS_LENGTH?> - <?php echo $this->lang->line('day')?></small></h4>
-                                    </div>
-                                    <div class="details">
-                                        <span class="price"><?php echo $TOUR_PRICE?> <?php echo $this->lang->line('currency')?></span>
-                                        <a href="<?php echo base_url()?>tours/tours_booking/<?php echo $tourID?>" class="button green btn-small uppercase"><?php echo $this->lang->line('booknow')?></a>
-                                    </div>
-                                </div>
-                                <div class="flights table-wrapper">
-                                    <div class="table-row">
-                                        <div class="table-cell">
-                                            <h4 class="box-title"><?php echo $START_DEPARTURE_LOCATION?> - <?php echo $START_ARRIVAL_LOCATION?><small></small></h4>
-                                        </div>
-                                        <div class="table-cell">
-                                            <i class="icon soap-icon-plane-right take-off"></i>
-                                            <dl><dt><?php echo $this->lang->line('departs')?></dt><dd><?php echo $START_DEPARTURE_TIME?></dd></dl>
-                                        </div>
-                                        <div class="table-cell">
-                                            <i class="icon soap-icon-plane-right landing"></i>
-                                            <dl><dt><?php echo $this->lang->line('arrives')?></dt><dd><?php echo $START_ARRIVAL_TIME?></dd></dl>
-                                        </div>
-                                    </div>
-                                    <div class="table-row">
-                                        <div class="table-cell">
-                                            <h4 class="box-title"><?php echo $END_DEPARTURE_LOCATION?> - <?php echo $END_ARRIVAL_LOCATION?><small></small></h4>
-                                        </div>
-                                        <div class="table-cell">
-                                            <i class="icon soap-icon-plane-right take-off"></i>
-                                            <dl><dt><?php echo $this->lang->line('departs')?></dt><dd><?php echo $END_DEPARTURE_TIME?></dd></dl>
-                                        </div>
-                                        <div class="table-cell">
-                                            <i class="icon soap-icon-plane-right landing"></i>
-                                            <dl><dt><?php echo $this->lang->line('arrives')?></dt><dd><?php echo $END_ARRIVAL_TIME?></dd></dl>
-                                        </div>
-                                    </div>
-                                </div>
+                <div id="tour-details" class="col-md-5 VungChuaTravel-box">
+                    <div class="small-box table-wrapper full-width">
+                        <dl class="term-description">
+                            <dt><?php echo $this->lang->line('tourCode')?>:</dt> <dd><?php echo $row->TOURS_ID ?></dd>
+                            <dt><?php echo $this->lang->line('tourday')?>:</dt><dd><?php echo $row->TOURS_LENGTH?> - <?php echo $this->lang->line('day')?></dd>
+                            <dt><?php echo $this->lang->line('departs')?>:</dt><dd><?php echo $row->START_DEPARTURE_TIME?></dd>
+                            <dt><?php echo $this->lang->line('departs')?>:</dt><dd><?php echo $row->LOCATION?> - <?php echo $row->NATIONAL?></dd>
+                            <dt><?php echo $this->lang->line('transportation')?>:</dt><dd><?php echo $row->TRANSPORT?></dd>
+                            <dt><?php echo $this->lang->line('price')?>:</dt><dd <?php if($row->DISCOUNT != 0){echo 'style="text-decoration: line-through; color: red"';}?>><?php echo $row->TOUR_PRICE?> <?php echo $this->lang->line('currency')?></dd>
+                            <dt><?php echo $this->lang->line('promotion')?>:</dt><dd><?php if($row->DISCOUNT == 0){echo $row->DISCOUNT;}else{echo $row->DISCOUNT_PRICE;}?> <?php echo $this->lang->line('currency')?></dd>
+                            <div align="center">
+                            <a href="<?php echo base_url()?>tours/tours_booking/<?php echo $tourID?>" class="button green btn-small uppercase"><?php echo $this->lang->line('booknow')?></a>
                             </div>
+                            <dt></dt><dd></dd>
+                            <div align="center">
+                                <div class="fb-like" data-href="<?php echo base_url('tours/tours_detail/'.$row->TEXT_LINK)?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                                <div class="g-plusone" data-size="medium" data-annotation="none"></div>
+                                <a href="#" class="button blue btn-sm uppercase"><i class="fa fa-youtube"></i></a>
+                                <a href="skype:dieuhanh.vungchuatravel?call" class="button blue btn-sm uppercase"><i class="fa fa-skype"></i></a>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+                <div class="col-md-12 tab-container">
+                    <ul class="tabs">
+                        <li class="active"><a href="#tours-schedule-tab" data-toggle="tab"><?php echo $this->lang->line('tourschedule')?></a></li>
+                        <li><a href="#tours-price-tab" data-toggle="tab"><?php echo $this->lang->line('tourprice') ?></a></li>
+                        <li><a href="#tours-note-tab" data-toggle="tab"><?php echo $this->lang->line('tournote') ?></a></li>
+                        <li><a href="#download-tab" data-toggle="tab">Download</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tours-schedule-tab">
+                            <h2><?php echo $row->TOURS_TIT?></h2>
+                            <p><?php echo $row->TOUR_CNT?></p>
+                            <?php foreach($tour_schedule as $row1){
+                                echo '<h2>'. $row1->DEPARTURE_TIME.' - '.$row1->ARRIVAL_TIME.'</h2>
+                                        <p>'.$row1->CONTENT.'</p>';
+                            }
+                            ?>
+                        </div>
+
+                        <div class="tab-pane fade" id="tours-price-tab">
+                            <p><?php echo $row->PRICE_CNT?></p>
+                        </div>
+
+                        <div class="tab-pane fade" id="tours-note-tab">
+                            <p><?php echo $row->REMARK?></p>
+                        </div>
+                        <div class="tab-pane fade" id="download-tab">
+                            <p>Comming Soon.</p>
                         </div>
                     </div>
-
-                    <div class="tour-google-map block"></div>
-                        <div class="tab-container">
-                            <ul class="tabs">
-                                <li class="active"><a href="#tours-schedule-tab" data-toggle="tab"><?php echo $this->lang->line('tourschedule'); ?></a></li>
-                                <li><a href="#tours-price-tab" data-toggle="tab"><?php echo $this->lang->line('tourprice'); ?></a></li>
-                                <li><a href="#tours-note-tab" data-toggle="tab"><?php echo $this->lang->line('tournote'); ?></a></li>
-                            </ul>
-                            <div class="tab-content">
-                                <div class="tab-pane fade in active" id="tours-schedule-tab">
-                                    <h2><?php echo $TOURS_TIT?></h2>
-                                    <p><?php echo $TOUR_CNT?></p>
-                                    <?php foreach($tour_schedule as $row){
-                                        echo '<h2>'. $row->DEPARTURE_TIME.' - '.$row->ARRIVAL_TIME.'</h2>
-                                                <p>'.$row->CONTENT.'</p>';
-                                    }
-                                    ?>
-                                </div>
-
-                                <div class="tab-pane fade" id="tours-price-tab">
-                                    <p><?php echo $PRICE_CNT?></p>
-                                </div>
-
-                                <div class="tab-pane fade" id="tours-note-tab">
-                                    <p><?php echo $REMARK?></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <div class="fb-comments" data-href="<?php echo base_url()?>tours/tours_detail/<?php echo $tourID?>" data-width="800px" data-numposts="5" data-colorscheme="light"></div>
+                </div>
+                <div class="fb-comments" data-href="<?php echo base_url()?>tours/tours_detail/<?php echo $row->TEXT_LINK?>" data-width="800px" data-numposts="5" data-colorscheme="light"></div>
             </div>
-            <div class="sidebar col-md-3">
-                <div class="VungChuaTravel-box">
-                    <h4 class="box-title"><?php echo $this->lang->line('tourrelated'); ?></h4>
-                    <div class="image-box style14">
-                        <?php foreach($tour_relation as $row){?>
-                        <article class="box">
-                            <figure>
-                                <a href="<?php echo base_url()?>tours/tours_detail/<?php echo $row->TOURS_ID?>" title=""><img width="63" height="59" src="<?php echo base_url()?><?php echo $row->TOURS_RPV_IMG_URL?>" alt=""></a>
-                            </figure>
-                            <div class="details">
-                                <h5 class="box-title"><a href="<?php echo base_url()?>tours/tours_detail/<?php echo $row->TOURS_ID?>"><?php echo $row->TOURS_TIT?></a></h5>
-                                <label class="price-wrapper"><span class="price-per-unit"><?php echo $row->PRICE?></span><?php echo $this->lang->line('currency'); ?></label><br>
-                                <label class="price-wrapper"><span class="price-per-unit"><?php echo $row->TOURS_LENGTH?></span><?php echo $this->lang->line('day'); ?></label>
-                            </div>
-                        </article>
-                        <?php ;}?>
-                    </div>
-                </div>
-                <div class="VungChuaTravel-box book-with-us-box">
-                    <h4><?php echo $this->lang->line('whychose'); ?></h4>
-                    <ul>
-                        <li>
-                            <i class="soap-icon-hotel-1 circle"></i>
-                            <h5 class="title"><a href="#"><?php echo $this->lang->line('1000hotel'); ?></a></h5>
-                            <p><?php echo $this->lang->line('1000hotelcnt'); ?></p>
-                        </li>
-                        <li>
-                            <i class="soap-icon-savings circle"></i>
-                            <h5 class="title"><a href="#"><?php echo $this->lang->line('lowrate'); ?></a></h5>
-                            <p><?php echo $this->lang->line('lowratecnt'); ?></p>
-                        </li>
-                        <li>
-                            <i class="soap-icon-support circle"></i>
-                            <h5 class="title"><a href="#"><?php echo $this->lang->line('exsupport'); ?></a></h5>
-                            <p><?php echo $this->lang->line('exsupportcnt'); ?></p>
-                        </li>
+            <?php } }?>
+            <div class="col-md-3 sidebar">
+                <div class="col-sm-12 support-box" align="center">
+                    <h2><?php echo $this->lang->line('oSupport'); ?></h2>
+                    <ul class="discover">
+                        <li class="col-xs-6"><i class="fa fa-phone" style="font-size: x-large; color: #12a0c3"></i></li>
+                        <li class="col-xs-6"><i class="fa fa-phone" style="font-size: x-large; color: #12a0c3"></i></li>
+                        <li class="col-xs-6"><b style="color: #12a0c3">0523.82.88.82</b></li>
+                        <li class="col-xs-6"><b style="color: #12a0c3">0949.07.86.86</b></li>
+                        <li class="col-xs-6"><a title="vungchuatravel" href="skype:dieuhanh.vungchuatravel?call"><i class="fa fa-skype" style="font-size: x-large; color: #12a0c3"></i></a></li>
+                        <li class="col-xs-6"><a title="dieuhanh.vungchuatravel" href="skype:dieuhanh.vungchuatravel?call"><i class="fa fa-skype" style="font-size: x-large; color: #12a0c3"></i></a></li>
+                        <li class="col-xs-6"><a title="vungchuatravel" href="ymsgr:SendIM?vungchuatravel"><img src="http://opi.yahoo.com/online?u=vungchuatravel&amp;m=g&amp;t=1"/></a></li>
+                        <li class="col-xs-6"><a title="dieuhanh.vungchuatravel" href="ymsgr:SendIM?dieuhanh.vungchuatravel"><img src="http://opi.yahoo.com/online?u=dieuhanh.vungchuatravel&amp;m=g&amp;t=1" /></a></li>
                     </ul>
                 </div>
-                <div class="VungChuaTravel-box contact-box">
-                    <h4 class="box-title"><?php echo $this->lang->line('needhelp'); ?></h4>
-                    <p><?php echo $this->lang->line('needhelpcnt'); ?></p>
-                    <address class="contact-details">
-                        <span class="contact-phone"><i class="soap-icon-phone"></i>0905-99-79-89</span>
-                        <br />
-                        <a href="#" class="contact-email">hotro.vungchuatravel@gmail.com</a>
-                    </address>
+            </div>
+            <div class="col-md-3 sidebar" align="center">
+                <div class="VungChuaTravel-box">
+                    <h2><?php echo $this->lang->line('mostSold'); ?></h2>
+                    <div class="image-box style14">
+                        <?php foreach($mostSoldTour as $row){?>
+                            <article class="box">
+                                <figure>
+                                    <a href="<?php echo base_url()?>tours/tours_detail/<?php echo $row->TOURS_ID?>" title=""><img width="63" height="59" src="<?php echo base_url()?><?php echo $row->TOURS_RPV_IMG_URL?>" alt=""></a>
+                                </figure>
+                                <div class="details">
+                                    <h5 class="box-title"><a href="<?php echo base_url()?>tours/tours_detail/<?php echo $row->TOURS_ID?>"><?php echo $row->TOURS_TIT?></a></h5>
+                                    <label class="price-wrapper"><span class="price-per-unit"><?php echo $row->PRICE?></span><?php echo $this->lang->line('currency'); ?></label><br>
+                                    <label class="price-wrapper"><span class="price-per-unit"><?php echo $row->TOURS_LENGTH?></span><?php echo $this->lang->line('day'); ?></label>
+                                </div>
+                            </article>
+                            <?php ;}?>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>

@@ -78,6 +78,7 @@ class Tour_model extends CI_Model
                     , TOURS_PRICE_CNT_" . $this->session->userdata('lang_code') . " AS PRICE_CNT
                     , TOURS_PRICE_" . $this->session->userdata('lang_code') . " AS PRICE
                     , DISCOUNT
+                    , FORMAT(((TOURS_PRICE_" . $this->session->userdata('lang_code') . " / 100 )*(100 - DISCOUNT)),0) AS DISCOUNT_PRICE
                     , FORMAT(TOURS_PRICE_" . $this->session->userdata('lang_code') . ",0) AS TOUR_PRICE
                     , TOURS_REMARK_" . $this->session->userdata('lang_code') . " AS REMARK
                     , (SELECT LOCATION_NM_" . $this->session->userdata('lang_code') . " FROM location WHERE LOCATION_ID = TOUR.START_ARRIVAL_LOCATION) AS START_ARRIVAL_LOCATION
@@ -132,6 +133,25 @@ class Tour_model extends CI_Model
                 WHERE LOCATION_ID = ? AND DISPLAY_YN = 'Y'
                 LIMIT 5";
         $query = $this->db->query($Sql,$locationID);
+        return $query->result();
+    }
+
+    public function mostSoldTour($tourID){
+        $Sql ="SELECT
+                    TOURS_ID
+                    , TEXT_LINK
+                    , LOCATION_ID
+                    , (SELECT LOCATION_NM_" . $this->session->userdata('lang_code') . " FROM location WHERE LOCATION_ID = TOUR.LOCATION_ID) AS LOCATION
+                    , (SELECT n.NATIONAL_NAME FROM national n, location l WHERE l.NATIONAL_ID = n.NATIONAL_ID AND l.LOCATION_ID = TOUR.LOCATION_ID ) AS NATIONAL
+                    , TOURS_TIT_" . $this->session->userdata('lang_code') . " AS TOURS_TIT
+                    , TOURS_RPV_IMG_URL
+                    , TOURS_LENGTH
+                    , FORMAT(TOURS_PRICE_" . $this->session->userdata('lang_code') . ",0) AS PRICE
+                FROM tours TOUR
+                WHERE RPV_YN = 'Y' AND DISPLAY_YN = 'Y' AND TOURS_ID != ?
+                ORDER BY TOURS_UPDATE_TIME DESC
+                LIMIT 10";
+        $query = $this->db->query($Sql,$tourID);
         return $query->result();
     }
 

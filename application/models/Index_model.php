@@ -178,7 +178,7 @@ class Index_model extends CI_Model {
             $sql = "SELECT CATEGORY_ID, CATEGORY_NM_" . $this->session->userdata('lang_code') . " AS CATE_NM,
                     CATEGORY_DESC_" . $this->session->userdata('lang_code') . " AS CATE_DESC,
                     IMG_URL, GROUP_ID, COLOR_CD, TITLE_COLOR_CD, FONT_COLOR_CD
-                    FROM category
+                    FROM category WHERE GROUP_ID in ('T', 'Q')
                     ORDER BY CATEGORY_ID ASC
         ";
         }else {

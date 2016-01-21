@@ -1154,11 +1154,11 @@ margin-bottom:10px
 }
 article
 {
-margin-bottom:20px
+margin-bottom:10px
 }
 #main
 {
-margin-bottom:40px
+margin-bottom:20px
 }
 .body-blank
 {
@@ -2060,7 +2060,7 @@ margin-top:10px;text-align:center;margin-bottom:0
 }
 .VungChuaTravel-box
 {
-background:#fff;padding:20px;margin-bottom:30px
+background:#fff;padding:10px;margin-bottom:10px;
 }
 .VungChuaTravel-box>*:last-child
 {
@@ -2607,7 +2607,7 @@ padding-right:0
 }
 .tab-container ul.tabs li a
 {
-color:#fff;display:block;padding:0 20px;background:#d9d9d9;font-size:1em;font-weight:bold;height:40px;line-height:40px;text-decoration:none;text-transform:uppercase;white-space:nowrap
+color:#333;display:block;padding:0 20px;background:#d9d9d9;font-size:1em;font-weight:bold;height:40px;line-height:40px;text-decoration:none;text-transform:uppercase;white-space:nowrap
 }
 .tab-container ul.tabs li.active>a,.tab-container ul.tabs li:hover>a
 {
@@ -11226,4 +11226,14 @@ cate material design box style
 .cate-row article figure:hover figcaption
 {
     -webkit-transform:translate3d(0, 0, 0);-moz-transform:translate3d(0, 0, 0);-ms-transform:translate3d(0, 0, 0);-o-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)
+}
+.support-box{
+    position: relative;
+    display: block;
+    padding: 10px 5px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.support-box li{
+    padding: 5px;
 }

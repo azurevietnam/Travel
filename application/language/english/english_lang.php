@@ -30,6 +30,7 @@ $lang['faq'] = "Faq";
 $lang['seats'] = "Seats";
 $lang['car'] = "Car";
 $lang['quantity'] = "Quantity";
+$lang['mostSold'] = "Most Sold Tour";
 
 /*
  * login and sign up form
@@ -168,6 +169,7 @@ $lang['guide'] = "guide";
  * Post
  */
 $lang['all'] = "All";
+$lang['tourCode'] = "Tour Code";
 $lang['tourschedule'] = "Tour Schedule";
 $lang['tourprice'] = "Tour Prices";
 $lang['tournote'] = "Tour Note";

@@ -30,6 +30,7 @@ $lang['faq'] = "Hỏi Đáp";
 $lang['seats'] = "Chổ";
 $lang['car'] = "Xe";
 $lang['quantity'] = "Số lượng";
+$lang['mostSold'] = "Tour Bán Chạy Nhất";
 
 /*
  * login and sign up form
@@ -183,6 +184,7 @@ $lang['guide'] = "Cẩm Nang";
  * Post
  */
 $lang['all'] = "Tất Cả";
+$lang['tourCode'] = "Mã Tour";
 $lang['tourschedule'] = "Kế Hoạch";
 $lang['tourprice'] = "Giá Tour";
 $lang['tournote'] = "Lưu Ý";

@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a0d783e-a507-4c94-888e-00d08b54a5e2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/tours-detail1.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Index_model.php" afterPath="$PROJECT_DIR$/application/models/Index_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/index.php" afterPath="$PROJECT_DIR$/application/views/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Tour_model.php" afterPath="$PROJECT_DIR$/application/models/Tour_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Tours.php" afterPath="$PROJECT_DIR$/application/controllers/Tours.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/add-tours.php" afterPath="$PROJECT_DIR$/application/views/admin/add-tours.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin/edit-tours.php" afterPath="$PROJECT_DIR$/application/views/admin/edit-tours.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/language/english/english_lang.php" afterPath="$PROJECT_DIR$/application/language/english/english_lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/resources/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/style.css" afterPath="$PROJECT_DIR$/resources/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/tours-detail.php" afterPath="$PROJECT_DIR$/application/views/tours-detail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/language/vietnam/vietnam_lang.php" afterPath="$PROJECT_DIR$/application/language/vietnam/vietnam_lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Travel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,133 +35,116 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="news-list.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/news-list.php">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2064" column="32" selection-start-line="2064" selection-start-column="32" selection-end-line="2064" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <file leaf-file-name="tours-detail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/tours-detail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846">
-              <caret line="95" column="20" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+            <state vertical-scroll-proportion="-14.384615">
+              <caret line="137" column="51" selection-start-line="137" selection-start-column="51" selection-end-line="137" selection-end-column="51" />
+              <folding>
+                <element signature="e#6#91#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vietnam_lang.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/language/vietnam/vietnam_lang.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.7454545">
+              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tours.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="english_lang.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/language/english/english_lang.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.3818183">
+              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tours.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Tours.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.709091">
-              <caret line="69" column="56" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.43762377">
+              <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
               <folding>
                 <element signature="n#__construct#0;n#tours#0;n#!!top" expanded="false" />
                 <element signature="n#tours_order#0;n#tours#0;n#!!top" expanded="false" />
-                <marker date="1453192977303" expanded="true" signature="7854:9450" placeholder="..." />
-                <marker date="1453192977303" expanded="true" signature="7900:9423" placeholder="..." />
-                <marker date="1453192977303" expanded="true" signature="8034:8165" placeholder="..." />
-                <marker date="1453192977303" expanded="true" signature="8215:9388" placeholder="..." />
-                <marker date="1453192977303" expanded="true" signature="8511:8609" placeholder="..." />
-                <marker date="1453192977303" expanded="true" signature="8661:8805" placeholder="..." />
-                <marker date="1453192977303" expanded="true" signature="8857:9184" placeholder="..." />
-                <marker date="1453192977303" expanded="true" signature="8912:9145" placeholder="..." />
-                <marker date="1453192977303" expanded="true" signature="10338:12244" placeholder="..." />
-                <marker date="1453192977303" expanded="true" signature="10388:12213" placeholder="..." />
-                <marker date="1453192977303" expanded="true" signature="10429:10681" placeholder="..." />
-                <marker date="1453192977303" expanded="true" signature="10735:12174" placeholder="..." />
-                <marker date="1453192977303" expanded="true" signature="11030:11225" placeholder="..." />
-                <marker date="1453192977303" expanded="true" signature="11284:11602" placeholder="..." />
-                <marker date="1453192977303" expanded="true" signature="11435:11446" placeholder="..." />
-                <marker date="1453192977303" expanded="true" signature="11742:12135" placeholder="..." />
+                <marker date="1453344656637" expanded="true" signature="7852:9449" placeholder="..." />
+                <marker date="1453344656637" expanded="true" signature="7898:9422" placeholder="..." />
+                <marker date="1453344656637" expanded="true" signature="8032:8163" placeholder="..." />
+                <marker date="1453344656637" expanded="true" signature="8213:9387" placeholder="..." />
+                <marker date="1453344656637" expanded="true" signature="8509:8607" placeholder="..." />
+                <marker date="1453344656637" expanded="true" signature="8659:8803" placeholder="..." />
+                <marker date="1453344656637" expanded="true" signature="8855:9182" placeholder="..." />
+                <marker date="1453344656637" expanded="true" signature="8910:9143" placeholder="..." />
+                <marker date="1453344656637" expanded="true" signature="10337:12243" placeholder="..." />
+                <marker date="1453344656637" expanded="true" signature="10387:12212" placeholder="..." />
+                <marker date="1453344656637" expanded="true" signature="10428:10680" placeholder="..." />
+                <marker date="1453344656637" expanded="true" signature="10734:12173" placeholder="..." />
+                <marker date="1453344656637" expanded="true" signature="11029:11224" placeholder="..." />
+                <marker date="1453344656637" expanded="true" signature="11283:11601" placeholder="..." />
+                <marker date="1453344656637" expanded="true" signature="11434:11445" placeholder="..." />
+                <marker date="1453344656637" expanded="true" signature="11741:12134" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tours-list.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/tours-list.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846">
-              <caret line="14" column="66" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tours.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/tours.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.076923">
-              <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.072727">
-              <caret line="314" column="27" selection-start-line="314" selection-start-column="19" selection-end-line="314" selection-end-column="27" />
-              <folding>
-                <element signature="n#__construct#0;n#Home#0;n#!!top" expanded="false" />
-                <element signature="n#loadTourCate#0;n#Home#0;n#!!top" expanded="false" />
-                <marker date="1453194775635" expanded="true" signature="13675:14420" placeholder="..." />
-                <marker date="1453194775635" expanded="true" signature="13721:13764" placeholder="..." />
-                <marker date="1453194775635" expanded="true" signature="13721:13786" placeholder="..." />
-                <marker date="1453194775635" expanded="true" signature="13721:13787" placeholder="..." />
-                <marker date="1453194775635" expanded="true" signature="13721:13802" placeholder="..." />
-                <marker date="1453194775635" expanded="true" signature="13721:14393" placeholder="..." />
-                <marker date="1453194775635" expanded="true" signature="13814:13862" placeholder="..." />
-                <marker date="1453194775635" expanded="true" signature="13814:13939" placeholder="..." />
-                <marker date="1453194775635" expanded="true" signature="13989:14054" placeholder="..." />
-                <marker date="1453194775635" expanded="true" signature="13989:14358" placeholder="..." />
-                <marker date="1453194775635" expanded="true" signature="14221:14323" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PagesConfig.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/PagesConfig.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6545455">
-              <caret line="51" column="68" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Index_model.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Index_model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Index_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22903885">
-              <caret line="149" column="6" selection-start-line="149" selection-start-column="6" selection-end-line="149" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="177" column="109" selection-start-line="177" selection-start-column="109" selection-end-line="177" selection-end-column="109" />
               <folding>
-                <marker date="1453197421328" expanded="true" signature="572:1180" placeholder="SELECT TRAVE..." />
-                <marker date="1453197421328" expanded="true" signature="597:718" placeholder="SELECT n.NAT..national..." />
-                <marker date="1453197421328" expanded="true" signature="2345:3025" placeholder="SELECT TOURS..." />
-                <marker date="1453197421328" expanded="true" signature="2363:2486" placeholder="SELECT n.NAT..national..." />
-                <marker date="1453197421328" expanded="true" signature="3206:3887" placeholder="SELECT TOURS..." />
-                <marker date="1453197421328" expanded="true" signature="3224:3347" placeholder="SELECT n.NAT..national..." />
-                <marker date="1453197421328" expanded="true" signature="11313:11388" placeholder="SELECT COUNT..news..." />
+                <marker date="1453260331022" expanded="true" signature="572:1180" placeholder="SELECT TRAVE..." />
+                <marker date="1453260331022" expanded="true" signature="597:718" placeholder="SELECT n.NAT..national..." />
+                <marker date="1453260331022" expanded="true" signature="2345:3025" placeholder="SELECT TOURS..." />
+                <marker date="1453260331022" expanded="true" signature="2363:2486" placeholder="SELECT n.NAT..national..." />
+                <marker date="1453260331022" expanded="true" signature="3206:3887" placeholder="SELECT TOURS..." />
+                <marker date="1453260331022" expanded="true" signature="3224:3347" placeholder="SELECT n.NAT..national..." />
+                <marker date="1453260331022" expanded="true" signature="11342:11417" placeholder="SELECT COUNT..news..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/index.php">
+      <file leaf-file-name="Tour_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Tour_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
-              <caret line="368" column="65" selection-start-line="368" selection-start-column="51" selection-end-line="368" selection-end-column="65" />
-              <folding />
+            <state vertical-scroll-proportion="-4.9454546">
+              <caret line="81" column="12" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+              <folding>
+                <element signature="n#__construct#0;n#Tour_model#0;n#!!top" expanded="false" />
+                <element signature="n#addTourOrder#0;n#Tour_model#0;n#!!top" expanded="false" />
+                <element signature="n#loadImgUrl#0;n#Tour_model#0;n#!!top" expanded="false" />
+                <element signature="n#tourSEOkey#0;n#Tour_model#0;n#!!top" expanded="false" />
+                <marker date="1453344590023" expanded="true" signature="1279:1357" placeholder="SELECT COUNT..tours..." />
+                <marker date="1453344590023" expanded="true" signature="1403:1461" placeholder="SELECT COUNT..tours..." />
+                <marker date="1453344590023" expanded="true" signature="1694:1771" placeholder="SELECT IMG_I..img_grp..." />
+                <marker date="1453344590023" expanded="true" signature="1958:4347" placeholder="SELECT TOURS..." />
+                <marker date="1453344590023" expanded="true" signature="2117:2240" placeholder="SELECT n.NAT..national..." />
+                <marker date="1453344590023" expanded="true" signature="5051:5099" placeholder="SELECT LOCAT..tours..." />
+                <marker date="1453344590023" expanded="true" signature="7783:8591" placeholder="SELECT TOURS..." />
+                <marker date="1453344590023" expanded="true" signature="7824:7947" placeholder="SELECT n.NAT..national..." />
+                <marker date="1453344590023" expanded="true" signature="8632:9420" placeholder="SELECT TOURS..." />
+                <marker date="1453344590023" expanded="true" signature="8673:8796" placeholder="SELECT n.NAT..national..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -172,9 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/css/style-dark-orange.css" />
-        <option value="$PROJECT_DIR$/resources/css/style-light-blue.css" />
-        <option value="$PROJECT_DIR$/resources/css/style-light-orange.css" />
         <option value="$PROJECT_DIR$/resources/css/style-light-yellow.css" />
         <option value="$PROJECT_DIR$/resources/css/style-orange.css" />
         <option value="$PROJECT_DIR$/resources/css/style-purple.css" />
@@ -187,9 +177,7 @@
         <option value="$PROJECT_DIR$/application/views/admin/news-list.php" />
         <option value="$PROJECT_DIR$/application/controllers/Popup.php" />
         <option value="$PROJECT_DIR$/application/language/vietnam/signup_lang.php" />
-        <option value="$PROJECT_DIR$/application/language/vietnam/vietnam_lang.php" />
         <option value="$PROJECT_DIR$/application/language/english/signup_lang.php" />
-        <option value="$PROJECT_DIR$/application/language/english/english_lang.php" />
         <option value="$PROJECT_DIR$/application/config/autoload.php" />
         <option value="$PROJECT_DIR$/application/views/admin/news-edit.php" />
         <option value="$PROJECT_DIR$/application/controllers/Admin_news.php" />
@@ -198,12 +186,9 @@
         <option value="$PROJECT_DIR$/application/models/admin_models/Order_mode.php" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/resources/css/revolution_slider/css/settings.css" />
-        <option value="$PROJECT_DIR$/resources/css/style.css" />
         <option value="$PROJECT_DIR$/resources/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/application/views/admin/add-tours.php" />
         <option value="$PROJECT_DIR$/application/controllers/Admin_tours.php" />
         <option value="$PROJECT_DIR$/application/models/admin_models/Admin_tour_model.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/edit-tours.php" />
         <option value="$PROJECT_DIR$/application/views/admin/admin-tours.php" />
         <option value="$PROJECT_DIR$/application/views/admin/add-cate.php" />
         <option value="$PROJECT_DIR$/application/views/admin/edit-cate.php" />
@@ -211,18 +196,26 @@
         <option value="$PROJECT_DIR$/application/controllers/Category.php" />
         <option value="$PROJECT_DIR$/application/views/tours-group.php" />
         <option value="$PROJECT_DIR$/application/views/tours-list.php" />
-        <option value="$PROJECT_DIR$/application/models/Tour_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/PagesConfig.php" />
         <option value="$PROJECT_DIR$/application/controllers/Order.php" />
         <option value="$PROJECT_DIR$/application/controllers/Guides.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Tours.php" />
         <option value="$PROJECT_DIR$/application/views/includes/header.php" />
         <option value="$PROJECT_DIR$/application/views/includes/short-header.php" />
         <option value="$PROJECT_DIR$/application/views/news-list.php" />
         <option value="$PROJECT_DIR$/application/controllers/Home.php" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
         <option value="$PROJECT_DIR$/application/views/index.php" />
+        <option value="$PROJECT_DIR$/application/views/tours-detail1.php" />
         <option value="$PROJECT_DIR$/application/models/Index_model.php" />
+        <option value="$PROJECT_DIR$/resources/css/font-awesome.min.css" />
+        <option value="$PROJECT_DIR$/resources/css/style.css" />
+        <option value="$PROJECT_DIR$/application/views/admin/add-tours.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/edit-tours.php" />
+        <option value="$PROJECT_DIR$/application/language/vietnam/vietnam_lang.php" />
+        <option value="$PROJECT_DIR$/application/language/english/english_lang.php" />
+        <option value="$PROJECT_DIR$/application/views/tours-detail.php" />
+        <option value="$PROJECT_DIR$/application/models/Tour_model.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Tours.php" />
       </list>
     </option>
   </component>
@@ -238,8 +231,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1366" />
-    <option name="height" value="728" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -280,7 +275,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -296,6 +291,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -367,7 +394,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -388,8 +419,66 @@
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin_models" />
+              <option name="myItemId" value="Travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="language" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="language" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vietnam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="language" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="english" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -445,7 +534,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -533,10 +622,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18070444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1860817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -600,32 +689,11 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/admin/add-images.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12734082">
-          <caret line="114" column="10" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/admin-category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/order-detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/javascripts/custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -679,20 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.384615">
           <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/language/english/english_lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.046421662">
-          <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/language/vietnam/vietnam_lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.032818533">
-          <caret line="88" column="24" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -767,18 +821,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11184" column="36" selection-start-line="11184" selection-start-column="36" selection-end-line="11184" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="852" column="55" selection-start-line="852" selection-start-column="55" selection-end-line="852" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -786,13 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/edit-tours.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3223938">
-          <caret line="199" column="141" selection-start-line="199" selection-start-column="141" selection-end-line="199" selection-end-column="141" />
         </state>
       </provider>
     </entry>
@@ -842,7 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.75482625">
           <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -850,53 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="n#getAllTour#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#getAllNational#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#getLocalByNationID#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#getAllCategory#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#addNational#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#addLocation#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#loadTour#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#loadImages#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#addTour#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#updateTour#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#updateTourStatus#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#getImgSeq#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#insertTourImg#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#updateImg#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#deleteImg#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#loadTourImages#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#loadTourSchedule#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#insertSchedule#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#updateSchedule#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#deleteSchedule#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <element signature="n#getScdSeq#0;n#Admin_Tour_Model#0;n#!!top" expanded="false" />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT TOURS..tours..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT CATEG..category..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tours_detail..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..img_grp..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT NATIO..national..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT LOCAT..location..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT CATEG..category..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT TOURS..tours..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT NATIO..location..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT NATIO..national..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT LOCAT..location..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT CATEG..category..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT NATIO..location..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT NATIO..national..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT LOCAT..location..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT NATIO..location..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT NATIO..national..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT LOCAT..location..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT NATIO..location..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT NATIO..national..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT LOCAT..location..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT NATIO..location..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT NATIO..national..." />
-            <marker date="1452753924228" expanded="true" signature="-1:-1" placeholder="SELECT LOCAT..location..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -904,7 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="51" column="81" selection-start-line="51" selection-start-column="81" selection-end-line="51" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,17 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.423077">
           <caret line="97" column="48" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="48" />
-          <folding>
-            <marker date="1453100992299" expanded="true" signature="-1:-1" placeholder="SELECT CATEG..category..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/add-tours.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="196" column="28" selection-start-line="196" selection-start-column="28" selection-end-line="201" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,7 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.85328186">
           <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,19 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.72200775">
           <caret line="40" column="65" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="65" />
-          <folding>
-            <marker date="1453189659523" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1453189659523" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1453189659523" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tours-detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6891892">
-          <caret line="84" column="39" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -958,50 +923,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15250966">
           <caret line="186" column="76" selection-start-line="186" selection-start-column="76" selection-end-line="186" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/tours-list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="14" column="66" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/tours.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.076923">
+        <state vertical-scroll-proportion="0.0">
           <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Tours.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.709091">
-          <caret line="69" column="56" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="56" />
-          <folding>
-            <element signature="n#__construct#0;n#tours#0;n#!!top" expanded="false" />
-            <element signature="n#tours_order#0;n#tours#0;n#!!top" expanded="false" />
-            <marker date="1453192977303" expanded="true" signature="7854:9450" placeholder="..." />
-            <marker date="1453192977303" expanded="true" signature="7900:9423" placeholder="..." />
-            <marker date="1453192977303" expanded="true" signature="8034:8165" placeholder="..." />
-            <marker date="1453192977303" expanded="true" signature="8215:9388" placeholder="..." />
-            <marker date="1453192977303" expanded="true" signature="8511:8609" placeholder="..." />
-            <marker date="1453192977303" expanded="true" signature="8661:8805" placeholder="..." />
-            <marker date="1453192977303" expanded="true" signature="8857:9184" placeholder="..." />
-            <marker date="1453192977303" expanded="true" signature="8912:9145" placeholder="..." />
-            <marker date="1453192977303" expanded="true" signature="10338:12244" placeholder="..." />
-            <marker date="1453192977303" expanded="true" signature="10388:12213" placeholder="..." />
-            <marker date="1453192977303" expanded="true" signature="10429:10681" placeholder="..." />
-            <marker date="1453192977303" expanded="true" signature="10735:12174" placeholder="..." />
-            <marker date="1453192977303" expanded="true" signature="11030:11225" placeholder="..." />
-            <marker date="1453192977303" expanded="true" signature="11284:11602" placeholder="..." />
-            <marker date="1453192977303" expanded="true" signature="11435:11446" placeholder="..." />
-            <marker date="1453192977303" expanded="true" signature="11742:12135" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1009,101 +937,188 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34749034">
           <caret line="183" column="76" selection-start-line="183" selection-start-column="76" selection-end-line="183" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Tour_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.818182">
-          <caret line="33" column="5" selection-start-line="24" selection-start-column="3" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="n#__construct#0;n#Tour_model#0;n#!!top" expanded="false" />
-            <element signature="n#addTourOrder#0;n#Tour_model#0;n#!!top" expanded="false" />
-            <element signature="n#loadImgUrl#0;n#Tour_model#0;n#!!top" expanded="false" />
-            <element signature="n#loadTourDetail#0;n#Tour_model#0;n#!!top" expanded="false" />
-            <element signature="n#tourRelation#0;n#Tour_model#0;n#!!top" expanded="false" />
-            <element signature="n#tourSEOkey#0;n#Tour_model#0;n#!!top" expanded="false" />
-            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tours..." />
-            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tours..." />
-            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT IMG_I..img_grp..." />
-            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT TOURS..." />
-            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT n.NAT..national..." />
-            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT LOCAT..tours..." />
-            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT TOURS..." />
-            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT n.NAT..national..." />
-            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT TOURS..." />
-            <marker date="1453186636073" expanded="true" signature="-1:-1" placeholder="SELECT n.NAT..national..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/news-list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
+        <state vertical-scroll-proportion="0.0">
           <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
+        <state vertical-scroll-proportion="0.0">
           <caret line="95" column="20" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
+        <state vertical-scroll-proportion="0.0">
           <caret line="368" column="65" selection-start-line="368" selection-start-column="51" selection-end-line="368" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.072727">
+        <state vertical-scroll-proportion="0.0">
           <caret line="314" column="27" selection-start-line="314" selection-start-column="19" selection-end-line="314" selection-end-column="27" />
-          <folding>
-            <element signature="n#__construct#0;n#Home#0;n#!!top" expanded="false" />
-            <element signature="n#loadTourCate#0;n#Home#0;n#!!top" expanded="false" />
-            <marker date="1453194775635" expanded="true" signature="13675:14420" placeholder="..." />
-            <marker date="1453194775635" expanded="true" signature="13721:13764" placeholder="..." />
-            <marker date="1453194775635" expanded="true" signature="13721:13786" placeholder="..." />
-            <marker date="1453194775635" expanded="true" signature="13721:13787" placeholder="..." />
-            <marker date="1453194775635" expanded="true" signature="13721:13802" placeholder="..." />
-            <marker date="1453194775635" expanded="true" signature="13721:14393" placeholder="..." />
-            <marker date="1453194775635" expanded="true" signature="13814:13862" placeholder="..." />
-            <marker date="1453194775635" expanded="true" signature="13814:13939" placeholder="..." />
-            <marker date="1453194775635" expanded="true" signature="13989:14054" placeholder="..." />
-            <marker date="1453194775635" expanded="true" signature="13989:14358" placeholder="..." />
-            <marker date="1453194775635" expanded="true" signature="14221:14323" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/PagesConfig.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6545455">
+        <state vertical-scroll-proportion="0.0">
           <caret line="51" column="68" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Index_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22903885">
-          <caret line="149" column="6" selection-start-line="149" selection-start-column="6" selection-end-line="149" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="177" column="109" selection-start-line="177" selection-start-column="109" selection-end-line="177" selection-end-column="109" />
           <folding>
-            <marker date="1453197421328" expanded="true" signature="572:1180" placeholder="SELECT TRAVE..." />
-            <marker date="1453197421328" expanded="true" signature="597:718" placeholder="SELECT n.NAT..national..." />
-            <marker date="1453197421328" expanded="true" signature="2345:3025" placeholder="SELECT TOURS..." />
-            <marker date="1453197421328" expanded="true" signature="2363:2486" placeholder="SELECT n.NAT..national..." />
-            <marker date="1453197421328" expanded="true" signature="3206:3887" placeholder="SELECT TOURS..." />
-            <marker date="1453197421328" expanded="true" signature="3224:3347" placeholder="SELECT n.NAT..national..." />
-            <marker date="1453197421328" expanded="true" signature="11313:11388" placeholder="SELECT COUNT..news..." />
+            <marker date="1453260331022" expanded="true" signature="572:1180" placeholder="SELECT TRAVE..." />
+            <marker date="1453260331022" expanded="true" signature="597:718" placeholder="SELECT n.NAT..national..." />
+            <marker date="1453260331022" expanded="true" signature="2345:3025" placeholder="SELECT TOURS..." />
+            <marker date="1453260331022" expanded="true" signature="2363:2486" placeholder="SELECT n.NAT..national..." />
+            <marker date="1453260331022" expanded="true" signature="3206:3887" placeholder="SELECT TOURS..." />
+            <marker date="1453260331022" expanded="true" signature="3224:3347" placeholder="SELECT n.NAT..national..." />
+            <marker date="1453260331022" expanded="true" signature="11342:11417" placeholder="SELECT COUNT..news..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/includes/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="47" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2064" column="32" selection-start-line="2064" selection-start-column="32" selection-end-line="2064" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2361111">
+          <caret line="3" column="558" selection-start-line="3" selection-start-column="558" selection-end-line="3" selection-end-column="613" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tours-list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4325843">
+          <caret line="148" column="106" selection-start-line="148" selection-start-column="98" selection-end-line="148" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/add-tours.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.033707865">
+          <caret line="169" column="74" selection-start-line="169" selection-start-column="74" selection-end-line="169" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/edit-tours.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53370786">
+          <caret line="169" column="76" selection-start-line="169" selection-start-column="76" selection-end-line="169" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tours-detail1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="120" column="200" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="200" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/language/english/english_lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3818183">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/language/vietnam/vietnam_lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7454545">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/tours-detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.384615">
+          <caret line="137" column="51" selection-start-line="137" selection-start-column="51" selection-end-line="137" selection-end-column="51" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Tour_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.9454546">
+          <caret line="81" column="12" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+          <folding>
+            <element signature="n#__construct#0;n#Tour_model#0;n#!!top" expanded="false" />
+            <element signature="n#addTourOrder#0;n#Tour_model#0;n#!!top" expanded="false" />
+            <element signature="n#loadImgUrl#0;n#Tour_model#0;n#!!top" expanded="false" />
+            <element signature="n#tourSEOkey#0;n#Tour_model#0;n#!!top" expanded="false" />
+            <marker date="1453344590023" expanded="true" signature="1279:1357" placeholder="SELECT COUNT..tours..." />
+            <marker date="1453344590023" expanded="true" signature="1403:1461" placeholder="SELECT COUNT..tours..." />
+            <marker date="1453344590023" expanded="true" signature="1694:1771" placeholder="SELECT IMG_I..img_grp..." />
+            <marker date="1453344590023" expanded="true" signature="1958:4347" placeholder="SELECT TOURS..." />
+            <marker date="1453344590023" expanded="true" signature="2117:2240" placeholder="SELECT n.NAT..national..." />
+            <marker date="1453344590023" expanded="true" signature="5051:5099" placeholder="SELECT LOCAT..tours..." />
+            <marker date="1453344590023" expanded="true" signature="7783:8591" placeholder="SELECT TOURS..." />
+            <marker date="1453344590023" expanded="true" signature="7824:7947" placeholder="SELECT n.NAT..national..." />
+            <marker date="1453344590023" expanded="true" signature="8632:9420" placeholder="SELECT TOURS..." />
+            <marker date="1453344590023" expanded="true" signature="8673:8796" placeholder="SELECT n.NAT..national..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Tours.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43762377">
+          <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
+          <folding>
+            <element signature="n#__construct#0;n#tours#0;n#!!top" expanded="false" />
+            <element signature="n#tours_order#0;n#tours#0;n#!!top" expanded="false" />
+            <marker date="1453344656637" expanded="true" signature="7852:9449" placeholder="..." />
+            <marker date="1453344656637" expanded="true" signature="7898:9422" placeholder="..." />
+            <marker date="1453344656637" expanded="true" signature="8032:8163" placeholder="..." />
+            <marker date="1453344656637" expanded="true" signature="8213:9387" placeholder="..." />
+            <marker date="1453344656637" expanded="true" signature="8509:8607" placeholder="..." />
+            <marker date="1453344656637" expanded="true" signature="8659:8803" placeholder="..." />
+            <marker date="1453344656637" expanded="true" signature="8855:9182" placeholder="..." />
+            <marker date="1453344656637" expanded="true" signature="8910:9143" placeholder="..." />
+            <marker date="1453344656637" expanded="true" signature="10337:12243" placeholder="..." />
+            <marker date="1453344656637" expanded="true" signature="10387:12212" placeholder="..." />
+            <marker date="1453344656637" expanded="true" signature="10428:10680" placeholder="..." />
+            <marker date="1453344656637" expanded="true" signature="10734:12173" placeholder="..." />
+            <marker date="1453344656637" expanded="true" signature="11029:11224" placeholder="..." />
+            <marker date="1453344656637" expanded="true" signature="11283:11601" placeholder="..." />
+            <marker date="1453344656637" expanded="true" signature="11434:11445" placeholder="..." />
+            <marker date="1453344656637" expanded="true" signature="11741:12134" placeholder="..." />
           </folding>
         </state>
       </provider>

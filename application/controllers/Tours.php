@@ -73,7 +73,7 @@ class tours extends CI_Controller
             $data['tourID'] = $tourID;
             $data['tour_detail'] = $this->Tour_model->loadTourDetail($tourID);
             $data['tour_schedule'] = $this->Tour_model->loadTourSchedule($tourID);
-            $data['tour_relation'] = $this->Tour_model->tourRelation($tourID);
+            $data['mostSoldTour'] = $this->Tour_model->mostSoldTour($tourID);
             $hData['metaData'] = $this->Tour_model->tourSEOkey($tourID);
             $hData['toursCate'] = $this->Index_model->loadTourCate();
             $hData['newsCate'] = $this->Index_model->loadNewsCate();
@@ -93,7 +93,7 @@ class tours extends CI_Controller
             $data['tourID'] = $tourID;
             $data['tour_detail'] = $this->Tour_model->loadTourDetail($tourID);
             $data['tour_schedule'] = $this->Tour_model->loadTourSchedule($tourID);
-            $data['tour_relation'] = $this->Tour_model->tourRelation($tourID);
+            $data['mostSoldTour'] = $this->Tour_model->mostSoldTour($tourID);
             $hData['metaData'] = $this->Tour_model->tourSEOkey($tourID);
             $hData['toursCate'] = $this->Index_model->loadTourCate();
             $hData['newsCate'] = $this->Index_model->loadNewsCate();
@@ -200,7 +200,7 @@ class tours extends CI_Controller
                                         <span>'.$row->TOURS_LENGTH.' '.$this->lang->line('day').'</span>
                                     </div>
                                 </div>
-                                <a href="'.base_url().'tours/tours_detail/'. $row->TEXT_LINK.'" class="button btn-small full-width">'.$this->lang->line('booknow').'</a>
+                                <a href="'.base_url().'tours/tours_detail/'. $row->TEXT_LINK.'" class="button btn-small full-width">'.$this->lang->line('loadmore').'</a>
                             </div>
                         </article>
                     </div>';
